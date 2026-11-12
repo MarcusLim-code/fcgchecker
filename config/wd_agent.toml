@@ -1,0 +1,7 @@
+# Uses the current Devin host's existing authorized tools through typed JSON handoff.
+# No MCP server, OAuth client, WD URL or direct Python MCP session is configured here.
+retriever = "agent_mcp"
+checker = "devin"
+top_k = 3
+allow_network = false
+allow_remote = false

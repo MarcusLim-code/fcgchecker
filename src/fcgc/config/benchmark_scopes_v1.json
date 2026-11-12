@@ -1,0 +1,13 @@
+{
+  "corpus_version": "2.0.0",
+  "scope_by_source": {
+    "api_returns": "benchmark_firmware",
+    "buffers": "benchmark_firmware",
+    "decoy_bootloader": "decoy",
+    "decoy_host_tools": "decoy",
+    "error_flow": "benchmark_firmware",
+    "initialization": "benchmark_firmware",
+    "pointers": "benchmark_firmware",
+    "resources": "benchmark_firmware"
+  }
+}

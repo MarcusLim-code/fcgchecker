@@ -1,0 +1,54 @@
+[
+  {
+    "command": [
+      ".venv/bin/pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "........................................................................ [ 55%]\n.........................................................                [100%]\n129 passed in 4.62s\n"
+  },
+  {
+    "command": [
+      ".venv/bin/ruff",
+      "check",
+      "."
+    ],
+    "exit_code": 0,
+    "output": "All checks passed!\n"
+  },
+  {
+    "command": [
+      ".venv/bin/ruff",
+      "format",
+      "--check",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "output": "81 files already formatted\n"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "output": "No broken requirements found.\nWARNING: The directory '/Users/marcuslim/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+  }
+]

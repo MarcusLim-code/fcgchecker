@@ -1,0 +1,13 @@
+# Illustrative values, not validated acceptance criteria. Review on development data.
+rule_k = 18
+rationale = "Illustrative demonstration bounds only; replace with a justified development calibration before research acceptance testing."
+
+[[margins]]
+comparison = "p1_vs_p2"
+metric = "retained_recall"
+lower = -0.05
+
+[[margins]]
+comparison = "p1_vs_p2"
+metric = "checker_input_tokens"
+upper = 0.0

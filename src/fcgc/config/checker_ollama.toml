@@ -1,0 +1,13 @@
+retriever = "benchmark"
+checker = "ollama"
+model = "replace-with-installed-model:tag"
+ollama_url = "http://127.0.0.1:11434"
+allow_network = false
+allow_remote = false
+checker_timeout = 30.0
+
+[generation]
+temperature = 0.0
+seed = 0
+top_p = 1.0
+max_output_tokens = 2048

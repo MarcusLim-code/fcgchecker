@@ -1,0 +1,46 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C016",
+  "code_sha256": "81054c1db04290144fc0f987e3e9e75fb2267f97379038024a3cf8760df98e24",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-021",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 5,
+          "end_line": 5
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "destination[n] = 0;"
+        }
+      ],
+      "rationale": "When n equals capacity the terminator is out of bounds."
+    },
+    {
+      "rule_id": "SFCG-014",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 4,
+          "end_line": 4
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 4,
+          "end_line": 4,
+          "quote": "destination[i] = source[i];"
+        }
+      ],
+      "rationale": "The output pointer is not validated before writing."
+    }
+  ],
+  "case_rationale": "Matched general-code variant has no named device API but violates a general rule.",
+  "review_status": "provisional"
+}

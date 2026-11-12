@@ -1,0 +1,64 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C008",
+  "code_sha256": "59f80f235439519bd3b5ab65eebbe70805f4fee4623c61eef3248fb6f6997cc6",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-008",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 11,
+          "end_line": 11
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 11,
+          "end_line": 11,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "The error exit skips cleanup."
+    },
+    {
+      "rule_id": "SFCG-031",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 9,
+          "end_line": 9
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "if (handle < 0) return handle;"
+        }
+      ],
+      "rationale": "The lock remains held after open failure."
+    },
+    {
+      "rule_id": "SFCG-032",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 11,
+          "end_line": 11
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 11,
+          "end_line": 11,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "The device handle remains open on transaction failure."
+    }
+  ],
+  "case_rationale": "Matched lifetime variant with two leaking early returns.",
+  "review_status": "provisional"
+}

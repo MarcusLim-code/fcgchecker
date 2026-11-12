@@ -1,0 +1,49 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C005",
+  "code_sha256": "84206b1d24ea8ff05312ad5468177def77ecc1ab9eb37b938c0f36bb82725530",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-013",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "dst == NULL || src == NULL"
+        }
+      ],
+      "rationale": "Required pointers are checked."
+    },
+    {
+      "rule_id": "SFCG-019",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "i < count"
+        }
+      ],
+      "rationale": "The copy index stays below the capped count."
+    },
+    {
+      "rule_id": "SFCG-024",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "if (count > capacity) count = capacity;"
+        }
+      ],
+      "rationale": "External count is capped before copying."
+    }
+  ],
+  "case_rationale": "External count, pointers, and destination capacity all matter.",
+  "review_status": "provisional"
+}

@@ -1,0 +1,82 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C012",
+  "code_sha256": "d1d4d0e79bd5631f534c25e79e2f09dc06b0bf27535048164798eaf8ba7acd43",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-007",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "return 0;"
+        }
+      ],
+      "rationale": "The branch masks a specific IO_ERROR as success."
+    },
+    {
+      "rule_id": "SFCG-009",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 9,
+          "end_line": 9
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "if (now >= deadline) return IO_ERROR;"
+        }
+      ],
+      "rationale": "Timeout is reported as hardware IO_ERROR."
+    },
+    {
+      "rule_id": "SFCG-010",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 7,
+          "end_line": 7
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "rc != 0 && tries < 3u"
+        }
+      ],
+      "rationale": "Permanent failures are retried as if transient."
+    },
+    {
+      "rule_id": "SFCG-012",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "int rc = perform();"
+        }
+      ],
+      "rationale": "Retained error state is not cleared before the new transaction."
+    }
+  ],
+  "case_rationale": "Matched error variant retries permanent errors and masks a returned failure.",
+  "review_status": "provisional"
+}

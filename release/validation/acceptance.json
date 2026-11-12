@@ -1,0 +1,32 @@
+{
+  "accepted": true,
+  "scope": "synthetic offline development acceptance",
+  "runs": 120,
+  "finished": 120,
+  "failed": 0,
+  "incomplete_context_runs": 54,
+  "exact_evidence_replay": true,
+  "benchmark_checker": "mock: not_evaluated; no compliance-accuracy claim",
+  "deterministic_demonstration": {
+    "good": {
+      "status": "evaluated",
+      "decisions": [
+        "compliant"
+      ]
+    },
+    "bad": {
+      "status": "evaluated",
+      "decisions": [
+        "violating"
+      ]
+    }
+  },
+  "enterprise_verified": false,
+  "ground_truth": "provisional; post-hoc only; no held-out calibration",
+  "resource_metrics": "local token estimates and measured local wall-clock timings",
+  "evaluation_observations": 120,
+  "checker_status_counts": {
+    "not_evaluated": 120
+  },
+  "output": "/Users/marcuslim/Desktop/fcgchecker/runs/release-local"
+}

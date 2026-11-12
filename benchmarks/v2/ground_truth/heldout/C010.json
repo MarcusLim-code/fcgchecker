@@ -1,0 +1,82 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C010",
+  "code_sha256": "0692b05ffeb7e9e4dde0043658f9c46317c1244c8e6b516360c35e2aa2b4997c",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-025",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "state->sample"
+        }
+      ],
+      "rationale": "Sample is read on failure before known initialization."
+    },
+    {
+      "rule_id": "SFCG-026",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "enable_device_and_irq(state);"
+        }
+      ],
+      "rationale": "Interrupts are enabled before shared state setup."
+    },
+    {
+      "rule_id": "SFCG-027",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "if (rc != 0) return (int)state->sample;"
+        }
+      ],
+      "rationale": "Failed initialization still uses the incomplete object."
+    },
+    {
+      "rule_id": "SFCG-030",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 9,
+          "end_line": 9
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "state->threshold = 7u;"
+        }
+      ],
+      "rationale": "Configuration is programmed after enabling interrupts."
+    }
+  ],
+  "case_rationale": "Matched initialization variant changes the ordering and failure path.",
+  "review_status": "provisional"
+}

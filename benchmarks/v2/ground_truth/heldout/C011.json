@@ -1,0 +1,62 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C011",
+  "code_sha256": "455336a746153520e951972c73577f7cdf82d50dd9c23b50a8627b12796ce16b",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-007",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "return rc;"
+        }
+      ],
+      "rationale": "A specific nonzero operation error is returned."
+    },
+    {
+      "rule_id": "SFCG-009",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 10,
+          "end_line": 10,
+          "quote": "return TIMEOUT;"
+        }
+      ],
+      "rationale": "Elapsed deadline uses a distinct timeout status."
+    },
+    {
+      "rule_id": "SFCG-010",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "rc == BUSY && tries < 2u"
+        }
+      ],
+      "rationale": "Only transient BUSY is retried with a bound."
+    },
+    {
+      "rule_id": "SFCG-012",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "*last_error = 0;"
+        }
+      ],
+      "rationale": "Previous error state is cleared first."
+    }
+  ],
+  "case_rationale": "Status definitions in the synthetic rule corpus determine retry behavior.",
+  "review_status": "provisional"
+}

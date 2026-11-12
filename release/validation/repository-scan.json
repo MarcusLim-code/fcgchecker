@@ -1,0 +1,16 @@
+{
+  "scanned_text_files": 247,
+  "secret_pattern_findings": [],
+  "invalid_json_or_toml": [],
+  "skipped_large_files": [],
+  "python": "3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "static_type_check": "not configured in pyproject.toml",
+  "dependencies": {
+    "fcgc": "0.11.0",
+    "pydantic": "2.14.1",
+    "typer": "0.27.3",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-c": "0.24.2"
+  },
+  "limitation": "Pattern scan only; dependency CVE scanning requires a current advisory database."
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C002",
+  "code_sha256": "f64b1b5c22c6d7ca4331a047211a9f17e3330307b67465adbff5aa86312003ca",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-001",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "sensor_open(&handle);"
+        }
+      ],
+      "rationale": "The open status is ignored before handle use."
+    },
+    {
+      "rule_id": "SFCG-011",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 7,
+          "end_line": 7
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "return sensor_configure(handle);"
+        }
+      ],
+      "rationale": "Configure assumes open succeeded."
+    }
+  ],
+  "case_rationale": "Matched variant of C001 with the open result discarded.",
+  "review_status": "provisional"
+}

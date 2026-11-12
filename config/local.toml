@@ -1,0 +1,6 @@
+# Synthetic Stage 2 corpus; no network or enterprise service is used.
+retriever = "benchmark"
+checker = "mock"
+top_k = 3
+allow_network = false
+allow_remote = false

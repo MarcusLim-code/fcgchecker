@@ -1,0 +1,36 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C013",
+  "code_sha256": "161eca7d8463d31bdecc424cf4d226f0f8ee60d00a00e15748c058f67c5a780a",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-016",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 4,
+          "end_line": 4,
+          "quote": "if (length == 0u) return 0;"
+        }
+      ],
+      "rationale": "Null is accepted only on the zero-length path."
+    },
+    {
+      "rule_id": "SFCG-013",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "if (buffer == NULL) return -1;"
+        }
+      ],
+      "rationale": "Positive-length dereference follows pointer validation."
+    }
+  ],
+  "case_rationale": "The explicit zero-length exception controls applicability.",
+  "review_status": "provisional"
+}

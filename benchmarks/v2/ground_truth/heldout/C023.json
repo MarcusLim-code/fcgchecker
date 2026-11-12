@@ -1,0 +1,9 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C023",
+  "code_sha256": "a597c000f02a267e95b8616f5f71e094e3c5e445abfbb5596b60975692f6fd10",
+  "applicable_rules": [],
+  "case_rationale": "No status contract is supplied, so callback-status applicability cannot be established; this is not a compliant label.",
+  "review_status": "provisional"
+}

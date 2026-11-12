@@ -1,0 +1,50 @@
+{
+  "status": "evaluated",
+  "reason": "Per-rule results apply only to the supplied evidence and supported behavior.",
+  "retrieval": null,
+  "findings": [
+    {
+      "evidence_id": "ev-4f71e776e2f39f11",
+      "applicability": "applies",
+      "decision": "violating",
+      "locations": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "excerpt": "    *out = 7;"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "pointer",
+          "source_ref": "fcgc://demo/pointer.md",
+          "start": 119,
+          "end": 193,
+          "quote": "A required output pointer must be checked for null before its first write."
+        }
+      ],
+      "explanation": "The supported single-pointer function writes without a null guard.",
+      "uncertainty": []
+    }
+  ],
+  "execution": {
+    "provider": "synthetic_demo",
+    "model": "single-pointer-store-v1",
+    "model_details": "Only full single-pointer-store grammar supported.",
+    "settings": {
+      "temperature": 0.0,
+      "seed": 0,
+      "max_output_tokens": 2048,
+      "top_p": 1.0
+    },
+    "skill_version": "1.1.0",
+    "prompt_template_version": "FCGC-PROMPT-V1",
+    "instruction_hash": "61bc627569eab9f577fdf69868193b0830aeb049777f55a5eb1d0b37bb38169b",
+    "input_evidence_hash": "8c11dd20370af7d1aa1fe5a67a0a6d55d2582c8c85b544d5e1a11a550bf39af8",
+    "prompt_hash": "6829f478eb24fb623c016f7b9c98d1ba072f52abca246211cd17345a46fa161b",
+    "input_tokens": null,
+    "output_tokens": null,
+    "duration_ms": 1.5792909543961287,
+    "error": null
+  }
+}

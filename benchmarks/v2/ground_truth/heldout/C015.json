@@ -1,0 +1,49 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C015",
+  "code_sha256": "9ae5c3dfb3d3106dbaf848a4fb9b504724bdb2f93d7188ca89508e665d846da3",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-021",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 4,
+          "end_line": 4,
+          "quote": "capacity - 1u"
+        }
+      ],
+      "rationale": "One slot remains for the terminator."
+    },
+    {
+      "rule_id": "SFCG-019",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "i < n"
+        }
+      ],
+      "rationale": "The loop stays within the reserved count."
+    },
+    {
+      "rule_id": "SFCG-014",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "quote": "destination == 0"
+        }
+      ],
+      "rationale": "The output pointer is checked."
+    }
+  ],
+  "case_rationale": "General buffer rules apply despite no recognizable firmware API name.",
+  "review_status": "provisional"
+}

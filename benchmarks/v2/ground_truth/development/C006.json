@@ -1,0 +1,64 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C006",
+  "code_sha256": "00f9e9e056d5770b1571f4403cdfa5ce36ae474a9e5eb2f2b5c126cf4a87ed11",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-013",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "dst[i] = src[i];"
+        }
+      ],
+      "rationale": "Neither required pointer is validated before access."
+    },
+    {
+      "rule_id": "SFCG-019",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "i <= count"
+        }
+      ],
+      "rationale": "The inclusive bound writes one element beyond count."
+    },
+    {
+      "rule_id": "SFCG-024",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 5,
+          "end_line": 5
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 5,
+          "end_line": 5,
+          "quote": "size_t count = external_read_count();"
+        }
+      ],
+      "rationale": "External count is never capped to capacity."
+    }
+  ],
+  "case_rationale": "Matched copy variant with unchecked pointers and a count overrun.",
+  "review_status": "provisional"
+}

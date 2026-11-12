@@ -1,0 +1,14 @@
+version = "p3-gate-v1"
+template_version = "fallback-queries-v1"
+max_rounds = 3
+max_search_calls = 3
+max_fetch_calls = 8
+max_candidate_sources = 8
+context_token_budget = 3000
+max_elapsed_seconds = 5.0
+top_k = 3
+max_duplicate_fraction = 0.5
+general_categories = ["api_return_handling"]
+trigger_on_ambiguity = true
+targeted_template = "C firmware coding requirements {concepts} {components}"
+broadened_template = "general firmware coding requirements applicability conditions exceptions definitions {concepts}"

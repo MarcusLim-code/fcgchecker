@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "command": [
+        "/private/tmp/fcgc-native-v1-runtime/bin/fcgc",
+        "agent",
+        "invoke",
+        "--command",
+        "/fcg-doctor --dataset-root /Users/marcuslim/Desktop/fcgchecker/benchmarks/v2",
+        "--output",
+        "/Users/marcuslim/Desktop/fcgchecker/runs/native-final/wheel-doctor"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/private/tmp/fcgc-native-v1-runtime/bin/fcgc",
+        "agent",
+        "invoke",
+        "--command",
+        "/fcg-check /Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_cases/C001.c --mode local",
+        "--output",
+        "/Users/marcuslim/Desktop/fcgchecker/runs/native-final/wheel-check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "installed": {
+    "version": "0.12.0",
+    "code_hash": "a6ba0e9ddf0f9448d07bc06d6e4c7ae50780a4e94a020c594e04ed9440b2d1f2",
+    "orchestration_hash": "e8758c337bbb6379bdc4d07919d48374ff5464601d72f6e2aa9bed90a35090b8",
+    "skills": [
+      "/private/tmp/fcgc-native-v1-runtime/share/fcgc/agent-skills/fcg-check/SKILL.md",
+      "/private/tmp/fcgc-native-v1-runtime/share/fcgc/agent-skills/fcg-compare/SKILL.md",
+      "/private/tmp/fcgc-native-v1-runtime/share/fcgc/agent-skills/fcg-report/SKILL.md",
+      "/private/tmp/fcgc-native-v1-runtime/share/fcgc/agent-skills/fcg-rules/SKILL.md",
+      "/private/tmp/fcgc-native-v1-runtime/share/fcgc/agent-skills/fcg-doctor/SKILL.md"
+    ]
+  },
+  "matches_source": true
+}

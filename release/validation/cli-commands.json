@@ -1,0 +1,126 @@
+[
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "doctor",
+      "--config",
+      "examples/local.toml"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/01-doctor.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "info"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/02-info.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "features",
+      "--source",
+      "src/fcgc/fixtures/cases/sensor_poll.c",
+      "--output",
+      "runs/features.json"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/03-features.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "extract-rules",
+      "--document",
+      "src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "--output",
+      "runs/rules.json"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/04-extract-rules.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "check",
+      "--case",
+      "C001",
+      "--source",
+      "src/fcgc/fixtures/benchmark_cases/C001.c",
+      "--strategy",
+      "p3",
+      "--config",
+      "examples/local.toml",
+      "--output",
+      "runs/C001-p3.json"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/05-check.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "experiment",
+      "--config",
+      "experiments/release_development.toml"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/06-experiment.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "report",
+      "--config",
+      "runs/release-local/evaluation.toml"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/07-report.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "replay",
+      "--run",
+      "runs/release-local/experiment/runs/C001-p3-r01/trace.json",
+      "--output",
+      "runs/release-replay"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/08-replay.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "freeze-task",
+      "--source",
+      "src/fcgc/fixtures/checking/pointer_bad.c",
+      "--guideline",
+      "src/fcgc/fixtures/checking/pointer.md",
+      "--case",
+      "pointer-bad",
+      "--output",
+      "runs/pointer-task.json"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/09-freeze-task.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "check-task",
+      "--task",
+      "runs/pointer-task.json",
+      "--checker-config",
+      "src/fcgc/config/checker_demo.toml",
+      "--checker-config",
+      "src/fcgc/config/checker_mock.toml",
+      "--output",
+      "runs/pointer-results.json"
+    ],
+    "exit_code": 0,
+    "stdout": "release/validation/cli/10-check-task.json"
+  }
+]

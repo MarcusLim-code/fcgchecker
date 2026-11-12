@@ -1,0 +1,6 @@
+retriever = "benchmark"
+checker = "placeholder"
+top_k = 3
+
+[scope]
+allowed_scopes = ["benchmark_firmware"]

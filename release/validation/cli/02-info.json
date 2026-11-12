@@ -1,0 +1,24 @@
+{
+  "fcgc": "0.11.0",
+  "skill": "1.1.0",
+  "prompt": "FCGC-PROMPT-V1",
+  "dependencies": {
+    "pydantic": "2.14.1",
+    "typer": "0.27.3",
+    "tree-sitter": "0.26.0",
+    "tree-sitter-c": "0.24.2"
+  },
+  "retrieval": {
+    "local": "legacy smoke fixtures",
+    "benchmark": "synthetic lexical",
+    "replay": "recorded fixtures",
+    "atlassian_mcp": "unimplemented"
+  },
+  "checkers": {
+    "placeholder": "not_evaluated",
+    "mock": "not_evaluated",
+    "synthetic_demo": "bounded single-pointer-store grammar",
+    "ollama": "optional; explicit network opt-in; unverified availability",
+    "devin": "contract only; not_evaluated"
+  }
+}

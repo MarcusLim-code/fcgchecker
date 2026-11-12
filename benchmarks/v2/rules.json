@@ -1,0 +1,293 @@
+{
+  "dataset_version": "2.0.0",
+  "rules": [
+    {
+      "rule_id": "SFCG-001",
+      "category": "api_return_value",
+      "source_id": "api_returns",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md#L7",
+      "line": 7,
+      "excerpt": "1. [SFCG-001] After `sensor_open` succeeds, the returned handle may be used; a failed"
+    },
+    {
+      "rule_id": "SFCG-002",
+      "category": "api_return_value",
+      "source_id": "api_returns",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md#L9",
+      "line": 9,
+      "excerpt": "2. [SFCG-002] Firmware must inspect the result of `flash_write`, including a short"
+    },
+    {
+      "rule_id": "SFCG-003",
+      "category": "api_return_value",
+      "source_id": "api_returns",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md#L11",
+      "line": 11,
+      "excerpt": "3. [SFCG-003] A negative result from `adc_read` is an error and must not be cast into"
+    },
+    {
+      "rule_id": "SFCG-004",
+      "category": "api_return_value",
+      "source_id": "api_returns",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md#L13",
+      "line": 13,
+      "excerpt": "4. [SFCG-004] When a callback is invoked through a function pointer and its contract"
+    },
+    {
+      "rule_id": "SFCG-005",
+      "category": "api_return_value",
+      "source_id": "api_returns",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md#L15",
+      "line": 15,
+      "excerpt": "5. [SFCG-005] A call declared infallible in the local interface has no status to test;"
+    },
+    {
+      "rule_id": "SFCG-006",
+      "category": "api_return_value",
+      "source_id": "api_returns",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md#L17",
+      "line": 17,
+      "excerpt": "6. [SFCG-006] Failure of a best-effort diagnostic log operation may be ignored only"
+    },
+    {
+      "rule_id": "SFCG-007",
+      "category": "error_handling",
+      "source_id": "error_flow",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md#L6",
+      "line": 6,
+      "excerpt": "- [SFCG-007] Preserve a specific nonzero error code when returning to the immediate"
+    },
+    {
+      "rule_id": "SFCG-008",
+      "category": "error_handling",
+      "source_id": "error_flow",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md#L8",
+      "line": 8,
+      "excerpt": "- [SFCG-008] On an error path reached after resource acquisition, perform required"
+    },
+    {
+      "rule_id": "SFCG-009",
+      "category": "error_handling",
+      "source_id": "error_flow",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md#L10",
+      "line": 10,
+      "excerpt": "- [SFCG-009] Report elapsed-deadline timeout separately from a hardware-fault result."
+    },
+    {
+      "rule_id": "SFCG-010",
+      "category": "error_handling",
+      "source_id": "error_flow",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md#L11",
+      "line": 11,
+      "excerpt": "- [SFCG-010] Retry only an operation documented as transient and stop at the stated"
+    },
+    {
+      "rule_id": "SFCG-011",
+      "category": "error_handling",
+      "source_id": "error_flow",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md#L13",
+      "line": 13,
+      "excerpt": "- [SFCG-011] Inspect a fallible operation's status before starting an operation that"
+    },
+    {
+      "rule_id": "SFCG-012",
+      "category": "error_handling",
+      "source_id": "error_flow",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md#L15",
+      "line": 15,
+      "excerpt": "- [SFCG-012] Clear a retained error state before starting a logically new transaction,"
+    },
+    {
+      "rule_id": "SFCG-013",
+      "category": "pointer_validation",
+      "source_id": "pointers",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md#L8",
+      "line": 8,
+      "excerpt": "| [SFCG-013] | Validate a required caller pointer before its first dereference. | Any entry point |"
+    },
+    {
+      "rule_id": "SFCG-014",
+      "category": "pointer_validation",
+      "source_id": "pointers",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md#L9",
+      "line": 9,
+      "excerpt": "| [SFCG-014] | Reject a null output pointer before writing through it. | Output parameters |"
+    },
+    {
+      "rule_id": "SFCG-015",
+      "category": "pointer_validation",
+      "source_id": "pointers",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md#L10",
+      "line": 10,
+      "excerpt": "| [SFCG-015] | Validate an externally supplied peripheral address against the allowed mapped range before MMIO access. | External addresses |"
+    },
+    {
+      "rule_id": "SFCG-016",
+      "category": "pointer_validation",
+      "source_id": "pointers",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md#L11",
+      "line": 11,
+      "excerpt": "| [SFCG-016] | A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null. | Length-bearing buffers |"
+    },
+    {
+      "rule_id": "SFCG-017",
+      "category": "pointer_validation",
+      "source_id": "pointers",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md#L12",
+      "line": 12,
+      "excerpt": "| [SFCG-017] | Validate callback context before dereferencing it inside the callback. | Indirect callbacks |"
+    },
+    {
+      "rule_id": "SFCG-018",
+      "category": "pointer_validation",
+      "source_id": "pointers",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md#L13",
+      "line": 13,
+      "excerpt": "| [SFCG-018] | Reject overlapping source and destination ranges when the operation contract forbids aliasing. | Copy without overlap support |"
+    },
+    {
+      "rule_id": "SFCG-019",
+      "category": "buffer_safety",
+      "source_id": "buffers",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md#L6",
+      "line": 6,
+      "excerpt": "index. [SFCG-019] A loop writing an array must keep each index strictly below"
+    },
+    {
+      "rule_id": "SFCG-020",
+      "category": "buffer_safety",
+      "source_id": "buffers",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md#L7",
+      "line": 7,
+      "excerpt": "capacity. [SFCG-020] When reserving a header and payload, check for arithmetic"
+    },
+    {
+      "rule_id": "SFCG-021",
+      "category": "buffer_safety",
+      "source_id": "buffers",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md#L10",
+      "line": 10,
+      "excerpt": "For text output, [SFCG-021] reserve room for a terminating zero byte before"
+    },
+    {
+      "rule_id": "SFCG-022",
+      "category": "buffer_safety",
+      "source_id": "buffers",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md#L12",
+      "line": 12,
+      "excerpt": "[SFCG-022] compute the next head and reject insertion when it would equal the tail."
+    },
+    {
+      "rule_id": "SFCG-023",
+      "category": "buffer_safety",
+      "source_id": "buffers",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md#L14",
+      "line": 14,
+      "excerpt": "The DMA contract adds two constraints. [SFCG-023] Before scheduling DMA, require"
+    },
+    {
+      "rule_id": "SFCG-024",
+      "category": "buffer_safety",
+      "source_id": "buffers",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md#L15",
+      "line": 15,
+      "excerpt": "four-byte alignment of both address and byte count. [SFCG-024] A byte count returned"
+    },
+    {
+      "rule_id": "SFCG-025",
+      "category": "initialization",
+      "source_id": "initialization",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md#L8",
+      "line": 8,
+      "excerpt": "1. [SFCG-025] Initialize the state object before reading fields that depend on"
+    },
+    {
+      "rule_id": "SFCG-026",
+      "category": "initialization",
+      "source_id": "initialization",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md#L10",
+      "line": 10,
+      "excerpt": "2. [SFCG-026] Zero or explicitly set fields shared with an interrupt handler before"
+    },
+    {
+      "rule_id": "SFCG-027",
+      "category": "initialization",
+      "source_id": "initialization",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md#L12",
+      "line": 12,
+      "excerpt": "3. [SFCG-027] If initialization reports failure, prevent later use of the incomplete"
+    },
+    {
+      "rule_id": "SFCG-028",
+      "category": "initialization",
+      "source_id": "initialization",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md#L14",
+      "line": 14,
+      "excerpt": "4. [SFCG-028] After a device reset, restore required configuration before normal"
+    },
+    {
+      "rule_id": "SFCG-029",
+      "category": "initialization",
+      "source_id": "initialization",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md#L16",
+      "line": 16,
+      "excerpt": "5. [SFCG-029] Apply a documented default configuration when the caller supplies no"
+    },
+    {
+      "rule_id": "SFCG-030",
+      "category": "initialization",
+      "source_id": "initialization",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md#L18",
+      "line": 18,
+      "excerpt": "6. [SFCG-030] Program configuration fields before enabling the device; later changes"
+    },
+    {
+      "rule_id": "SFCG-031",
+      "category": "resource_lifetime",
+      "source_id": "resources",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md#L7",
+      "line": 7,
+      "excerpt": "- [SFCG-031] Release a successfully acquired lock on every exit path."
+    },
+    {
+      "rule_id": "SFCG-032",
+      "category": "resource_lifetime",
+      "source_id": "resources",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md#L8",
+      "line": 8,
+      "excerpt": "- [SFCG-032] Close an opened device handle if a later operation fails before"
+    },
+    {
+      "rule_id": "SFCG-033",
+      "category": "resource_lifetime",
+      "source_id": "resources",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md#L10",
+      "line": 10,
+      "excerpt": "- [SFCG-033] Free successfully allocated storage when its owner finishes with it."
+    },
+    {
+      "rule_id": "SFCG-034",
+      "category": "resource_lifetime",
+      "source_id": "resources",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md#L11",
+      "line": 11,
+      "excerpt": "- [SFCG-034] Ownership transferred to a documented receiver ends the sender's"
+    },
+    {
+      "rule_id": "SFCG-035",
+      "category": "resource_lifetime",
+      "source_id": "resources",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md#L13",
+      "line": 13,
+      "excerpt": "- [SFCG-035] Disable a device interrupt before tearing down state used by its handler."
+    },
+    {
+      "rule_id": "SFCG-036",
+      "category": "resource_lifetime",
+      "source_id": "resources",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md#L14",
+      "line": 14,
+      "excerpt": "- [SFCG-036] Release two or more acquired resources in reverse acquisition order"
+    }
+  ]
+}

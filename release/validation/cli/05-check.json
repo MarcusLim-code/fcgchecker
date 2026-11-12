@@ -1,0 +1,214 @@
+{
+  "status": "not_evaluated",
+  "reason": "No supported compliance judgment was produced.",
+  "retrieval": null,
+  "findings": [
+    {
+      "evidence_id": "ev-84aee31b3b3ae48c",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-6347fde46b77472a",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-8e28d6fabd1c90bd",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-8a166c47a595d4d6",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-c2d9abdf308b49a9",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-5efa3c397e9e615c",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-d73116c7ee06f742",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-2c814e4f9c7d8cb9",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-183684ad33febd3a",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-ff82dff57fc77a62",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-5ad585777e5a3250",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-6a675c6ab8018623",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-0fb6d56509598453",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-40b575f0550b7485",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-134c0de317d84060",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-60811f5a11d1bbc9",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    },
+    {
+      "evidence_id": "ev-b49c1f98f30d95a4",
+      "applicability": "unresolved",
+      "decision": "unresolved",
+      "locations": [],
+      "citations": [],
+      "explanation": "No evidence or incomplete evidence context.",
+      "uncertainty": [
+        "No evidence or incomplete evidence context."
+      ]
+    }
+  ],
+  "execution": {
+    "provider": "mock",
+    "model": "mock-contract-v1",
+    "model_details": null,
+    "settings": {
+      "temperature": 0.0,
+      "seed": 0,
+      "max_output_tokens": 2048,
+      "top_p": 1.0
+    },
+    "skill_version": "1.1.0",
+    "prompt_template_version": "FCGC-PROMPT-V1",
+    "instruction_hash": "61bc627569eab9f577fdf69868193b0830aeb049777f55a5eb1d0b37bb38169b",
+    "input_evidence_hash": "47d62b2c7e2e9ba8aa9d332e4345a4e7e57cdde5ec713295f618faffdd008cf3",
+    "prompt_hash": "f394ad5db58f11d20c8cfb7d83774036a10b7a066e68f93c21d35bb9bd61ac9b",
+    "input_tokens": null,
+    "output_tokens": null,
+    "duration_ms": 1.1879999656230211,
+    "error": null
+  }
+}

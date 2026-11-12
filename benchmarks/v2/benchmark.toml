@@ -1,0 +1,4 @@
+minimum_rules = 30
+development_cases = 8
+heldout_cases = 16
+near_duplicate_threshold = 0.80

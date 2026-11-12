@@ -1,0 +1,49 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C001",
+  "code_sha256": "e5608fb93c447b2e90e8dab64d58631c61b5995b27eac9412ebf1ec3edd2a4fc",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-001",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "The handle is used only after open succeeds."
+    },
+    {
+      "rule_id": "SFCG-007",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "return rc;"
+        }
+      ],
+      "rationale": "The specific open error is propagated."
+    },
+    {
+      "rule_id": "SFCG-011",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "The second operation follows a status check."
+    }
+  ],
+  "case_rationale": "The fallible open and dependent configure operation make three rules applicable.",
+  "review_status": "provisional"
+}

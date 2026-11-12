@@ -1,0 +1,90 @@
+[
+  {
+    "status": "evaluated",
+    "reason": "Per-rule results apply only to the supplied evidence and supported behavior.",
+    "retrieval": null,
+    "findings": [
+      {
+        "evidence_id": "ev-564d430ae5403cce",
+        "applicability": "applies",
+        "decision": "violating",
+        "locations": [
+          {
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt": "    *out = 7;"
+          }
+        ],
+        "citations": [
+          {
+            "source_id": "pointer",
+            "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/checking/pointer.md",
+            "start": 119,
+            "end": 193,
+            "quote": "A required output pointer must be checked for null before its first write."
+          }
+        ],
+        "explanation": "The supported single-pointer function writes without a null guard.",
+        "uncertainty": []
+      }
+    ],
+    "execution": {
+      "provider": "synthetic_demo",
+      "model": "single-pointer-store-v1",
+      "model_details": "Only full single-pointer-store grammar supported.",
+      "settings": {
+        "temperature": 0.0,
+        "seed": 0,
+        "max_output_tokens": 2048,
+        "top_p": 1.0
+      },
+      "skill_version": "1.1.0",
+      "prompt_template_version": "FCGC-PROMPT-V1",
+      "instruction_hash": "61bc627569eab9f577fdf69868193b0830aeb049777f55a5eb1d0b37bb38169b",
+      "input_evidence_hash": "78b27c1ed9706a49d79d964be8ce9d51582f38ec16e32f7fcc10f4f3cf3ecd4b",
+      "prompt_hash": "49eb516eafd452b0db97e8b65591e0eb1073165257b86fcff9bb9410e890acb6",
+      "input_tokens": null,
+      "output_tokens": null,
+      "duration_ms": 1.8970831297338009,
+      "error": null
+    }
+  },
+  {
+    "status": "not_evaluated",
+    "reason": "No supported compliance judgment was produced.",
+    "retrieval": null,
+    "findings": [
+      {
+        "evidence_id": "ev-564d430ae5403cce",
+        "applicability": "unresolved",
+        "decision": "unresolved",
+        "locations": [],
+        "citations": [],
+        "explanation": "Mock checker exercises contracts only.",
+        "uncertainty": [
+          "Mock checker exercises contracts only."
+        ]
+      }
+    ],
+    "execution": {
+      "provider": "mock",
+      "model": "mock-contract-v1",
+      "model_details": null,
+      "settings": {
+        "temperature": 0.0,
+        "seed": 0,
+        "max_output_tokens": 2048,
+        "top_p": 1.0
+      },
+      "skill_version": "1.1.0",
+      "prompt_template_version": "FCGC-PROMPT-V1",
+      "instruction_hash": "61bc627569eab9f577fdf69868193b0830aeb049777f55a5eb1d0b37bb38169b",
+      "input_evidence_hash": "78b27c1ed9706a49d79d964be8ce9d51582f38ec16e32f7fcc10f4f3cf3ecd4b",
+      "prompt_hash": "49eb516eafd452b0db97e8b65591e0eb1073165257b86fcff9bb9410e890acb6",
+      "input_tokens": null,
+      "output_tokens": null,
+      "duration_ms": 1.5457910485565662,
+      "error": null
+    }
+  }
+]

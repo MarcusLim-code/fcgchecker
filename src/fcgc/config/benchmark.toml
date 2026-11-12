@@ -1,0 +1,3 @@
+retriever = "benchmark"
+checker = "placeholder"
+top_k = 8

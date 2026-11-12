@@ -1,0 +1,2407 @@
+{
+  "lock_hash": "05fd0a7aa3d669d971087f10c7ba69b386a437bfee91dec5050f50f6347f0ecb",
+  "runs": 120,
+  "finished": 120,
+  "failed": 0,
+  "incomplete": 54,
+  "run_order": [
+    "C002-r-r03",
+    "C002-p2-r03",
+    "C001-b0-r03",
+    "C007-r-r02",
+    "C007-p1-r02",
+    "C006-p3-r03",
+    "C006-p3-r02",
+    "C002-p1-r02",
+    "C007-p1-r03",
+    "C007-r-r03",
+    "C001-p1-r02",
+    "C006-p1-r03",
+    "C008-p2-r03",
+    "C003-p1-r02",
+    "C005-p3-r01",
+    "C002-p3-r01",
+    "C004-p1-r02",
+    "C007-b0-r01",
+    "C004-p2-r02",
+    "C008-r-r01",
+    "C002-b0-r03",
+    "C003-r-r01",
+    "C002-p2-r01",
+    "C006-p2-r03",
+    "C002-p2-r02",
+    "C002-p1-r03",
+    "C008-b0-r02",
+    "C008-b0-r01",
+    "C007-p2-r02",
+    "C008-p2-r02",
+    "C008-r-r03",
+    "C006-b0-r03",
+    "C008-p2-r01",
+    "C005-p1-r01",
+    "C001-p2-r01",
+    "C003-p3-r03",
+    "C005-p2-r02",
+    "C001-p2-r03",
+    "C007-b0-r03",
+    "C006-p2-r01",
+    "C006-r-r02",
+    "C005-p2-r01",
+    "C008-p1-r01",
+    "C008-b0-r03",
+    "C005-r-r03",
+    "C006-p3-r01",
+    "C002-b0-r02",
+    "C003-p1-r01",
+    "C005-b0-r02",
+    "C005-b0-r01",
+    "C003-p2-r03",
+    "C008-p3-r01",
+    "C004-p2-r01",
+    "C008-p3-r02",
+    "C002-r-r01",
+    "C001-p2-r02",
+    "C004-p3-r02",
+    "C003-b0-r02",
+    "C003-p1-r03",
+    "C005-r-r01",
+    "C006-r-r03",
+    "C002-p3-r02",
+    "C001-p1-r03",
+    "C004-p3-r01",
+    "C004-r-r03",
+    "C004-b0-r02",
+    "C004-b0-r03",
+    "C001-p1-r01",
+    "C003-p3-r01",
+    "C002-p1-r01",
+    "C004-r-r02",
+    "C007-b0-r02",
+    "C003-p2-r02",
+    "C005-p2-r03",
+    "C008-p1-r02",
+    "C001-p3-r03",
+    "C003-r-r02",
+    "C001-p3-r01",
+    "C008-p3-r03",
+    "C004-p1-r01",
+    "C004-b0-r01",
+    "C003-r-r03",
+    "C003-b0-r03",
+    "C004-p1-r03",
+    "C002-p3-r03",
+    "C008-r-r02",
+    "C007-p3-r03",
+    "C006-r-r01",
+    "C001-b0-r02",
+    "C004-r-r01",
+    "C001-r-r01",
+    "C003-p2-r01",
+    "C001-r-r03",
+    "C001-p3-r02",
+    "C006-p1-r01",
+    "C001-b0-r01",
+    "C003-b0-r01",
+    "C004-p3-r03",
+    "C006-b0-r01",
+    "C007-r-r01",
+    "C007-p2-r01",
+    "C005-b0-r03",
+    "C007-p2-r03",
+    "C007-p3-r01",
+    "C007-p1-r01",
+    "C005-p3-r02",
+    "C005-r-r02",
+    "C007-p3-r02",
+    "C004-p2-r03",
+    "C005-p3-r03",
+    "C006-p1-r02",
+    "C006-b0-r02",
+    "C002-r-r02",
+    "C001-r-r02",
+    "C008-p1-r03",
+    "C006-p2-r02",
+    "C005-p1-r03",
+    "C005-p1-r02",
+    "C003-p3-r02",
+    "C002-b0-r01"
+  ],
+  "retrieval_variability": {
+    "C002:r": [
+      {
+        "run_id": "C002-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "6401dddf38ec89131ae6fc67fbd9e33939341c9b8729f62372425034b3fd6566"
+      },
+      {
+        "run_id": "C002-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "6401dddf38ec89131ae6fc67fbd9e33939341c9b8729f62372425034b3fd6566"
+      },
+      {
+        "run_id": "C002-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "6401dddf38ec89131ae6fc67fbd9e33939341c9b8729f62372425034b3fd6566"
+      }
+    ],
+    "C002:p2": [
+      {
+        "run_id": "C002-p2-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "c25ffdad1274bc9714513cad6edb9e0ffd5d8a000a6885e9fbf20901b57a5609"
+      },
+      {
+        "run_id": "C002-p2-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "c25ffdad1274bc9714513cad6edb9e0ffd5d8a000a6885e9fbf20901b57a5609"
+      },
+      {
+        "run_id": "C002-p2-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "c25ffdad1274bc9714513cad6edb9e0ffd5d8a000a6885e9fbf20901b57a5609"
+      }
+    ],
+    "C001:b0": [
+      {
+        "run_id": "C001-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "b918b00a756a4c608096e7b74b58c6666c6a782f038bc5806d3c1239b36b31d0"
+      },
+      {
+        "run_id": "C001-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "b918b00a756a4c608096e7b74b58c6666c6a782f038bc5806d3c1239b36b31d0"
+      },
+      {
+        "run_id": "C001-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "b918b00a756a4c608096e7b74b58c6666c6a782f038bc5806d3c1239b36b31d0"
+      }
+    ],
+    "C007:r": [
+      {
+        "run_id": "C007-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "c1c1ce79afe810bebf28ab23fc13d0fe20e3ed5b5c8581e6ed0414fe58bfcbe3"
+      },
+      {
+        "run_id": "C007-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "c1c1ce79afe810bebf28ab23fc13d0fe20e3ed5b5c8581e6ed0414fe58bfcbe3"
+      },
+      {
+        "run_id": "C007-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "c1c1ce79afe810bebf28ab23fc13d0fe20e3ed5b5c8581e6ed0414fe58bfcbe3"
+      }
+    ],
+    "C007:p1": [
+      {
+        "run_id": "C007-p1-r02",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "da3234faf308714e9fbe1883b3e3ff1a4ede73e179bfd28a48090996fe846ae3"
+      },
+      {
+        "run_id": "C007-p1-r03",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "da3234faf308714e9fbe1883b3e3ff1a4ede73e179bfd28a48090996fe846ae3"
+      },
+      {
+        "run_id": "C007-p1-r01",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "da3234faf308714e9fbe1883b3e3ff1a4ede73e179bfd28a48090996fe846ae3"
+      }
+    ],
+    "C006:p3": [
+      {
+        "run_id": "C006-p3-r03",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "9add6dfd4accb6882c7159fe0bd47b218f010d9c07b8be9199991684f85dae07"
+      },
+      {
+        "run_id": "C006-p3-r02",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "9add6dfd4accb6882c7159fe0bd47b218f010d9c07b8be9199991684f85dae07"
+      },
+      {
+        "run_id": "C006-p3-r01",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "9add6dfd4accb6882c7159fe0bd47b218f010d9c07b8be9199991684f85dae07"
+      }
+    ],
+    "C002:p1": [
+      {
+        "run_id": "C002-p1-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "5cf00abd892e57aff3ca32f60b225ef925d4df5ff3727f181b19c47c4ae37356"
+      },
+      {
+        "run_id": "C002-p1-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "5cf00abd892e57aff3ca32f60b225ef925d4df5ff3727f181b19c47c4ae37356"
+      },
+      {
+        "run_id": "C002-p1-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "5cf00abd892e57aff3ca32f60b225ef925d4df5ff3727f181b19c47c4ae37356"
+      }
+    ],
+    "C001:p1": [
+      {
+        "run_id": "C001-p1-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0"
+        },
+        "task_hash": "a1e1f2a8b14b743813efa15edd4132a7b6f5fa2fa1aefaa23cb0102719805793"
+      },
+      {
+        "run_id": "C001-p1-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0"
+        },
+        "task_hash": "a1e1f2a8b14b743813efa15edd4132a7b6f5fa2fa1aefaa23cb0102719805793"
+      },
+      {
+        "run_id": "C001-p1-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0"
+        },
+        "task_hash": "a1e1f2a8b14b743813efa15edd4132a7b6f5fa2fa1aefaa23cb0102719805793"
+      }
+    ],
+    "C006:p1": [
+      {
+        "run_id": "C006-p1-r03",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "1b214cb567513c6b68eedf47b657e7ba16c9613bfd2812c0340c0fb3e7e742b3"
+      },
+      {
+        "run_id": "C006-p1-r01",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "1b214cb567513c6b68eedf47b657e7ba16c9613bfd2812c0340c0fb3e7e742b3"
+      },
+      {
+        "run_id": "C006-p1-r02",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "1b214cb567513c6b68eedf47b657e7ba16c9613bfd2812c0340c0fb3e7e742b3"
+      }
+    ],
+    "C008:p2": [
+      {
+        "run_id": "C008-p2-r03",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "cb12f47052f3035b6f3dd3517cf2a9ff7833d4a891ba1cdffcd4747711c149e8"
+      },
+      {
+        "run_id": "C008-p2-r02",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "cb12f47052f3035b6f3dd3517cf2a9ff7833d4a891ba1cdffcd4747711c149e8"
+      },
+      {
+        "run_id": "C008-p2-r01",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "cb12f47052f3035b6f3dd3517cf2a9ff7833d4a891ba1cdffcd4747711c149e8"
+      }
+    ],
+    "C003:p1": [
+      {
+        "run_id": "C003-p1-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "fc983ac2cdeaddf7187a2e8ba33c136f1ed909a75c25f8afc53f77aa8680f336"
+      },
+      {
+        "run_id": "C003-p1-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "fc983ac2cdeaddf7187a2e8ba33c136f1ed909a75c25f8afc53f77aa8680f336"
+      },
+      {
+        "run_id": "C003-p1-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "fc983ac2cdeaddf7187a2e8ba33c136f1ed909a75c25f8afc53f77aa8680f336"
+      }
+    ],
+    "C005:p3": [
+      {
+        "run_id": "C005-p3-r01",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "b6105a81fce67bdc9d9761f15b7667f6d005bbda59ff8828482c2e79a0f72e3c"
+      },
+      {
+        "run_id": "C005-p3-r02",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "b6105a81fce67bdc9d9761f15b7667f6d005bbda59ff8828482c2e79a0f72e3c"
+      },
+      {
+        "run_id": "C005-p3-r03",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "b6105a81fce67bdc9d9761f15b7667f6d005bbda59ff8828482c2e79a0f72e3c"
+      }
+    ],
+    "C002:p3": [
+      {
+        "run_id": "C002-p3-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow",
+          "initialization"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "93bd2eef4f274dfb8fe537589ca240f233feec2181d7cc128a9aa0af9ef2fa6f"
+      },
+      {
+        "run_id": "C002-p3-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow",
+          "initialization"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "93bd2eef4f274dfb8fe537589ca240f233feec2181d7cc128a9aa0af9ef2fa6f"
+      },
+      {
+        "run_id": "C002-p3-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "error_flow",
+          "initialization"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "93bd2eef4f274dfb8fe537589ca240f233feec2181d7cc128a9aa0af9ef2fa6f"
+      }
+    ],
+    "C004:p1": [
+      {
+        "run_id": "C004-p1-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "6cec45d9571dfab5113fbbe27faaae40a05a0fcd40b80ccbfb4d4697fc72e299"
+      },
+      {
+        "run_id": "C004-p1-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "6cec45d9571dfab5113fbbe27faaae40a05a0fcd40b80ccbfb4d4697fc72e299"
+      },
+      {
+        "run_id": "C004-p1-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "6cec45d9571dfab5113fbbe27faaae40a05a0fcd40b80ccbfb4d4697fc72e299"
+      }
+    ],
+    "C007:b0": [
+      {
+        "run_id": "C007-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "f1532160a11798346a903266ffa29834004161627414e8ee5b6c800901531ca6"
+      },
+      {
+        "run_id": "C007-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "f1532160a11798346a903266ffa29834004161627414e8ee5b6c800901531ca6"
+      },
+      {
+        "run_id": "C007-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "f1532160a11798346a903266ffa29834004161627414e8ee5b6c800901531ca6"
+      }
+    ],
+    "C004:p2": [
+      {
+        "run_id": "C004-p2-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "8dc2270c4b71db78925b518f97045850bea7d2f553afb2d2708a328e5f8a7b6a"
+      },
+      {
+        "run_id": "C004-p2-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "8dc2270c4b71db78925b518f97045850bea7d2f553afb2d2708a328e5f8a7b6a"
+      },
+      {
+        "run_id": "C004-p2-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "8dc2270c4b71db78925b518f97045850bea7d2f553afb2d2708a328e5f8a7b6a"
+      }
+    ],
+    "C008:r": [
+      {
+        "run_id": "C008-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "2c9b50c820ebcf7bf4ad584780da90087c57fcc13881e74cf450c49a83b57176"
+      },
+      {
+        "run_id": "C008-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "2c9b50c820ebcf7bf4ad584780da90087c57fcc13881e74cf450c49a83b57176"
+      },
+      {
+        "run_id": "C008-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "2c9b50c820ebcf7bf4ad584780da90087c57fcc13881e74cf450c49a83b57176"
+      }
+    ],
+    "C002:b0": [
+      {
+        "run_id": "C002-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "e231b615b9de977754ac93f3c5d4245e61aa66669d8f4ca263f48b51865ae7cd"
+      },
+      {
+        "run_id": "C002-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "e231b615b9de977754ac93f3c5d4245e61aa66669d8f4ca263f48b51865ae7cd"
+      },
+      {
+        "run_id": "C002-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "e231b615b9de977754ac93f3c5d4245e61aa66669d8f4ca263f48b51865ae7cd"
+      }
+    ],
+    "C003:r": [
+      {
+        "run_id": "C003-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "e5295ad41759a44198fc7a9f3cd8d4d27ec5280f702bf6e33a461b2b79f3ac47"
+      },
+      {
+        "run_id": "C003-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "e5295ad41759a44198fc7a9f3cd8d4d27ec5280f702bf6e33a461b2b79f3ac47"
+      },
+      {
+        "run_id": "C003-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "e5295ad41759a44198fc7a9f3cd8d4d27ec5280f702bf6e33a461b2b79f3ac47"
+      }
+    ],
+    "C006:p2": [
+      {
+        "run_id": "C006-p2-r03",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "bffeded9d1abf191c7747d9525b092a4c2ac66cf96cb9594b1d8b1f565d590a5"
+      },
+      {
+        "run_id": "C006-p2-r01",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "bffeded9d1abf191c7747d9525b092a4c2ac66cf96cb9594b1d8b1f565d590a5"
+      },
+      {
+        "run_id": "C006-p2-r02",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "bffeded9d1abf191c7747d9525b092a4c2ac66cf96cb9594b1d8b1f565d590a5"
+      }
+    ],
+    "C008:b0": [
+      {
+        "run_id": "C008-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "a5356892d323b3eaca8a9cfe4608f21abd72beb8ec4d111e8dc9ca37b8e62caa"
+      },
+      {
+        "run_id": "C008-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "a5356892d323b3eaca8a9cfe4608f21abd72beb8ec4d111e8dc9ca37b8e62caa"
+      },
+      {
+        "run_id": "C008-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "a5356892d323b3eaca8a9cfe4608f21abd72beb8ec4d111e8dc9ca37b8e62caa"
+      }
+    ],
+    "C007:p2": [
+      {
+        "run_id": "C007-p2-r02",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "5cb3a76406856da800ac7cd5e9864c6ed524a6e3b40e1194d586e5848c801644"
+      },
+      {
+        "run_id": "C007-p2-r01",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "5cb3a76406856da800ac7cd5e9864c6ed524a6e3b40e1194d586e5848c801644"
+      },
+      {
+        "run_id": "C007-p2-r03",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "5cb3a76406856da800ac7cd5e9864c6ed524a6e3b40e1194d586e5848c801644"
+      }
+    ],
+    "C006:b0": [
+      {
+        "run_id": "C006-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "4a9aa2f706307b0d6b71d587995ef3b17de335fdaa8f9da9d60e0cbced6230ce"
+      },
+      {
+        "run_id": "C006-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "4a9aa2f706307b0d6b71d587995ef3b17de335fdaa8f9da9d60e0cbced6230ce"
+      },
+      {
+        "run_id": "C006-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "4a9aa2f706307b0d6b71d587995ef3b17de335fdaa8f9da9d60e0cbced6230ce"
+      }
+    ],
+    "C005:p1": [
+      {
+        "run_id": "C005-p1-r01",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "76ae3dfec3df0a0787b28e714dd553ef4c0dbc0e8d1046e67c270d3a4aa1a3b9"
+      },
+      {
+        "run_id": "C005-p1-r03",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "76ae3dfec3df0a0787b28e714dd553ef4c0dbc0e8d1046e67c270d3a4aa1a3b9"
+      },
+      {
+        "run_id": "C005-p1-r02",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "76ae3dfec3df0a0787b28e714dd553ef4c0dbc0e8d1046e67c270d3a4aa1a3b9"
+      }
+    ],
+    "C001:p2": [
+      {
+        "run_id": "C001-p2-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0"
+        },
+        "task_hash": "965233c0af439c6f31068b03aa2d13f4c18d1b9fedb719cc49a0f0111d9cff8f"
+      },
+      {
+        "run_id": "C001-p2-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0"
+        },
+        "task_hash": "965233c0af439c6f31068b03aa2d13f4c18d1b9fedb719cc49a0f0111d9cff8f"
+      },
+      {
+        "run_id": "C001-p2-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0"
+        },
+        "task_hash": "965233c0af439c6f31068b03aa2d13f4c18d1b9fedb719cc49a0f0111d9cff8f"
+      }
+    ],
+    "C003:p3": [
+      {
+        "run_id": "C003-p3-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools",
+          "decoy_bootloader",
+          "initialization"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "f9d3fa93d5f98dc87ac30f36d6637addb45af119fb2d17034890b252876a3de3"
+      },
+      {
+        "run_id": "C003-p3-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools",
+          "decoy_bootloader",
+          "initialization"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "f9d3fa93d5f98dc87ac30f36d6637addb45af119fb2d17034890b252876a3de3"
+      },
+      {
+        "run_id": "C003-p3-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools",
+          "decoy_bootloader",
+          "initialization"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "f9d3fa93d5f98dc87ac30f36d6637addb45af119fb2d17034890b252876a3de3"
+      }
+    ],
+    "C005:p2": [
+      {
+        "run_id": "C005-p2-r02",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "7bc3a01e490058e96699c8805a85a57c4a758fc5dc662a8827c1d63d562af19d"
+      },
+      {
+        "run_id": "C005-p2-r01",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "7bc3a01e490058e96699c8805a85a57c4a758fc5dc662a8827c1d63d562af19d"
+      },
+      {
+        "run_id": "C005-p2-r03",
+        "ordered_sources": [
+          "buffers",
+          "pointers",
+          "api_returns"
+        ],
+        "source_hashes": {
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582"
+        },
+        "task_hash": "7bc3a01e490058e96699c8805a85a57c4a758fc5dc662a8827c1d63d562af19d"
+      }
+    ],
+    "C006:r": [
+      {
+        "run_id": "C006-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "472cc9f787137e8cd186b1cb7e231d7759ed40b509fdb9e9076e82653daac9c3"
+      },
+      {
+        "run_id": "C006-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "472cc9f787137e8cd186b1cb7e231d7759ed40b509fdb9e9076e82653daac9c3"
+      },
+      {
+        "run_id": "C006-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "472cc9f787137e8cd186b1cb7e231d7759ed40b509fdb9e9076e82653daac9c3"
+      }
+    ],
+    "C008:p1": [
+      {
+        "run_id": "C008-p1-r01",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "f31b2b4e41a28cf90542beb9f24bcf0eaf5982741c4eab470087316a0ffe8a5b"
+      },
+      {
+        "run_id": "C008-p1-r02",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "f31b2b4e41a28cf90542beb9f24bcf0eaf5982741c4eab470087316a0ffe8a5b"
+      },
+      {
+        "run_id": "C008-p1-r03",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd"
+        },
+        "task_hash": "f31b2b4e41a28cf90542beb9f24bcf0eaf5982741c4eab470087316a0ffe8a5b"
+      }
+    ],
+    "C005:r": [
+      {
+        "run_id": "C005-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "7d529891359c0a0c2c8d85ef3792ffbea91e24bc0b0e9757f34a1cb54ce8d64a"
+      },
+      {
+        "run_id": "C005-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "7d529891359c0a0c2c8d85ef3792ffbea91e24bc0b0e9757f34a1cb54ce8d64a"
+      },
+      {
+        "run_id": "C005-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "7d529891359c0a0c2c8d85ef3792ffbea91e24bc0b0e9757f34a1cb54ce8d64a"
+      }
+    ],
+    "C005:b0": [
+      {
+        "run_id": "C005-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "dd1d3a69eb22680378c0872ced4940027369a32d4f2a4453dd6cb4ed58bd0fd9"
+      },
+      {
+        "run_id": "C005-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "dd1d3a69eb22680378c0872ced4940027369a32d4f2a4453dd6cb4ed58bd0fd9"
+      },
+      {
+        "run_id": "C005-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "dd1d3a69eb22680378c0872ced4940027369a32d4f2a4453dd6cb4ed58bd0fd9"
+      }
+    ],
+    "C003:p2": [
+      {
+        "run_id": "C003-p2-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "268a223f52608363e5fb4964ea559622e1af553e9ab77a43eb3c6551df174d61"
+      },
+      {
+        "run_id": "C003-p2-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "268a223f52608363e5fb4964ea559622e1af553e9ab77a43eb3c6551df174d61"
+      },
+      {
+        "run_id": "C003-p2-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "268a223f52608363e5fb4964ea559622e1af553e9ab77a43eb3c6551df174d61"
+      }
+    ],
+    "C008:p3": [
+      {
+        "run_id": "C008-p3-r01",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "d658daf9d48d216da534f583d2a54ca112a443331e9f8b39bf5a49b47fa81940"
+      },
+      {
+        "run_id": "C008-p3-r02",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "d658daf9d48d216da534f583d2a54ca112a443331e9f8b39bf5a49b47fa81940"
+      },
+      {
+        "run_id": "C008-p3-r03",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "d658daf9d48d216da534f583d2a54ca112a443331e9f8b39bf5a49b47fa81940"
+      }
+    ],
+    "C004:p3": [
+      {
+        "run_id": "C004-p3-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools",
+          "decoy_bootloader",
+          "initialization"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "a504d3b7d519b358ca29014fb1a52880e7600173231200f6e25542b72af8141c"
+      },
+      {
+        "run_id": "C004-p3-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools",
+          "decoy_bootloader",
+          "initialization"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "a504d3b7d519b358ca29014fb1a52880e7600173231200f6e25542b72af8141c"
+      },
+      {
+        "run_id": "C004-p3-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools",
+          "decoy_bootloader",
+          "initialization"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "a504d3b7d519b358ca29014fb1a52880e7600173231200f6e25542b72af8141c"
+      }
+    ],
+    "C003:b0": [
+      {
+        "run_id": "C003-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "fc983ac2cdeaddf7187a2e8ba33c136f1ed909a75c25f8afc53f77aa8680f336"
+      },
+      {
+        "run_id": "C003-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "fc983ac2cdeaddf7187a2e8ba33c136f1ed909a75c25f8afc53f77aa8680f336"
+      },
+      {
+        "run_id": "C003-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "fc983ac2cdeaddf7187a2e8ba33c136f1ed909a75c25f8afc53f77aa8680f336"
+      }
+    ],
+    "C004:r": [
+      {
+        "run_id": "C004-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "51c8b4f36acdc0e31b28ab1a9548d5739a01c93fe0a8b5e22a613d0243be40d6"
+      },
+      {
+        "run_id": "C004-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "51c8b4f36acdc0e31b28ab1a9548d5739a01c93fe0a8b5e22a613d0243be40d6"
+      },
+      {
+        "run_id": "C004-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "51c8b4f36acdc0e31b28ab1a9548d5739a01c93fe0a8b5e22a613d0243be40d6"
+      }
+    ],
+    "C004:b0": [
+      {
+        "run_id": "C004-b0-r02",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "6cec45d9571dfab5113fbbe27faaae40a05a0fcd40b80ccbfb4d4697fc72e299"
+      },
+      {
+        "run_id": "C004-b0-r03",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "6cec45d9571dfab5113fbbe27faaae40a05a0fcd40b80ccbfb4d4697fc72e299"
+      },
+      {
+        "run_id": "C004-b0-r01",
+        "ordered_sources": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "source_hashes": {
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716"
+        },
+        "task_hash": "6cec45d9571dfab5113fbbe27faaae40a05a0fcd40b80ccbfb4d4697fc72e299"
+      }
+    ],
+    "C001:p3": [
+      {
+        "run_id": "C001-p3-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers",
+          "initialization",
+          "decoy_bootloader"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18"
+        },
+        "task_hash": "47d62b2c7e2e9ba8aa9d332e4345a4e7e57cdde5ec713295f618faffdd008cf3"
+      },
+      {
+        "run_id": "C001-p3-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers",
+          "initialization",
+          "decoy_bootloader"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18"
+        },
+        "task_hash": "47d62b2c7e2e9ba8aa9d332e4345a4e7e57cdde5ec713295f618faffdd008cf3"
+      },
+      {
+        "run_id": "C001-p3-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_host_tools",
+          "pointers",
+          "initialization",
+          "decoy_bootloader"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18"
+        },
+        "task_hash": "47d62b2c7e2e9ba8aa9d332e4345a4e7e57cdde5ec713295f618faffdd008cf3"
+      }
+    ],
+    "C007:p3": [
+      {
+        "run_id": "C007-p3-r03",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "14e4a25992987b56cffa03c007568053c2dd9510ee8d7dce787b0ee1aff31473"
+      },
+      {
+        "run_id": "C007-p3-r01",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "14e4a25992987b56cffa03c007568053c2dd9510ee8d7dce787b0ee1aff31473"
+      },
+      {
+        "run_id": "C007-p3-r02",
+        "ordered_sources": [
+          "resources",
+          "api_returns",
+          "error_flow",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization"
+        ],
+        "source_hashes": {
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64",
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c"
+        },
+        "task_hash": "14e4a25992987b56cffa03c007568053c2dd9510ee8d7dce787b0ee1aff31473"
+      }
+    ],
+    "C001:r": [
+      {
+        "run_id": "C001-r-r01",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "729bf188e7059ef6f3bc5acb2cf2fc6dc72858828e5d167a8390f7eebd129052"
+      },
+      {
+        "run_id": "C001-r-r03",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "729bf188e7059ef6f3bc5acb2cf2fc6dc72858828e5d167a8390f7eebd129052"
+      },
+      {
+        "run_id": "C001-r-r02",
+        "ordered_sources": [
+          "api_returns",
+          "decoy_bootloader",
+          "decoy_host_tools",
+          "initialization",
+          "pointers",
+          "buffers",
+          "error_flow",
+          "resources"
+        ],
+        "source_hashes": {
+          "api_returns": "80d72f1945a488b53248ca229a96445d876777b605ea62bcb54f572fe8d3d582",
+          "decoy_bootloader": "2b84bc5e4e0ff9495048517194ce36b181b91f48f021ace7164a3c08fa126e18",
+          "decoy_host_tools": "e683c6e16168176c5612e306afe6040028675120cade2b26c75e6ef5c23b5716",
+          "initialization": "6ca4595ec0b4cb25d4506513a7c94d88189608c2b259acef0c9ad8c6ea50097c",
+          "pointers": "3f78a20a9b1bb80d1236474976e8f413f21a2f64195f673fd6e7523841c4feb0",
+          "buffers": "bd7632a7512dc986221c535f98b24c5601f69f5f3828996eb31c58b0b88e61a7",
+          "error_flow": "430606c2ac49cb68ea2f17a847194d10e113f05e9a051c1e5374ab6d25757ccd",
+          "resources": "38fc818207d512be6f6f9cb7c2730bf054cd2d6019dcea360cf05c88ba16ae64"
+        },
+        "task_hash": "729bf188e7059ef6f3bc5acb2cf2fc6dc72858828e5d167a8390f7eebd129052"
+      }
+    ]
+  },
+  "variability_counts": {
+    "C002:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C002:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C001:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C007:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C007:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C006:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C002:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C001:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C006:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C008:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C003:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C005:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C002:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C004:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C007:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C004:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C008:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C002:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C003:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C006:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C008:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C007:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C006:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C005:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C001:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C003:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C005:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C006:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C008:p1": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C005:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C005:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C003:p2": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C008:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C004:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C003:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C004:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C004:b0": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C001:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C007:p3": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    },
+    "C001:r": {
+      "distinct_source_orders": 1,
+      "distinct_task_hashes": 1
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C017",
+  "code_sha256": "ec74e909c1c48d4b3d69da6d5c20042f18535dbab8a4d7bb6a2b3f533dd8442e",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-002",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "written < 0 || (size_t)written != length"
+        }
+      ],
+      "rationale": "Both failure and short write are checked."
+    },
+    {
+      "rule_id": "SFCG-011",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "if (written < 0"
+        }
+      ],
+      "rationale": "Commit follows a write-result check."
+    }
+  ],
+  "case_rationale": "The macro hides a fallible storage call but not its contract.",
+  "review_status": "provisional"
+}

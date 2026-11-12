@@ -1,0 +1,47 @@
+version = "p2-reducer-v1"
+token_budget = 2200
+minimum_score = 2
+artifact_scope = "firmware"
+scope_exclusion_phrases = ["not firmware"]
+known_components = ["sensor", "storage", "dma", "interrupt", "bus", "register", "bootloader", "host"]
+instructions_version = "checker-evidence-v1"
+
+[[categories]]
+feature = "api_return_handling"
+terms = ["return", "status", "result", "fallible"]
+
+[[categories]]
+feature = "possibly_unchecked_result"
+terms = ["unchecked", "inspect", "status", "result"]
+
+[[categories]]
+feature = "error_handling"
+terms = ["error", "failure", "propagat", "timeout", "retry"]
+
+[[categories]]
+feature = "pointer_validation"
+terms = ["pointer", "null", "dereferenc", "address"]
+
+[[categories]]
+feature = "buffer_boundary"
+terms = ["buffer", "capacity", "length", "bound", "array", "copy"]
+
+[[categories]]
+feature = "resource_lifetime"
+terms = ["resource", "lock", "handle", "cleanup", "release", "close"]
+
+[[categories]]
+feature = "storage_write"
+terms = ["storage", "flash", "write", "persist"]
+
+[[categories]]
+feature = "initialization"
+terms = ["initializ", "configur", "enable", "reset"]
+
+[[categories]]
+feature = "dma_transfer"
+terms = ["dma", "transfer", "alignment"]
+
+[[categories]]
+feature = "interrupt_state"
+terms = ["interrupt", "handler", "irq"]

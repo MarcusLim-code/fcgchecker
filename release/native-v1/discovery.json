@@ -1,0 +1,14 @@
+{
+  "fcgc_version": "0.12.0",
+  "code_hash": "a6ba0e9ddf0f9448d07bc06d6e4c7ae50780a4e94a020c594e04ed9440b2d1f2",
+  "orchestration_hash": "e8758c337bbb6379bdc4d07919d48374ff5464601d72f6e2aa9bed90a35090b8",
+  "skill_files": [
+    "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-check/SKILL.md",
+    "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-compare/SKILL.md",
+    "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-report/SKILL.md",
+    "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-rules/SKILL.md",
+    "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-doctor/SKILL.md"
+  ],
+  "native_registration": "unverified: Devin executable unavailable",
+  "live_mcp": "unverified: no tools exposed to the active Codex agent"
+}

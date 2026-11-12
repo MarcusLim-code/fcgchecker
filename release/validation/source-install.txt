@@ -1,0 +1,16 @@
+Processing /var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/fcgc-release-source-_8znh6f6/fcgc-0.11.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: fcgc
+  Building wheel for fcgc (pyproject.toml): started
+  Building wheel for fcgc (pyproject.toml): finished with status 'done'
+  Created wheel for fcgc: filename=fcgc-0.11.0-py3-none-any.whl size=133928 sha256=fd10844cfea80543c2ef0087c4f201b42831ba981bc0d5009b62e9f655b3b0f7
+  Stored in directory: /private/var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/pip-ephem-wheel-cache-0munks3q/wheels/32/61/9a/6975a65190e5314f5113178f64251b482accd9a9dcd20fcde8
+Successfully built fcgc
+Installing collected packages: fcgc
+  Attempting uninstall: fcgc
+    Found existing installation: fcgc 0.11.0
+    Uninstalling fcgc-0.11.0:
+      Successfully uninstalled fcgc-0.11.0
+Successfully installed fcgc-0.11.0
+WARNING: The directory '/Users/marcuslim/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.

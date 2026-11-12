@@ -1,0 +1,36 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C003",
+  "code_sha256": "3cb4288c0509815181213da8a3bdd1a6b8e036d5d7e681d21730d3fc55b8b64a",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-013",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "quote": "input == NULL"
+        }
+      ],
+      "rationale": "The required input pointer is checked before dereference."
+    },
+    {
+      "rule_id": "SFCG-014",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "quote": "output == NULL"
+        }
+      ],
+      "rationale": "The output pointer is checked before writing."
+    }
+  ],
+  "case_rationale": "Both caller-owned pointers are required and used.",
+  "review_status": "provisional"
+}

@@ -1,0 +1,442 @@
+{
+  "normalized": {
+    "document": {
+      "source_id": "buffers",
+      "title": "Synthetic FCG: Buffer Boundaries",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "content": "# Synthetic FCG: Buffer Boundaries\n\nDataset version 2.0.0. Illustrative research rules only; not official WD requirements.\n\nIn this section a capacity is the number of writable elements, not the last valid\nindex. [SFCG-019] A loop writing an array must keep each index strictly below\ncapacity. [SFCG-020] When reserving a header and payload, check for arithmetic\noverflow before adding their lengths and compare the total with capacity.\n\nFor text output, [SFCG-021] reserve room for a terminating zero byte before\nwriting it, including the empty-text path. A ring queue follows a different rule:\n[SFCG-022] compute the next head and reject insertion when it would equal the tail.\n\nThe DMA contract adds two constraints. [SFCG-023] Before scheduling DMA, require\nfour-byte alignment of both address and byte count. [SFCG-024] A byte count returned\nby an external read must be capped at destination capacity before copying.\n\nThe empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer. Consult `pointers.md` for null pointers with zero length.\n",
+      "document_version": null
+    },
+    "normalizer_version": "markdown-normalizer-v1",
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "span": {
+          "start": 36,
+          "end": 122,
+          "start_line": 3,
+          "end_line": 3,
+          "excerpt": "Dataset version 2.0.0. Illustrative research rules only; not official WD requirements."
+        },
+        "heading_lineage": [
+          "Synthetic FCG: Buffer Boundaries"
+        ],
+        "cells": []
+      },
+      {
+        "kind": "paragraph",
+        "span": {
+          "start": 124,
+          "end": 436,
+          "start_line": 5,
+          "end_line": 8,
+          "excerpt": "In this section a capacity is the number of writable elements, not the last valid\nindex. [SFCG-019] A loop writing an array must keep each index strictly below\ncapacity. [SFCG-020] When reserving a header and payload, check for arithmetic\noverflow before adding their lengths and compare the total with capacity."
+        },
+        "heading_lineage": [
+          "Synthetic FCG: Buffer Boundaries"
+        ],
+        "cells": []
+      },
+      {
+        "kind": "paragraph",
+        "span": {
+          "start": 438,
+          "end": 679,
+          "start_line": 10,
+          "end_line": 12,
+          "excerpt": "For text output, [SFCG-021] reserve room for a terminating zero byte before\nwriting it, including the empty-text path. A ring queue follows a different rule:\n[SFCG-022] compute the next head and reject insertion when it would equal the tail."
+        },
+        "heading_lineage": [
+          "Synthetic FCG: Buffer Boundaries"
+        ],
+        "cells": []
+      },
+      {
+        "kind": "paragraph",
+        "span": {
+          "start": 681,
+          "end": 921,
+          "start_line": 14,
+          "end_line": 16,
+          "excerpt": "The DMA contract adds two constraints. [SFCG-023] Before scheduling DMA, require\nfour-byte alignment of both address and byte count. [SFCG-024] A byte count returned\nby an external read must be capped at destination capacity before copying."
+        },
+        "heading_lineage": [
+          "Synthetic FCG: Buffer Boundaries"
+        ],
+        "cells": []
+      },
+      {
+        "kind": "paragraph",
+        "span": {
+          "start": 923,
+          "end": 1071,
+          "start_line": 18,
+          "end_line": 19,
+          "excerpt": "The empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer. Consult `pointers.md` for null pointers with zero length."
+        },
+        "heading_lineage": [
+          "Synthetic FCG: Buffer Boundaries"
+        ],
+        "cells": []
+      }
+    ]
+  },
+  "extractor_version": "rule-segmenter-v1",
+  "rules": [
+    {
+      "evidence_id": "ev-2aa700507a671625",
+      "source_id": "buffers",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-019",
+      "heading_lineage": [
+        "Synthetic FCG: Buffer Boundaries"
+      ],
+      "normative_statement": "A loop writing an array must keep each index strictly below\ncapacity.",
+      "normative_span": {
+        "start": 224,
+        "end": 293,
+        "start_line": 6,
+        "end_line": 7,
+        "excerpt": "A loop writing an array must keep each index strictly below\ncapacity."
+      },
+      "conditions": [],
+      "exceptions": [],
+      "supporting_definitions": [
+        {
+          "kind": "definition",
+          "span": {
+            "start": 124,
+            "end": 212,
+            "start_line": 5,
+            "end_line": 6,
+            "excerpt": "In this section a capacity is the number of writable elements, not the last valid\nindex."
+          }
+        }
+      ],
+      "dependencies": [],
+      "obligation_strength": "mandatory",
+      "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+      "ambiguity_status": "clear",
+      "ambiguity_notes": [],
+      "section_span": null,
+      "duplicate_of": null
+    },
+    {
+      "evidence_id": "ev-651a240a1b999d20",
+      "source_id": "buffers",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-020",
+      "heading_lineage": [
+        "Synthetic FCG: Buffer Boundaries"
+      ],
+      "normative_statement": "When reserving a header and payload, check for arithmetic\noverflow before adding their lengths and compare the total with capacity.",
+      "normative_span": {
+        "start": 305,
+        "end": 436,
+        "start_line": 7,
+        "end_line": 8,
+        "excerpt": "When reserving a header and payload, check for arithmetic\noverflow before adding their lengths and compare the total with capacity."
+      },
+      "conditions": [
+        {
+          "kind": "condition",
+          "span": {
+            "start": 305,
+            "end": 341,
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt": "When reserving a header and payload,"
+          }
+        }
+      ],
+      "exceptions": [],
+      "supporting_definitions": [
+        {
+          "kind": "definition",
+          "span": {
+            "start": 124,
+            "end": 212,
+            "start_line": 5,
+            "end_line": 6,
+            "excerpt": "In this section a capacity is the number of writable elements, not the last valid\nindex."
+          }
+        }
+      ],
+      "dependencies": [],
+      "obligation_strength": "mandatory",
+      "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+      "ambiguity_status": "clear",
+      "ambiguity_notes": [],
+      "section_span": null,
+      "duplicate_of": null
+    },
+    {
+      "evidence_id": "ev-7a11cf20f335dbde",
+      "source_id": "buffers",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-021",
+      "heading_lineage": [
+        "Synthetic FCG: Buffer Boundaries"
+      ],
+      "normative_statement": "reserve room for a terminating zero byte before\nwriting it, including the empty-text path.",
+      "normative_span": {
+        "start": 466,
+        "end": 556,
+        "start_line": 10,
+        "end_line": 11,
+        "excerpt": "reserve room for a terminating zero byte before\nwriting it, including the empty-text path."
+      },
+      "conditions": [
+        {
+          "kind": "condition",
+          "span": {
+            "start": 438,
+            "end": 454,
+            "start_line": 10,
+            "end_line": 10,
+            "excerpt": "For text output,"
+          }
+        }
+      ],
+      "exceptions": [],
+      "supporting_definitions": [],
+      "dependencies": [],
+      "obligation_strength": "mandatory",
+      "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+      "ambiguity_status": "clear",
+      "ambiguity_notes": [],
+      "section_span": null,
+      "duplicate_of": null
+    },
+    {
+      "evidence_id": "ev-3f00d794f75f4733",
+      "source_id": "buffers",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-022",
+      "heading_lineage": [
+        "Synthetic FCG: Buffer Boundaries"
+      ],
+      "normative_statement": "compute the next head and reject insertion when it would equal the tail.",
+      "normative_span": {
+        "start": 607,
+        "end": 679,
+        "start_line": 12,
+        "end_line": 12,
+        "excerpt": "compute the next head and reject insertion when it would equal the tail."
+      },
+      "conditions": [],
+      "exceptions": [],
+      "supporting_definitions": [],
+      "dependencies": [],
+      "obligation_strength": "prohibition",
+      "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+      "ambiguity_status": "clear",
+      "ambiguity_notes": [],
+      "section_span": null,
+      "duplicate_of": null
+    },
+    {
+      "evidence_id": "ev-3d3b584ead4b584d",
+      "source_id": "buffers",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-023",
+      "heading_lineage": [
+        "Synthetic FCG: Buffer Boundaries"
+      ],
+      "normative_statement": "Before scheduling DMA, require\nfour-byte alignment of both address and byte count.",
+      "normative_span": {
+        "start": 731,
+        "end": 813,
+        "start_line": 14,
+        "end_line": 15,
+        "excerpt": "Before scheduling DMA, require\nfour-byte alignment of both address and byte count."
+      },
+      "conditions": [
+        {
+          "kind": "condition",
+          "span": {
+            "start": 731,
+            "end": 753,
+            "start_line": 14,
+            "end_line": 14,
+            "excerpt": "Before scheduling DMA,"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "kind": "exception",
+          "span": {
+            "start": 923,
+            "end": 1013,
+            "start_line": 18,
+            "end_line": 19,
+            "excerpt": "The empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer."
+          }
+        }
+      ],
+      "supporting_definitions": [],
+      "dependencies": [],
+      "obligation_strength": "mandatory",
+      "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+      "ambiguity_status": "review_required",
+      "ambiguity_notes": [
+        "Later exception attached by proximity; confirm its scope."
+      ],
+      "section_span": {
+        "start": 731,
+        "end": 1071,
+        "start_line": 14,
+        "end_line": 19,
+        "excerpt": "Before scheduling DMA, require\nfour-byte alignment of both address and byte count. [SFCG-024] A byte count returned\nby an external read must be capped at destination capacity before copying.\n\nThe empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer. Consult `pointers.md` for null pointers with zero length."
+      },
+      "duplicate_of": null
+    },
+    {
+      "evidence_id": "ev-d4b2c1a118201f8f",
+      "source_id": "buffers",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-024",
+      "heading_lineage": [
+        "Synthetic FCG: Buffer Boundaries"
+      ],
+      "normative_statement": "A byte count returned\nby an external read must be capped at destination capacity before copying.",
+      "normative_span": {
+        "start": 825,
+        "end": 921,
+        "start_line": 15,
+        "end_line": 16,
+        "excerpt": "A byte count returned\nby an external read must be capped at destination capacity before copying."
+      },
+      "conditions": [],
+      "exceptions": [
+        {
+          "kind": "exception",
+          "span": {
+            "start": 923,
+            "end": 1013,
+            "start_line": 18,
+            "end_line": 19,
+            "excerpt": "The empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer."
+          }
+        }
+      ],
+      "supporting_definitions": [
+        {
+          "kind": "definition",
+          "span": {
+            "start": 124,
+            "end": 212,
+            "start_line": 5,
+            "end_line": 6,
+            "excerpt": "In this section a capacity is the number of writable elements, not the last valid\nindex."
+          }
+        }
+      ],
+      "dependencies": [],
+      "obligation_strength": "mandatory",
+      "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+      "ambiguity_status": "review_required",
+      "ambiguity_notes": [
+        "Later exception attached by proximity; confirm its scope."
+      ],
+      "section_span": {
+        "start": 825,
+        "end": 1071,
+        "start_line": 15,
+        "end_line": 19,
+        "excerpt": "A byte count returned\nby an external read must be capped at destination capacity before copying.\n\nThe empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer. Consult `pointers.md` for null pointers with zero length."
+      },
+      "duplicate_of": null
+    }
+  ],
+  "other_fragments": [
+    {
+      "kind": "informative",
+      "span": {
+        "start": 36,
+        "end": 58,
+        "start_line": 3,
+        "end_line": 3,
+        "excerpt": "Dataset version 2.0.0."
+      }
+    },
+    {
+      "kind": "informative",
+      "span": {
+        "start": 59,
+        "end": 122,
+        "start_line": 3,
+        "end_line": 3,
+        "excerpt": "Illustrative research rules only; not official WD requirements."
+      }
+    },
+    {
+      "kind": "definition",
+      "span": {
+        "start": 124,
+        "end": 212,
+        "start_line": 5,
+        "end_line": 6,
+        "excerpt": "In this section a capacity is the number of writable elements, not the last valid\nindex."
+      }
+    },
+    {
+      "kind": "condition",
+      "span": {
+        "start": 438,
+        "end": 454,
+        "start_line": 10,
+        "end_line": 10,
+        "excerpt": "For text output,"
+      }
+    },
+    {
+      "kind": "informative",
+      "span": {
+        "start": 557,
+        "end": 595,
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt": "A ring queue follows a different rule:"
+      }
+    },
+    {
+      "kind": "informative",
+      "span": {
+        "start": 681,
+        "end": 719,
+        "start_line": 14,
+        "end_line": 14,
+        "excerpt": "The DMA contract adds two constraints."
+      }
+    },
+    {
+      "kind": "exception",
+      "span": {
+        "start": 923,
+        "end": 1013,
+        "start_line": 18,
+        "end_line": 19,
+        "excerpt": "The empty-text exception does not permit writing a terminator into a zero-capacity\nbuffer."
+      }
+    },
+    {
+      "kind": "informative",
+      "span": {
+        "start": 1014,
+        "end": 1071,
+        "start_line": 19,
+        "end_line": 19,
+        "excerpt": "Consult `pointers.md` for null pointers with zero length."
+      }
+    }
+  ],
+  "review_sections": []
+}

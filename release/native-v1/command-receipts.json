@@ -1,0 +1,67 @@
+[
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "agent",
+      "invoke",
+      "--command",
+      "/fcg-check src/fcgc/fixtures/benchmark_cases/C001.c --mode local",
+      "--output",
+      "runs/native-final/check"
+    ],
+    "exit_code": 0,
+    "stdout": "runs/native-final/check-stdout.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "agent",
+      "invoke",
+      "--command",
+      "/fcg-rules src/fcgc/fixtures/benchmark_cases/C001.c",
+      "--output",
+      "runs/native-final/rules"
+    ],
+    "exit_code": 0,
+    "stdout": "runs/native-final/rules-stdout.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "agent",
+      "invoke",
+      "--command",
+      "/fcg-compare --dataset fcgc-synthetic-v2 --repeat 3",
+      "--output",
+      "runs/native-final/compare"
+    ],
+    "exit_code": 0,
+    "stdout": "runs/native-final/compare-stdout.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "agent",
+      "invoke",
+      "--command",
+      "/fcg-report --experiment runs/native-final/compare",
+      "--output",
+      "runs/native-final/report"
+    ],
+    "exit_code": 0,
+    "stdout": "runs/native-final/report-stdout.json"
+  },
+  {
+    "command": [
+      ".venv/bin/fcgc",
+      "agent",
+      "invoke",
+      "--command",
+      "/fcg-doctor",
+      "--output",
+      "runs/native-final/doctor"
+    ],
+    "exit_code": 0,
+    "stdout": "runs/native-final/doctor-stdout.json"
+  }
+]

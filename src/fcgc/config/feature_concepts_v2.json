@@ -1,0 +1,83 @@
+{
+  "version": "feature-concepts-v2",
+  "mappings": [
+    {
+      "feature_category": "storage_write",
+      "guideline_concept": "storage-write result handling",
+      "query_terms": "storage flash write short result",
+      "priority": 100
+    },
+    {
+      "feature_category": "resource_lifetime",
+      "guideline_concept": "resource acquisition and cleanup",
+      "query_terms": "resource lock handle cleanup release",
+      "priority": 95
+    },
+    {
+      "feature_category": "buffer_boundary",
+      "guideline_concept": "buffer boundary safety",
+      "query_terms": "buffer capacity array count boundary",
+      "priority": 90
+    },
+    {
+      "feature_category": "dma_transfer",
+      "guideline_concept": "DMA transfer preconditions",
+      "query_terms": "DMA address alignment byte count",
+      "priority": 88
+    },
+    {
+      "feature_category": "indirect_call",
+      "guideline_concept": "indirect call result and context",
+      "query_terms": "callback indirect status context pointer",
+      "priority": 86
+    },
+    {
+      "feature_category": "pointer_validation",
+      "guideline_concept": "pointer contract validation",
+      "query_terms": "pointer null output validation dereference",
+      "priority": 82
+    },
+    {
+      "feature_category": "possibly_unchecked_result",
+      "guideline_concept": "possible unchecked API result",
+      "query_terms": "API return result status failure",
+      "priority": 98
+    },
+    {
+      "feature_category": "error_handling",
+      "guideline_concept": "error handling and propagation",
+      "query_terms": "error flow propagation timeout retry",
+      "priority": 75
+    },
+    {
+      "feature_category": "initialization",
+      "guideline_concept": "initialization order",
+      "query_terms": "initialization state configuration enable",
+      "priority": 70
+    },
+    {
+      "feature_category": "interrupt_state",
+      "guideline_concept": "interrupt shared state",
+      "query_terms": "interrupt handler shared state enable",
+      "priority": 68
+    },
+    {
+      "feature_category": "api_return_handling",
+      "guideline_concept": "API result handling",
+      "query_terms": "API return status result",
+      "priority": 50
+    },
+    {
+      "feature_category": "macro_wrapped_call",
+      "guideline_concept": "macro-wrapped call obligations",
+      "query_terms": "macro call result contract",
+      "priority": 45
+    },
+    {
+      "feature_category": "general_firmware",
+      "guideline_concept": "general firmware rules",
+      "query_terms": "general firmware coding requirements",
+      "priority": 0
+    }
+  ]
+}

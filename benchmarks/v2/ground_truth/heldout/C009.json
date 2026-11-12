@@ -1,0 +1,75 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C009",
+  "code_sha256": "df8515be6550419df42cf66e846e27ffa96e3fa1baad12c4706a55905313a997",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-025",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "*state = (State){0};"
+        }
+      ],
+      "rationale": "State fields are initialized before use."
+    },
+    {
+      "rule_id": "SFCG-026",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 10,
+          "end_line": 10,
+          "quote": "enable_device_and_irq(state);"
+        }
+      ],
+      "rationale": "Shared state is set before interrupt enable."
+    },
+    {
+      "rule_id": "SFCG-027",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "Failed initialization blocks later use."
+    },
+    {
+      "rule_id": "SFCG-029",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "state->threshold = 7u;"
+        }
+      ],
+      "rationale": "The documented synthetic default is applied."
+    },
+    {
+      "rule_id": "SFCG-030",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "state->threshold = 7u;"
+        }
+      ],
+      "rationale": "Configuration is programmed before enabling."
+    }
+  ],
+  "case_rationale": "This case exercises several initialization obligations together.",
+  "review_status": "provisional"
+}

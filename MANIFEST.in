@@ -1,0 +1,17 @@
+include README.md START_HERE.md pyproject.toml requirements*.lock .env.example
+recursive-include .agents/skills SKILL.md
+recursive-include docs *.md
+recursive-include examples *.c *.md
+recursive-include config *.toml
+recursive-include research *.toml *.md
+recursive-include scripts *.py
+recursive-include skills *.md *.txt
+recursive-include benchmarks/v2 *.json *.toml *.md
+recursive-include tests *.py *.json
+recursive-include release *.json *.csv *.md *.html *.txt
+global-exclude __pycache__ *.py[cod]
+global-exclude *.private.toml *.private.json *.local.toml *.local.json .env .env.*
+include .env.example
+prune runs
+prune wheelhouse
+prune outputs

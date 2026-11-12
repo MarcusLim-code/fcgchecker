@@ -1,0 +1,18 @@
+{
+  "installed_wheel": {
+    "version": "0.11.0",
+    "module": "/private/tmp/fcgc-release-verified/lib/python3.13/site-packages/fcgc/__init__.py",
+    "code_hash": "ed3700498a0bbab20c72493f3cdf512813a69091ec52d342004324ef02c80ff4"
+  },
+  "lock_code_hashes": {
+    "release-local": "ed3700498a0bbab20c72493f3cdf512813a69091ec52d342004324ef02c80ff4",
+    "release-wheel": "ed3700498a0bbab20c72493f3cdf512813a69091ec52d342004324ef02c80ff4",
+    "release-experiment": "ed3700498a0bbab20c72493f3cdf512813a69091ec52d342004324ef02c80ff4"
+  },
+  "all_match_current_code": true,
+  "offline_install_flags": [
+    "--no-index",
+    "--no-deps"
+  ],
+  "runtime_dependency_lock": "requirements-runtime.lock"
+}

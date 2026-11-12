@@ -1,0 +1,62 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C007",
+  "code_sha256": "b3a4387143e4b5e56047c5d909efa3077f00f45ea7a079e14b9346dbafe6ba98",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-008",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 11,
+          "end_line": 11,
+          "quote": "device_close(handle);"
+        }
+      ],
+      "rationale": "Cleanup precedes the propagated transaction result."
+    },
+    {
+      "rule_id": "SFCG-031",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "unlock_bus();"
+        }
+      ],
+      "rationale": "All paths after successful lock release it."
+    },
+    {
+      "rule_id": "SFCG-032",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 11,
+          "end_line": 11,
+          "quote": "device_close(handle);"
+        }
+      ],
+      "rationale": "Opened handle closes after the transaction."
+    },
+    {
+      "rule_id": "SFCG-007",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 13,
+          "end_line": 13,
+          "quote": "return rc;"
+        }
+      ],
+      "rationale": "The transaction status is returned."
+    }
+  ],
+  "case_rationale": "Both lock and device handle have path-sensitive lifetime obligations.",
+  "review_status": "provisional"
+}

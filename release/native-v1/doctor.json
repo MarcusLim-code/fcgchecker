@@ -1,0 +1,186 @@
+{
+  "local_retrieval": {
+    "status": "ready",
+    "search_fetch_sources": 3
+  },
+  "dataset": {
+    "status": "ready",
+    "details": {
+      "dataset_version": "2.0.0",
+      "annotation_version": "1.0.0-provisional",
+      "rules": 36,
+      "documents": 8,
+      "cases": 24,
+      "annotations": 24,
+      "provisional_annotations": 24,
+      "coverage": {
+        "rule_categories": {
+          "api_return_value": 6,
+          "buffer_safety": 6,
+          "error_handling": 6,
+          "initialization": 6,
+          "pointer_validation": 6,
+          "resource_lifetime": 6
+        },
+        "document_types": {
+          "bulleted": 2,
+          "contextual_decoy": 2,
+          "narrative": 1,
+          "numbered": 2,
+          "table": 1
+        },
+        "code_behaviors": {
+          "array_copy": 2,
+          "callback_context": 2,
+          "dependent_operation": 2,
+          "dma_submission": 2,
+          "error_status": 2,
+          "external_length": 2,
+          "indirect_call": 2,
+          "interrupt_enable": 2,
+          "lock_lifetime": 2,
+          "macro_wrapped_call": 2,
+          "multiple_exits": 2,
+          "output_write": 2,
+          "pointer_access": 2,
+          "pointer_entry": 2,
+          "resource_acquisition": 2,
+          "retry_loop": 2,
+          "state_initialization": 2,
+          "status_call": 2,
+          "storage_call": 2,
+          "terminator_write": 2,
+          "text_copy": 2,
+          "utility_operation": 2,
+          "zero_length_branch": 2
+        },
+        "splits": {
+          "development": 8,
+          "heldout": 16
+        }
+      },
+      "validation": "passed"
+    },
+    "validation_scope": "structural only; no held-out calibration"
+  },
+  "skills": {
+    "status": "ready",
+    "files": [
+      {
+        "name": "fcg-check",
+        "path": "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-check/SKILL.md",
+        "metadata": {
+          "name": "fcg-check",
+          "description": "Run source-backed FCG checking for a C firmware file or named function using the configured local or agent-mediated WD workflow.",
+          "argument-hint": "<file.c> [--function NAME] [--mode local|wd] [--strategy b0|p1|p2|p3] [--config PATH]",
+          "triggers": [
+            "user",
+            "model"
+          ]
+        }
+      },
+      {
+        "name": "fcg-compare",
+        "path": "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-compare/SKILL.md",
+        "metadata": {
+          "name": "fcg-compare",
+          "description": "Run the existing controlled B0/P1/P2/P3 development experiment and post-hoc evaluation using one selected fixture/replay backend and checker configuration.",
+          "argument-hint": "[--case CASE] [--dataset fcgc-synthetic-v2] [--repeat N] [--config PATH] [--experiment-config PATH]",
+          "triggers": [
+            "user",
+            "model"
+          ]
+        }
+      },
+      {
+        "name": "fcg-report",
+        "path": "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-report/SKILL.md",
+        "metadata": {
+          "name": "fcg-report",
+          "description": "Generate retrieval, checking and efficiency reports from saved FCGC experiment traces without rerunning retrieval.",
+          "argument-hint": "[--experiment latest|DIRECTORY|EVALUATION_CONFIG] [--runs-root PATH]",
+          "triggers": [
+            "user",
+            "model"
+          ]
+        }
+      },
+      {
+        "name": "fcg-rules",
+        "path": "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-rules/SKILL.md",
+        "metadata": {
+          "name": "fcg-rules",
+          "description": "Inspect source-backed FCG evidence, contextual exceptions, dependencies and reduction decisions for C firmware without declaring compliance.",
+          "argument-hint": "<file.c> [--function NAME] [--mode local|wd] [--strategy b0|p1|p2|p3] [--config PATH]",
+          "triggers": [
+            "user",
+            "model"
+          ]
+        }
+      },
+      {
+        "name": "fcg-doctor",
+        "path": "/Users/marcuslim/Desktop/fcgchecker/.agents/skills/fcg-doctor/SKILL.md",
+        "metadata": {
+          "name": "fcg-doctor",
+          "description": "Check FCGC package, dataset, native skill files, local providers and host-reported Devin/MCP readiness without changing authentication or source files.",
+          "argument-hint": "[--dataset-root PATH] [--mode local|wd]",
+          "triggers": [
+            "user",
+            "model"
+          ]
+        }
+      }
+    ],
+    "native_registration": "unverified"
+  },
+  "devin_runtime": {
+    "status": "unavailable",
+    "executable": null,
+    "surface": "no active host detected by Python"
+  },
+  "atlassian_mcp": {
+    "status": "not_configured",
+    "active_host_tools_visible": false,
+    "python_direct_access": false,
+    "authenticated_live_access_verified": false,
+    "environment": null,
+    "provenance": "not exposed to this Python process"
+  },
+  "versions": {
+    "fcgc": "0.12.0",
+    "skill": "1.1.0",
+    "prompt": "FCGC-PROMPT-V1",
+    "bridge": "fcgc-host-v1",
+    "schemas": "Pydantic v2; existing contracts + agent v1",
+    "pydantic": "2.14.1"
+  },
+  "checkers": {
+    "mock": {
+      "status": "ready",
+      "result": "not_evaluated"
+    },
+    "synthetic_demo": {
+      "status": "ready",
+      "scope": "one exact single-pointer-store grammar"
+    },
+    "ollama": {
+      "status": "not_configured",
+      "availability_probe_performed": false
+    },
+    "devin_agent": {
+      "status": "unavailable"
+    },
+    "devin_api": {
+      "status": "not_configured",
+      "implemented": false
+    }
+  },
+  "workflows": {
+    "local": true,
+    "wd_bridge": false,
+    "live_verified": false
+  },
+  "requested_mode": "local",
+  "status": "complete"
+}

@@ -1,0 +1,7 @@
+{
+  "exact_evidence_replay": true,
+  "snapshot": "/Users/marcuslim/Desktop/fcgchecker/runs/release-local/experiment/snapshots/C001-p3-r01.json",
+  "snapshot_hash": "630ade9a64a492c5ee6da8d245dc817f924a612e5852814217bf2f97eb19e4ec",
+  "checker_results_may_differ": true,
+  "timing_reproduced": false
+}

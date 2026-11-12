@@ -1,0 +1,50 @@
+{
+  "version": "checking-task-v1",
+  "firmware": {
+    "case_id": "pointer_bad",
+    "source_name": "pointer_bad.c",
+    "content": "#include <stddef.h>\nint store(int *out) {\n    *out = 7;\n    return 0;\n}\n",
+    "sha256": "674595ca51c01873a789c452e9d7eba68d151707b11725df7ae911d899654a86"
+  },
+  "documents": [
+    {
+      "source_id": "pointer",
+      "title": "pointer",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/checking/pointer.md",
+      "content": "# Synthetic FCG: Single Pointer Store\n\nIllustrative demonstration only; not an official WD requirement.\n\n1. [SFCG-981] A required output pointer must be checked for null before its first write.\n",
+      "document_version": null
+    }
+  ],
+  "rules": [
+    {
+      "evidence_id": "ev-564d430ae5403cce",
+      "source_id": "pointer",
+      "source_ref": "file:///Users/marcuslim/Desktop/fcgchecker/src/fcgc/fixtures/checking/pointer.md",
+      "document_version": null,
+      "explicit_rule_id": "SFCG-981",
+      "heading_lineage": [
+        "Synthetic FCG: Single Pointer Store"
+      ],
+      "normative_statement": "A required output pointer must be checked for null before its first write.",
+      "normative_span": {
+        "start": 119,
+        "end": 193,
+        "start_line": 5,
+        "end_line": 5,
+        "excerpt": "A required output pointer must be checked for null before its first write."
+      },
+      "conditions": [],
+      "exceptions": [],
+      "supporting_definitions": [],
+      "dependencies": [],
+      "obligation_strength": "mandatory",
+      "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+      "ambiguity_status": "clear",
+      "ambiguity_notes": [],
+      "section_span": null,
+      "duplicate_of": null
+    }
+  ],
+  "context_status": "complete",
+  "warnings": []
+}

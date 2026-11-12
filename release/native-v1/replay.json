@@ -1,0 +1,7 @@
+{
+  "exact_evidence_replay": true,
+  "snapshot": "/Users/marcuslim/Desktop/fcgchecker/runs/native-final/compare/experiment/snapshots/C001-p3-r01.json",
+  "snapshot_hash": "9828bc57bd05449c93b502653e7facf9e678f74653cc1f99243656513b1b3b79",
+  "checker_results_may_differ": true,
+  "timing_reproduced": false
+}

@@ -1,0 +1,2513 @@
+{
+  "strategy": "p3",
+  "config_version": "p3-gate-v1",
+  "features": {
+    "extractor_version": "tree-sitter-c-v1",
+    "analysis_mode": "tree_sitter_ast",
+    "parser_has_error": false,
+    "observed": {
+      "function_definitions": [
+        "boot_sensor"
+      ],
+      "calls": [
+        {
+          "callee": "sensor_open",
+          "effective_callee": "sensor_open",
+          "enclosing_function": "boot_sensor",
+          "line": 6,
+          "assigned_to": "rc",
+          "checked_lines": [
+            7
+          ],
+          "returned_directly": false,
+          "returned_later_lines": [
+            7
+          ],
+          "macro_expanded": false,
+          "possible_indirect_call": false
+        },
+        {
+          "callee": "sensor_configure",
+          "effective_callee": "sensor_configure",
+          "enclosing_function": "boot_sensor",
+          "line": 8,
+          "assigned_to": null,
+          "checked_lines": [],
+          "returned_directly": true,
+          "returned_later_lines": [],
+          "macro_expanded": false,
+          "possible_indirect_call": false
+        }
+      ],
+      "pointer_buffer_operations": [
+        {
+          "kind": "pointer_expression",
+          "expression": "&handle",
+          "line": 6
+        }
+      ],
+      "control_flow": [
+        {
+          "kind": "condition",
+          "expression": "(rc != 0)",
+          "line": 7
+        },
+        {
+          "kind": "return",
+          "expression": "return rc;",
+          "line": 7
+        },
+        {
+          "kind": "return",
+          "expression": "return sensor_configure(handle);",
+          "line": 8
+        }
+      ],
+      "identifiers": [
+        "boot_sensor",
+        "handle",
+        "rc",
+        "sensor_configure",
+        "sensor_open"
+      ]
+    },
+    "inferred_categories": [
+      {
+        "name": "api_return_handling",
+        "basis": [
+          "call:sensor_configure@8",
+          "call:sensor_open@6"
+        ],
+        "confidence": "heuristic"
+      },
+      {
+        "name": "error_handling",
+        "basis": [
+          "condition@7"
+        ],
+        "confidence": "heuristic"
+      },
+      {
+        "name": "general_firmware",
+        "basis": [
+          "C source artifact"
+        ],
+        "confidence": "heuristic"
+      },
+      {
+        "name": "initialization",
+        "basis": [
+          "call:sensor_configure@8"
+        ],
+        "confidence": "heuristic"
+      },
+      {
+        "name": "pointer_validation",
+        "basis": [
+          "syntax:pointer_expression@6"
+        ],
+        "confidence": "heuristic"
+      },
+      {
+        "name": "resource_lifetime",
+        "basis": [
+          "call:sensor_open@6"
+        ],
+        "confidence": "heuristic"
+      }
+    ],
+    "component_hints": [
+      "sensor"
+    ],
+    "unknowns": [
+      "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+      "A later conditional reference is observable, not proof it checks the same value."
+    ]
+  },
+  "initial_plan": {
+    "mapping_version": "feature-concepts-v2",
+    "template_version": "p1-template-v2",
+    "query": "synthetic C firmware coding guidelines resource lock handle cleanup release pointer null output validation dereference general firmware coding requirements sensor_configure sensor_open sensor",
+    "concepts": [
+      {
+        "feature_category": "resource_lifetime",
+        "guideline_concept": "resource acquisition and cleanup",
+        "query_terms": "resource lock handle cleanup release",
+        "basis": [
+          "call:sensor_open@6"
+        ]
+      },
+      {
+        "feature_category": "pointer_validation",
+        "guideline_concept": "pointer contract validation",
+        "query_terms": "pointer null output validation dereference",
+        "basis": [
+          "syntax:pointer_expression@6"
+        ]
+      },
+      {
+        "feature_category": "general_firmware",
+        "guideline_concept": "general firmware rules",
+        "query_terms": "general firmware coding requirements",
+        "basis": [
+          "C source artifact"
+        ]
+      }
+    ],
+    "api_names": [
+      "sensor_configure",
+      "sensor_open"
+    ],
+    "component_hints": [
+      "sensor"
+    ],
+    "max_queries": 1,
+    "document_top_k": 3
+  },
+  "initial_assessment": {
+    "status": "insufficient_evidence",
+    "operation_category_coverage": {
+      "api_return_handling": [
+        "ev-84aee31b3b3ae48c",
+        "ev-6347fde46b77472a",
+        "ev-8e28d6fabd1c90bd"
+      ],
+      "error_handling": [
+        "ev-8e28d6fabd1c90bd",
+        "ev-8a166c47a595d4d6"
+      ],
+      "initialization": [],
+      "pointer_validation": [
+        "ev-6347fde46b77472a",
+        "ev-c2d9abdf308b49a9",
+        "ev-5efa3c397e9e615c",
+        "ev-d73116c7ee06f742",
+        "ev-2c814e4f9c7d8cb9",
+        "ev-183684ad33febd3a"
+      ],
+      "resource_lifetime": [
+        "ev-84aee31b3b3ae48c"
+      ]
+    },
+    "general_category_coverage": {
+      "api_return_handling": [
+        "ev-84aee31b3b3ae48c",
+        "ev-6347fde46b77472a",
+        "ev-8e28d6fabd1c90bd"
+      ]
+    },
+    "normative_rule_count": 10,
+    "unresolved_dependencies": [],
+    "ambiguous_applicability": [
+      "ev-84aee31b3b3ae48c",
+      "ev-6347fde46b77472a",
+      "ev-8a166c47a595d4d6",
+      "ev-c2d9abdf308b49a9",
+      "ev-5efa3c397e9e615c",
+      "ev-d73116c7ee06f742",
+      "ev-2c814e4f9c7d8cb9",
+      "ev-183684ad33febd3a",
+      "ev-ff82dff57fc77a62"
+    ],
+    "empty_or_weak_results": false,
+    "duplicate_fraction": 0.0,
+    "excessive_duplication": false,
+    "missing_expected_categories": [
+      "initialization"
+    ],
+    "reasons": [
+      "missing_expected_categories",
+      "ambiguous_applicability"
+    ]
+  },
+  "final_assessment": {
+    "status": "insufficient_evidence",
+    "operation_category_coverage": {
+      "api_return_handling": [
+        "ev-84aee31b3b3ae48c",
+        "ev-6347fde46b77472a",
+        "ev-8e28d6fabd1c90bd"
+      ],
+      "error_handling": [
+        "ev-8e28d6fabd1c90bd",
+        "ev-8a166c47a595d4d6",
+        "ev-0fb6d56509598453"
+      ],
+      "initialization": [
+        "ev-5ad585777e5a3250",
+        "ev-0fb6d56509598453",
+        "ev-40b575f0550b7485",
+        "ev-134c0de317d84060",
+        "ev-60811f5a11d1bbc9"
+      ],
+      "pointer_validation": [
+        "ev-6347fde46b77472a",
+        "ev-c2d9abdf308b49a9",
+        "ev-5efa3c397e9e615c",
+        "ev-d73116c7ee06f742",
+        "ev-2c814e4f9c7d8cb9",
+        "ev-183684ad33febd3a"
+      ],
+      "resource_lifetime": [
+        "ev-84aee31b3b3ae48c",
+        "ev-6a675c6ab8018623"
+      ]
+    },
+    "general_category_coverage": {
+      "api_return_handling": [
+        "ev-84aee31b3b3ae48c",
+        "ev-6347fde46b77472a",
+        "ev-8e28d6fabd1c90bd"
+      ]
+    },
+    "normative_rule_count": 17,
+    "unresolved_dependencies": [],
+    "ambiguous_applicability": [
+      "ev-84aee31b3b3ae48c",
+      "ev-6347fde46b77472a",
+      "ev-8a166c47a595d4d6",
+      "ev-c2d9abdf308b49a9",
+      "ev-5efa3c397e9e615c",
+      "ev-d73116c7ee06f742",
+      "ev-2c814e4f9c7d8cb9",
+      "ev-183684ad33febd3a",
+      "ev-ff82dff57fc77a62",
+      "ev-5ad585777e5a3250",
+      "ev-0fb6d56509598453",
+      "ev-40b575f0550b7485",
+      "ev-134c0de317d84060"
+    ],
+    "empty_or_weak_results": false,
+    "duplicate_fraction": 0.0,
+    "excessive_duplication": false,
+    "missing_expected_categories": [],
+    "reasons": [
+      "ambiguous_applicability"
+    ]
+  },
+  "attempts": [
+    {
+      "round_number": 1,
+      "query": "synthetic C firmware coding guidelines resource lock handle cleanup release pointer null output validation dereference general firmware coding requirements sensor_configure sensor_open sensor",
+      "template_version": "p1-template-v2",
+      "trigger_reasons": [],
+      "results": {
+        "query": "synthetic C firmware coding guidelines resource lock handle cleanup release pointer null output validation dereference general firmware coding requirements sensor_configure sensor_open sensor",
+        "hits": [
+          {
+            "source_id": "api_returns",
+            "title": "Synthetic FCG: API Results and Calls",
+            "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+            "score": 8
+          },
+          {
+            "source_id": "decoy_host_tools",
+            "title": "Synthetic Decoy: Host Diagnostics Guide",
+            "source_ref": "fcgc://synthetic-benchmark/decoy_host_tools.md",
+            "score": 8
+          },
+          {
+            "source_id": "pointers",
+            "title": "Synthetic FCG: Pointer Contracts",
+            "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+            "score": 8
+          }
+        ],
+        "scope": null
+      },
+      "fetched_source_ids": [
+        "api_returns",
+        "decoy_host_tools",
+        "pointers"
+      ],
+      "new_rule_ids": [
+        "SFCG-001",
+        "SFCG-002",
+        "SFCG-003",
+        "SFCG-004",
+        "SFCG-005",
+        "SFCG-006",
+        "SFCG-013",
+        "SFCG-014",
+        "SFCG-015",
+        "SFCG-016",
+        "SFCG-017",
+        "SFCG-018"
+      ],
+      "errors": [],
+      "search_calls": 1,
+      "fetch_calls": 3,
+      "duration_ms": 3.3858329989016056
+    },
+    {
+      "round_number": 2,
+      "query": "C firmware coding requirements initializ configur enable reset sensor",
+      "template_version": "fallback-queries-v1",
+      "trigger_reasons": [
+        "missing_expected_categories",
+        "ambiguous_applicability"
+      ],
+      "results": {
+        "query": "C firmware coding requirements initializ configur enable reset sensor",
+        "hits": [
+          {
+            "source_id": "api_returns",
+            "title": "Synthetic FCG: API Results and Calls",
+            "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+            "score": 4
+          },
+          {
+            "source_id": "decoy_host_tools",
+            "title": "Synthetic Decoy: Host Diagnostics Guide",
+            "source_ref": "fcgc://synthetic-benchmark/decoy_host_tools.md",
+            "score": 4
+          },
+          {
+            "source_id": "initialization",
+            "title": "Synthetic FCG: Initialization and State",
+            "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+            "score": 3
+          }
+        ],
+        "scope": null
+      },
+      "fetched_source_ids": [
+        "initialization"
+      ],
+      "new_rule_ids": [
+        "SFCG-025",
+        "SFCG-026",
+        "SFCG-027",
+        "SFCG-028",
+        "SFCG-029",
+        "SFCG-030"
+      ],
+      "errors": [],
+      "search_calls": 1,
+      "fetch_calls": 1,
+      "duration_ms": 3.34874982945621
+    },
+    {
+      "round_number": 3,
+      "query": "C firmware coding requirements applicability conditions exceptions shared definitions sensor",
+      "template_version": "fallback-queries-v1",
+      "trigger_reasons": [
+        "ambiguous_applicability"
+      ],
+      "results": {
+        "query": "C firmware coding requirements applicability conditions exceptions shared definitions sensor",
+        "hits": [
+          {
+            "source_id": "api_returns",
+            "title": "Synthetic FCG: API Results and Calls",
+            "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+            "score": 5
+          },
+          {
+            "source_id": "decoy_host_tools",
+            "title": "Synthetic Decoy: Host Diagnostics Guide",
+            "source_ref": "fcgc://synthetic-benchmark/decoy_host_tools.md",
+            "score": 4
+          },
+          {
+            "source_id": "decoy_bootloader",
+            "title": "Synthetic Decoy: Manufacturing Bootloader Notes",
+            "source_ref": "fcgc://synthetic-benchmark/decoy_bootloader.md",
+            "score": 3
+          }
+        ],
+        "scope": null
+      },
+      "fetched_source_ids": [
+        "decoy_bootloader"
+      ],
+      "new_rule_ids": [
+        "ev-b49c1f98f30d95a4"
+      ],
+      "errors": [],
+      "search_calls": 1,
+      "fetch_calls": 1,
+      "duration_ms": 3.892582841217518
+    }
+  ],
+  "documents": [
+    {
+      "source_id": "api_returns",
+      "title": "Synthetic FCG: API Results and Calls",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+      "content": "# Synthetic FCG: API Results and Calls\n\nDataset version 2.0.0. Illustrative research rules only; these are not official WD requirements.\nScope: C firmware in the synthetic benchmark. \"Status\" means the integer outcome returned\nby a fallible operation; zero means success unless a local API declaration says otherwise.\n\n1. [SFCG-001] After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access.\n2. [SFCG-002] Firmware must inspect the result of `flash_write`, including a short\n   write, before treating the bytes as stored.\n3. [SFCG-003] A negative result from `adc_read` is an error and must not be cast into\n   a sample value.\n4. [SFCG-004] When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing.\n5. [SFCG-005] A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call.\n6. [SFCG-006] Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted.\n\nThe exceptions in items 5 and 6 do not exempt `sensor_open`, `flash_write`, or\n`adc_read` from their stated result-handling obligations. See `error_flow.md` for\npropagation after a failed call.\n",
+      "document_version": null
+    },
+    {
+      "source_id": "decoy_host_tools",
+      "title": "Synthetic Decoy: Host Diagnostics Guide",
+      "source_ref": "fcgc://synthetic-benchmark/decoy_host_tools.md",
+      "content": "# Synthetic Decoy: Host Diagnostics Guide\n\nDataset version 2.0.0. Illustrative research material only; not official WD requirements.\nScope: host-side C++ calibration tools, not firmware. The host program checks a\nsensor_open-like return, validates a pointer, and closes a file handle after an\nexception. These similar terms are deliberately present to challenge retrieval.\nNo requirement in this document applies to the benchmark's C firmware cases.\n",
+      "document_version": null
+    },
+    {
+      "source_id": "pointers",
+      "title": "Synthetic FCG: Pointer Contracts",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+      "content": "# Synthetic FCG: Pointer Contracts\n\nDataset version 2.0.0. Illustrative research rules only; not official WD requirements.\nThe following table applies to C firmware entry points receiving caller-owned memory.\n\n| Rule | Requirement | Scope |\n| --- | --- | --- |\n| [SFCG-013] | Validate a required caller pointer before its first dereference. | Any entry point |\n| [SFCG-014] | Reject a null output pointer before writing through it. | Output parameters |\n| [SFCG-015] | Validate an externally supplied peripheral address against the allowed mapped range before MMIO access. | External addresses |\n| [SFCG-016] | A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null. | Length-bearing buffers |\n| [SFCG-017] | Validate callback context before dereferencing it inside the callback. | Indirect callbacks |\n| [SFCG-018] | Reject overlapping source and destination ranges when the operation contract forbids aliasing. | Copy without overlap support |\n\nThe zero-length exception in [SFCG-016] is intentional. It does not relax\n[SFCG-013] for a separately required configuration pointer.\n",
+      "document_version": null
+    },
+    {
+      "source_id": "initialization",
+      "title": "Synthetic FCG: Initialization and State",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+      "content": "# Synthetic FCG: Initialization and State\n\nDataset version 2.0.0. Illustrative research rules only; not official WD requirements.\nThese statements apply to stateful firmware modules even when their APIs have\nunfamiliar names or are hidden behind macros.\nFor the benchmark `State` module, the documented default threshold is 7.\n\n1. [SFCG-025] Initialize the state object before reading fields that depend on\n   initialization.\n2. [SFCG-026] Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source.\n3. [SFCG-027] If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow.\n4. [SFCG-028] After a device reset, restore required configuration before normal\n   operations resume.\n5. [SFCG-029] Apply a documented default configuration when the caller supplies no\n   override.\n6. [SFCG-030] Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence.\n\nAn object with static zero initialization may satisfy [SFCG-025] if zero is its\ndocumented initial state. This exception does not satisfy [SFCG-029] when the\ndocumented default is nonzero.\n",
+      "document_version": null
+    },
+    {
+      "source_id": "decoy_bootloader",
+      "title": "Synthetic Decoy: Manufacturing Bootloader Notes",
+      "source_ref": "fcgc://synthetic-benchmark/decoy_bootloader.md",
+      "content": "# Synthetic Decoy: Manufacturing Bootloader Notes\n\nDataset version 2.0.0. Illustrative research material only; not official WD requirements.\nScope: a separate manufacturing bootloader that is not part of this benchmark.\nIts buffer length, resource cleanup, initialization order, and flash_write\nsemantics differ from the application firmware contracts. It has a special\nunaligned transfer mode. Similar words here must not be treated as applicability.\n",
+      "document_version": null
+    }
+  ],
+  "selection": {
+    "config_version": "p2-reducer-v1",
+    "candidate_rules": [
+      {
+        "evidence_id": "ev-84aee31b3b3ae48c",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-001",
+        "heading_lineage": [
+          "Synthetic FCG: API Results and Calls"
+        ],
+        "normative_statement": "After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access.",
+        "normative_span": {
+          "start": 333,
+          "end": 454,
+          "start_line": 7,
+          "end_line": 8,
+          "excerpt": "After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 333,
+              "end": 362,
+              "start_line": 7,
+              "end_line": 7,
+              "excerpt": "After `sensor_open` succeeds,"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-60ca3dc6a6231fcb",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-002",
+        "heading_lineage": [
+          "Synthetic FCG: API Results and Calls"
+        ],
+        "normative_statement": "Firmware must inspect the result of `flash_write`, including a short\n   write, before treating the bytes as stored.",
+        "normative_span": {
+          "start": 469,
+          "end": 584,
+          "start_line": 9,
+          "end_line": 10,
+          "excerpt": "Firmware must inspect the result of `flash_write`, including a short\n   write, before treating the bytes as stored."
+        },
+        "conditions": [],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-90dc6775ae9dd59b",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-003",
+        "heading_lineage": [
+          "Synthetic FCG: API Results and Calls"
+        ],
+        "normative_statement": "A negative result from `adc_read` is an error and must not be cast into\n   a sample value.",
+        "normative_span": {
+          "start": 599,
+          "end": 689,
+          "start_line": 11,
+          "end_line": 12,
+          "excerpt": "A negative result from `adc_read` is an error and must not be cast into\n   a sample value."
+        },
+        "conditions": [],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "prohibition",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-6347fde46b77472a",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-004",
+        "heading_lineage": [
+          "Synthetic FCG: API Results and Calls"
+        ],
+        "normative_statement": "When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing.",
+        "normative_span": {
+          "start": 704,
+          "end": 848,
+          "start_line": 13,
+          "end_line": 14,
+          "excerpt": "When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 704,
+              "end": 793,
+              "start_line": 13,
+              "end_line": 14,
+              "excerpt": "When a callback is invoked through a function pointer and its contract\n   returns status,"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-8e28d6fabd1c90bd",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-005",
+        "heading_lineage": [
+          "Synthetic FCG: API Results and Calls"
+        ],
+        "normative_statement": "A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call.",
+        "normative_span": {
+          "start": 863,
+          "end": 989,
+          "start_line": 15,
+          "end_line": 16,
+          "excerpt": "A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call."
+        },
+        "conditions": [],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "prohibition",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-8a166c47a595d4d6",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-006",
+        "heading_lineage": [
+          "Synthetic FCG: API Results and Calls"
+        ],
+        "normative_statement": "Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted.",
+        "normative_span": {
+          "start": 1004,
+          "end": 1136,
+          "start_line": 17,
+          "end_line": 18,
+          "excerpt": "Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 1069,
+              "end": 1135,
+              "start_line": 17,
+              "end_line": 18,
+              "excerpt": "only\n   when the caller does not depend on the log being persisted"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "conditional_permission",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-c2d9abdf308b49a9",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-013",
+        "heading_lineage": [
+          "Synthetic FCG: Pointer Contracts"
+        ],
+        "normative_statement": "Validate a required caller pointer before its first dereference.",
+        "normative_span": {
+          "start": 276,
+          "end": 340,
+          "start_line": 8,
+          "end_line": 8,
+          "excerpt": "Validate a required caller pointer before its first dereference."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 343,
+              "end": 358,
+              "start_line": 8,
+              "end_line": 8,
+              "excerpt": "Any entry point"
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "kind": "exception",
+            "span": {
+              "start": 1050,
+              "end": 1127,
+              "start_line": 15,
+              "end_line": 16,
+              "excerpt": "It does not relax\n[SFCG-013] for a separately required configuration pointer."
+            }
+          }
+        ],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-5efa3c397e9e615c",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-014",
+        "heading_lineage": [
+          "Synthetic FCG: Pointer Contracts"
+        ],
+        "normative_statement": "Reject a null output pointer before writing through it.",
+        "normative_span": {
+          "start": 376,
+          "end": 431,
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt": "Reject a null output pointer before writing through it."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 434,
+              "end": 451,
+              "start_line": 9,
+              "end_line": 9,
+              "excerpt": "Output parameters"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "prohibition",
+        "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-d73116c7ee06f742",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-015",
+        "heading_lineage": [
+          "Synthetic FCG: Pointer Contracts"
+        ],
+        "normative_statement": "Validate an externally supplied peripheral address against the allowed mapped range before MMIO access.",
+        "normative_span": {
+          "start": 469,
+          "end": 572,
+          "start_line": 10,
+          "end_line": 10,
+          "excerpt": "Validate an externally supplied peripheral address against the allowed mapped range before MMIO access."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 575,
+              "end": 593,
+              "start_line": 10,
+              "end_line": 10,
+              "excerpt": "External addresses"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-2c814e4f9c7d8cb9",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-016",
+        "heading_lineage": [
+          "Synthetic FCG: Pointer Contracts"
+        ],
+        "normative_statement": "A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null.",
+        "normative_span": {
+          "start": 611,
+          "end": 713,
+          "start_line": 11,
+          "end_line": 11,
+          "excerpt": "A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 716,
+              "end": 738,
+              "start_line": 11,
+              "end_line": 11,
+              "excerpt": "Length-bearing buffers"
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "kind": "exception",
+            "span": {
+              "start": 994,
+              "end": 1049,
+              "start_line": 15,
+              "end_line": 15,
+              "excerpt": "The zero-length exception in [SFCG-016] is intentional."
+            }
+          }
+        ],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-183684ad33febd3a",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-017",
+        "heading_lineage": [
+          "Synthetic FCG: Pointer Contracts"
+        ],
+        "normative_statement": "Validate callback context before dereferencing it inside the callback.",
+        "normative_span": {
+          "start": 756,
+          "end": 826,
+          "start_line": 12,
+          "end_line": 12,
+          "excerpt": "Validate callback context before dereferencing it inside the callback."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 829,
+              "end": 847,
+              "start_line": 12,
+              "end_line": 12,
+              "excerpt": "Indirect callbacks"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-ff82dff57fc77a62",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-018",
+        "heading_lineage": [
+          "Synthetic FCG: Pointer Contracts"
+        ],
+        "normative_statement": "Reject overlapping source and destination ranges when the operation contract forbids aliasing.",
+        "normative_span": {
+          "start": 865,
+          "end": 959,
+          "start_line": 13,
+          "end_line": 13,
+          "excerpt": "Reject overlapping source and destination ranges when the operation contract forbids aliasing."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 962,
+              "end": 990,
+              "start_line": 13,
+              "end_line": 13,
+              "excerpt": "Copy without overlap support"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "prohibition",
+        "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-5ad585777e5a3250",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-025",
+        "heading_lineage": [
+          "Synthetic FCG: Initialization and State"
+        ],
+        "normative_statement": "Initialize the state object before reading fields that depend on\n   initialization.",
+        "normative_span": {
+          "start": 342,
+          "end": 425,
+          "start_line": 8,
+          "end_line": 9,
+          "excerpt": "Initialize the state object before reading fields that depend on\n   initialization."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 254,
+              "end": 326,
+              "start_line": 6,
+              "end_line": 6,
+              "excerpt": "For the benchmark `State` module, the documented default threshold is 7."
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "kind": "exception",
+            "span": {
+              "start": 997,
+              "end": 1102,
+              "start_line": 21,
+              "end_line": 22,
+              "excerpt": "An object with static zero initialization may satisfy [SFCG-025] if zero is its\ndocumented initial state."
+            }
+          }
+        ],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-6a675c6ab8018623",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-026",
+        "heading_lineage": [
+          "Synthetic FCG: Initialization and State"
+        ],
+        "normative_statement": "Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source.",
+        "normative_span": {
+          "start": 440,
+          "end": 543,
+          "start_line": 10,
+          "end_line": 11,
+          "excerpt": "Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source."
+        },
+        "conditions": [],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-0fb6d56509598453",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-027",
+        "heading_lineage": [
+          "Synthetic FCG: Initialization and State"
+        ],
+        "normative_statement": "If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow.",
+        "normative_span": {
+          "start": 558,
+          "end": 664,
+          "start_line": 12,
+          "end_line": 13,
+          "excerpt": "If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 558,
+              "end": 592,
+              "start_line": 12,
+              "end_line": 12,
+              "excerpt": "If initialization reports failure,"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-40b575f0550b7485",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-028",
+        "heading_lineage": [
+          "Synthetic FCG: Initialization and State"
+        ],
+        "normative_statement": "After a device reset, restore required configuration before normal\n   operations resume.",
+        "normative_span": {
+          "start": 679,
+          "end": 767,
+          "start_line": 14,
+          "end_line": 15,
+          "excerpt": "After a device reset, restore required configuration before normal\n   operations resume."
+        },
+        "conditions": [
+          {
+            "kind": "condition",
+            "span": {
+              "start": 679,
+              "end": 700,
+              "start_line": 14,
+              "end_line": 14,
+              "excerpt": "After a device reset,"
+            }
+          }
+        ],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-134c0de317d84060",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-029",
+        "heading_lineage": [
+          "Synthetic FCG: Initialization and State"
+        ],
+        "normative_statement": "Apply a documented default configuration when the caller supplies no\n   override.",
+        "normative_span": {
+          "start": 782,
+          "end": 863,
+          "start_line": 16,
+          "end_line": 17,
+          "excerpt": "Apply a documented default configuration when the caller supplies no\n   override."
+        },
+        "conditions": [],
+        "exceptions": [
+          {
+            "kind": "exception",
+            "span": {
+              "start": 1103,
+              "end": 1185,
+              "start_line": 22,
+              "end_line": 23,
+              "excerpt": "This exception does not satisfy [SFCG-029] when the\ndocumented default is nonzero."
+            }
+          }
+        ],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-60811f5a11d1bbc9",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "document_version": null,
+        "explicit_rule_id": "SFCG-030",
+        "heading_lineage": [
+          "Synthetic FCG: Initialization and State"
+        ],
+        "normative_statement": "Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence.",
+        "normative_span": {
+          "start": 878,
+          "end": 995,
+          "start_line": 18,
+          "end_line": 19,
+          "excerpt": "Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence."
+        },
+        "conditions": [],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "mandatory",
+        "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-b49c1f98f30d95a4",
+        "source_id": "decoy_bootloader",
+        "source_ref": "fcgc://synthetic-benchmark/decoy_bootloader.md",
+        "document_version": null,
+        "explicit_rule_id": null,
+        "heading_lineage": [
+          "Synthetic Decoy: Manufacturing Bootloader Notes"
+        ],
+        "normative_statement": "Similar words here must not be treated as applicability.",
+        "normative_span": {
+          "start": 395,
+          "end": 451,
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt": "Similar words here must not be treated as applicability."
+        },
+        "conditions": [],
+        "exceptions": [],
+        "supporting_definitions": [],
+        "dependencies": [],
+        "obligation_strength": "prohibition",
+        "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+        "ambiguity_status": "clear",
+        "ambiguity_notes": [],
+        "section_span": null,
+        "duplicate_of": null
+      }
+    ],
+    "decisions": [
+      {
+        "evidence_id": "ev-84aee31b3b3ae48c",
+        "rule_id": "SFCG-001",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "action": "include",
+        "reason_codes": [
+          "observed_api_match",
+          "feature_category_match",
+          "component_match",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 10,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-60ca3dc6a6231fcb",
+        "rule_id": "SFCG-002",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "action": "exclude",
+        "reason_codes": [
+          "feature_category_match",
+          "specific_api_binding_unobserved"
+        ],
+        "explanation": "The rule binds a different named API absent from parsed calls; no macro or indirect-call uncertainty was observed. Category matches remain logged but do not override the explicit API binding.",
+        "relevance_score": 2,
+        "preserved_for_uncertainty": false,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-90dc6775ae9dd59b",
+        "rule_id": "SFCG-003",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "action": "exclude",
+        "reason_codes": [
+          "feature_category_match",
+          "specific_api_binding_unobserved"
+        ],
+        "explanation": "The rule binds a different named API absent from parsed calls; no macro or indirect-call uncertainty was observed. Category matches remain logged but do not override the explicit API binding.",
+        "relevance_score": 4,
+        "preserved_for_uncertainty": false,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-6347fde46b77472a",
+        "rule_id": "SFCG-004",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 5,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-8e28d6fabd1c90bd",
+        "rule_id": "SFCG-005",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 5,
+        "preserved_for_uncertainty": false,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-8a166c47a595d4d6",
+        "rule_id": "SFCG-006",
+        "source_id": "api_returns",
+        "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 5,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-c2d9abdf308b49a9",
+        "rule_id": "SFCG-013",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-5efa3c397e9e615c",
+        "rule_id": "SFCG-014",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-d73116c7ee06f742",
+        "rule_id": "SFCG-015",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-2c814e4f9c7d8cb9",
+        "rule_id": "SFCG-016",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-183684ad33febd3a",
+        "rule_id": "SFCG-017",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-ff82dff57fc77a62",
+        "rule_id": "SFCG-018",
+        "source_id": "pointers",
+        "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-5ad585777e5a3250",
+        "rule_id": "SFCG-025",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-6a675c6ab8018623",
+        "rule_id": "SFCG-026",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "component_applicability_unresolved",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 5,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-0fb6d56509598453",
+        "rule_id": "SFCG-027",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 5,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-40b575f0550b7485",
+        "rule_id": "SFCG-028",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-134c0de317d84060",
+        "rule_id": "SFCG-029",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-60811f5a11d1bbc9",
+        "rule_id": "SFCG-030",
+        "source_id": "initialization",
+        "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+        "action": "include",
+        "reason_codes": [
+          "feature_category_match",
+          "general_rule_candidate"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 3,
+        "preserved_for_uncertainty": false,
+        "duplicate_of": null
+      },
+      {
+        "evidence_id": "ev-b49c1f98f30d95a4",
+        "rule_id": null,
+        "source_id": "decoy_bootloader",
+        "source_ref": "fcgc://synthetic-benchmark/decoy_bootloader.md",
+        "action": "include",
+        "reason_codes": [
+          "component_applicability_unresolved",
+          "general_rule_candidate",
+          "preserve_uncertain_applicability",
+          "low_score_retained_without_inapplicability_proof"
+        ],
+        "explanation": "Retained using observed API, category, component, or general-rule signals; conditions and exceptions remain unresolved unless explicit evidence settles them.",
+        "relevance_score": 1,
+        "preserved_for_uncertainty": true,
+        "duplicate_of": null
+      }
+    ],
+    "selected_ids": [
+      "ev-84aee31b3b3ae48c",
+      "ev-6347fde46b77472a",
+      "ev-8e28d6fabd1c90bd",
+      "ev-8a166c47a595d4d6",
+      "ev-c2d9abdf308b49a9",
+      "ev-5efa3c397e9e615c",
+      "ev-d73116c7ee06f742",
+      "ev-2c814e4f9c7d8cb9",
+      "ev-183684ad33febd3a",
+      "ev-ff82dff57fc77a62",
+      "ev-5ad585777e5a3250",
+      "ev-6a675c6ab8018623",
+      "ev-0fb6d56509598453",
+      "ev-40b575f0550b7485",
+      "ev-134c0de317d84060",
+      "ev-60811f5a11d1bbc9",
+      "ev-b49c1f98f30d95a4"
+    ],
+    "excluded_ids": [
+      "ev-60ca3dc6a6231fcb",
+      "ev-90dc6775ae9dd59b"
+    ],
+    "unresolved_dependencies": [],
+    "warnings": []
+  },
+  "checker_request": {
+    "strategy": "p3",
+    "firmware": {
+      "case_id": "C001",
+      "source_name": "C001.c",
+      "content": "#include <stddef.h>\nint sensor_open(void **handle);\nint sensor_configure(void *handle);\nint boot_sensor(void) {\n    void *handle = NULL;\n    int rc = sensor_open(&handle);\n    if (rc != 0) return rc;\n    return sensor_configure(handle);\n}\n",
+      "sha256": "e5608fb93c447b2e90e8dab64d58631c61b5995b27eac9412ebf1ec3edd2a4fc"
+    },
+    "location": {
+      "source_name": "C001.c",
+      "sha256": "e5608fb93c447b2e90e8dab64d58631c61b5995b27eac9412ebf1ec3edd2a4fc",
+      "line_count": 9
+    },
+    "evidence": [
+      {
+        "rule": {
+          "evidence_id": "ev-84aee31b3b3ae48c",
+          "source_id": "api_returns",
+          "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-001",
+          "heading_lineage": [
+            "Synthetic FCG: API Results and Calls"
+          ],
+          "normative_statement": "After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access.",
+          "normative_span": {
+            "start": 333,
+            "end": 454,
+            "start_line": 7,
+            "end_line": 8,
+            "excerpt": "After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 333,
+                "end": 362,
+                "start_line": 7,
+                "end_line": 7,
+                "excerpt": "After `sensor_open` succeeds,"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 333,
+            "end": 454,
+            "start_line": 7,
+            "end_line": 8,
+            "excerpt": "After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-001 @ api_returns:L7; Synthetic FCG: API Results and Calls]\n[Rule] After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-6347fde46b77472a",
+          "source_id": "api_returns",
+          "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-004",
+          "heading_lineage": [
+            "Synthetic FCG: API Results and Calls"
+          ],
+          "normative_statement": "When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing.",
+          "normative_span": {
+            "start": 704,
+            "end": 848,
+            "start_line": 13,
+            "end_line": 14,
+            "excerpt": "When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 704,
+                "end": 793,
+                "start_line": 13,
+                "end_line": 14,
+                "excerpt": "When a callback is invoked through a function pointer and its contract\n   returns status,"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 704,
+            "end": 848,
+            "start_line": 13,
+            "end_line": 14,
+            "excerpt": "When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-004 @ api_returns:L13; Synthetic FCG: API Results and Calls]\n[Rule] When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-8e28d6fabd1c90bd",
+          "source_id": "api_returns",
+          "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-005",
+          "heading_lineage": [
+            "Synthetic FCG: API Results and Calls"
+          ],
+          "normative_statement": "A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call.",
+          "normative_span": {
+            "start": 863,
+            "end": 989,
+            "start_line": 15,
+            "end_line": 16,
+            "excerpt": "A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call."
+          },
+          "conditions": [],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "prohibition",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 863,
+            "end": 989,
+            "start_line": 15,
+            "end_line": 16,
+            "excerpt": "A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-005 @ api_returns:L15; Synthetic FCG: API Results and Calls]\n[Rule] A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-8a166c47a595d4d6",
+          "source_id": "api_returns",
+          "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-006",
+          "heading_lineage": [
+            "Synthetic FCG: API Results and Calls"
+          ],
+          "normative_statement": "Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted.",
+          "normative_span": {
+            "start": 1004,
+            "end": 1136,
+            "start_line": 17,
+            "end_line": 18,
+            "excerpt": "Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 1069,
+                "end": 1135,
+                "start_line": 17,
+                "end_line": 18,
+                "excerpt": "only\n   when the caller does not depend on the log being persisted"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "conditional_permission",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 1004,
+            "end": 1136,
+            "start_line": 17,
+            "end_line": 18,
+            "excerpt": "Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-006 @ api_returns:L17; Synthetic FCG: API Results and Calls]\n[Rule] Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-c2d9abdf308b49a9",
+          "source_id": "pointers",
+          "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-013",
+          "heading_lineage": [
+            "Synthetic FCG: Pointer Contracts"
+          ],
+          "normative_statement": "Validate a required caller pointer before its first dereference.",
+          "normative_span": {
+            "start": 276,
+            "end": 340,
+            "start_line": 8,
+            "end_line": 8,
+            "excerpt": "Validate a required caller pointer before its first dereference."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 343,
+                "end": 358,
+                "start_line": 8,
+                "end_line": 8,
+                "excerpt": "Any entry point"
+              }
+            }
+          ],
+          "exceptions": [
+            {
+              "kind": "exception",
+              "span": {
+                "start": 1050,
+                "end": 1127,
+                "start_line": 15,
+                "end_line": 16,
+                "excerpt": "It does not relax\n[SFCG-013] for a separately required configuration pointer."
+              }
+            }
+          ],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 276,
+            "end": 340,
+            "start_line": 8,
+            "end_line": 8,
+            "excerpt": "Validate a required caller pointer before its first dereference."
+          },
+          {
+            "start": 343,
+            "end": 358,
+            "start_line": 8,
+            "end_line": 8,
+            "excerpt": "Any entry point"
+          },
+          {
+            "start": 1050,
+            "end": 1127,
+            "start_line": 15,
+            "end_line": 16,
+            "excerpt": "It does not relax\n[SFCG-013] for a separately required configuration pointer."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-013 @ pointers:L8; Synthetic FCG: Pointer Contracts]\n[Rule] Validate a required caller pointer before its first dereference.\n[Condition] Any entry point\n[Exception] It does not relax\n[SFCG-013] for a separately required configuration pointer."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-5efa3c397e9e615c",
+          "source_id": "pointers",
+          "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-014",
+          "heading_lineage": [
+            "Synthetic FCG: Pointer Contracts"
+          ],
+          "normative_statement": "Reject a null output pointer before writing through it.",
+          "normative_span": {
+            "start": 376,
+            "end": 431,
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt": "Reject a null output pointer before writing through it."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 434,
+                "end": 451,
+                "start_line": 9,
+                "end_line": 9,
+                "excerpt": "Output parameters"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "prohibition",
+          "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 376,
+            "end": 431,
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt": "Reject a null output pointer before writing through it."
+          },
+          {
+            "start": 434,
+            "end": 451,
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt": "Output parameters"
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-014 @ pointers:L9; Synthetic FCG: Pointer Contracts]\n[Rule] Reject a null output pointer before writing through it.\n[Condition] Output parameters"
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-d73116c7ee06f742",
+          "source_id": "pointers",
+          "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-015",
+          "heading_lineage": [
+            "Synthetic FCG: Pointer Contracts"
+          ],
+          "normative_statement": "Validate an externally supplied peripheral address against the allowed mapped range before MMIO access.",
+          "normative_span": {
+            "start": 469,
+            "end": 572,
+            "start_line": 10,
+            "end_line": 10,
+            "excerpt": "Validate an externally supplied peripheral address against the allowed mapped range before MMIO access."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 575,
+                "end": 593,
+                "start_line": 10,
+                "end_line": 10,
+                "excerpt": "External addresses"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 469,
+            "end": 572,
+            "start_line": 10,
+            "end_line": 10,
+            "excerpt": "Validate an externally supplied peripheral address against the allowed mapped range before MMIO access."
+          },
+          {
+            "start": 575,
+            "end": 593,
+            "start_line": 10,
+            "end_line": 10,
+            "excerpt": "External addresses"
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-015 @ pointers:L10; Synthetic FCG: Pointer Contracts]\n[Rule] Validate an externally supplied peripheral address against the allowed mapped range before MMIO access.\n[Condition] External addresses"
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-2c814e4f9c7d8cb9",
+          "source_id": "pointers",
+          "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-016",
+          "heading_lineage": [
+            "Synthetic FCG: Pointer Contracts"
+          ],
+          "normative_statement": "A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null.",
+          "normative_span": {
+            "start": 611,
+            "end": 713,
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt": "A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 716,
+                "end": 738,
+                "start_line": 11,
+                "end_line": 11,
+                "excerpt": "Length-bearing buffers"
+              }
+            }
+          ],
+          "exceptions": [
+            {
+              "kind": "exception",
+              "span": {
+                "start": 994,
+                "end": 1049,
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt": "The zero-length exception in [SFCG-016] is intentional."
+              }
+            }
+          ],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 611,
+            "end": 713,
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt": "A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null."
+          },
+          {
+            "start": 716,
+            "end": 738,
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt": "Length-bearing buffers"
+          },
+          {
+            "start": 994,
+            "end": 1049,
+            "start_line": 15,
+            "end_line": 15,
+            "excerpt": "The zero-length exception in [SFCG-016] is intentional."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-016 @ pointers:L11; Synthetic FCG: Pointer Contracts]\n[Rule] A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null.\n[Condition] Length-bearing buffers\n[Exception] The zero-length exception in [SFCG-016] is intentional."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-183684ad33febd3a",
+          "source_id": "pointers",
+          "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-017",
+          "heading_lineage": [
+            "Synthetic FCG: Pointer Contracts"
+          ],
+          "normative_statement": "Validate callback context before dereferencing it inside the callback.",
+          "normative_span": {
+            "start": 756,
+            "end": 826,
+            "start_line": 12,
+            "end_line": 12,
+            "excerpt": "Validate callback context before dereferencing it inside the callback."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 829,
+                "end": 847,
+                "start_line": 12,
+                "end_line": 12,
+                "excerpt": "Indirect callbacks"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 756,
+            "end": 826,
+            "start_line": 12,
+            "end_line": 12,
+            "excerpt": "Validate callback context before dereferencing it inside the callback."
+          },
+          {
+            "start": 829,
+            "end": 847,
+            "start_line": 12,
+            "end_line": 12,
+            "excerpt": "Indirect callbacks"
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-017 @ pointers:L12; Synthetic FCG: Pointer Contracts]\n[Rule] Validate callback context before dereferencing it inside the callback.\n[Condition] Indirect callbacks"
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-ff82dff57fc77a62",
+          "source_id": "pointers",
+          "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-018",
+          "heading_lineage": [
+            "Synthetic FCG: Pointer Contracts"
+          ],
+          "normative_statement": "Reject overlapping source and destination ranges when the operation contract forbids aliasing.",
+          "normative_span": {
+            "start": 865,
+            "end": 959,
+            "start_line": 13,
+            "end_line": 13,
+            "excerpt": "Reject overlapping source and destination ranges when the operation contract forbids aliasing."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 962,
+                "end": 990,
+                "start_line": 13,
+                "end_line": 13,
+                "excerpt": "Copy without overlap support"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "prohibition",
+          "extraction_method": "markdown-normalizer-v1:table_row:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 865,
+            "end": 959,
+            "start_line": 13,
+            "end_line": 13,
+            "excerpt": "Reject overlapping source and destination ranges when the operation contract forbids aliasing."
+          },
+          {
+            "start": 962,
+            "end": 990,
+            "start_line": 13,
+            "end_line": 13,
+            "excerpt": "Copy without overlap support"
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-018 @ pointers:L13; Synthetic FCG: Pointer Contracts]\n[Rule] Reject overlapping source and destination ranges when the operation contract forbids aliasing.\n[Condition] Copy without overlap support"
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-5ad585777e5a3250",
+          "source_id": "initialization",
+          "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-025",
+          "heading_lineage": [
+            "Synthetic FCG: Initialization and State"
+          ],
+          "normative_statement": "Initialize the state object before reading fields that depend on\n   initialization.",
+          "normative_span": {
+            "start": 342,
+            "end": 425,
+            "start_line": 8,
+            "end_line": 9,
+            "excerpt": "Initialize the state object before reading fields that depend on\n   initialization."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 254,
+                "end": 326,
+                "start_line": 6,
+                "end_line": 6,
+                "excerpt": "For the benchmark `State` module, the documented default threshold is 7."
+              }
+            }
+          ],
+          "exceptions": [
+            {
+              "kind": "exception",
+              "span": {
+                "start": 997,
+                "end": 1102,
+                "start_line": 21,
+                "end_line": 22,
+                "excerpt": "An object with static zero initialization may satisfy [SFCG-025] if zero is its\ndocumented initial state."
+              }
+            }
+          ],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 342,
+            "end": 425,
+            "start_line": 8,
+            "end_line": 9,
+            "excerpt": "Initialize the state object before reading fields that depend on\n   initialization."
+          },
+          {
+            "start": 254,
+            "end": 326,
+            "start_line": 6,
+            "end_line": 6,
+            "excerpt": "For the benchmark `State` module, the documented default threshold is 7."
+          },
+          {
+            "start": 997,
+            "end": 1102,
+            "start_line": 21,
+            "end_line": 22,
+            "excerpt": "An object with static zero initialization may satisfy [SFCG-025] if zero is its\ndocumented initial state."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-025 @ initialization:L8; Synthetic FCG: Initialization and State]\n[Rule] Initialize the state object before reading fields that depend on\n   initialization.\n[Condition] For the benchmark `State` module, the documented default threshold is 7.\n[Exception] An object with static zero initialization may satisfy [SFCG-025] if zero is its\ndocumented initial state."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-6a675c6ab8018623",
+          "source_id": "initialization",
+          "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-026",
+          "heading_lineage": [
+            "Synthetic FCG: Initialization and State"
+          ],
+          "normative_statement": "Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source.",
+          "normative_span": {
+            "start": 440,
+            "end": 543,
+            "start_line": 10,
+            "end_line": 11,
+            "excerpt": "Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source."
+          },
+          "conditions": [],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 440,
+            "end": 543,
+            "start_line": 10,
+            "end_line": 11,
+            "excerpt": "Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-026 @ initialization:L10; Synthetic FCG: Initialization and State]\n[Rule] Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-0fb6d56509598453",
+          "source_id": "initialization",
+          "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-027",
+          "heading_lineage": [
+            "Synthetic FCG: Initialization and State"
+          ],
+          "normative_statement": "If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow.",
+          "normative_span": {
+            "start": 558,
+            "end": 664,
+            "start_line": 12,
+            "end_line": 13,
+            "excerpt": "If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 558,
+                "end": 592,
+                "start_line": 12,
+                "end_line": 12,
+                "excerpt": "If initialization reports failure,"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 558,
+            "end": 664,
+            "start_line": 12,
+            "end_line": 13,
+            "excerpt": "If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-027 @ initialization:L12; Synthetic FCG: Initialization and State]\n[Rule] If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-40b575f0550b7485",
+          "source_id": "initialization",
+          "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-028",
+          "heading_lineage": [
+            "Synthetic FCG: Initialization and State"
+          ],
+          "normative_statement": "After a device reset, restore required configuration before normal\n   operations resume.",
+          "normative_span": {
+            "start": 679,
+            "end": 767,
+            "start_line": 14,
+            "end_line": 15,
+            "excerpt": "After a device reset, restore required configuration before normal\n   operations resume."
+          },
+          "conditions": [
+            {
+              "kind": "condition",
+              "span": {
+                "start": 679,
+                "end": 700,
+                "start_line": 14,
+                "end_line": 14,
+                "excerpt": "After a device reset,"
+              }
+            }
+          ],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 679,
+            "end": 767,
+            "start_line": 14,
+            "end_line": 15,
+            "excerpt": "After a device reset, restore required configuration before normal\n   operations resume."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-028 @ initialization:L14; Synthetic FCG: Initialization and State]\n[Rule] After a device reset, restore required configuration before normal\n   operations resume."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-134c0de317d84060",
+          "source_id": "initialization",
+          "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-029",
+          "heading_lineage": [
+            "Synthetic FCG: Initialization and State"
+          ],
+          "normative_statement": "Apply a documented default configuration when the caller supplies no\n   override.",
+          "normative_span": {
+            "start": 782,
+            "end": 863,
+            "start_line": 16,
+            "end_line": 17,
+            "excerpt": "Apply a documented default configuration when the caller supplies no\n   override."
+          },
+          "conditions": [],
+          "exceptions": [
+            {
+              "kind": "exception",
+              "span": {
+                "start": 1103,
+                "end": 1185,
+                "start_line": 22,
+                "end_line": 23,
+                "excerpt": "This exception does not satisfy [SFCG-029] when the\ndocumented default is nonzero."
+              }
+            }
+          ],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 782,
+            "end": 863,
+            "start_line": 16,
+            "end_line": 17,
+            "excerpt": "Apply a documented default configuration when the caller supplies no\n   override."
+          },
+          {
+            "start": 1103,
+            "end": 1185,
+            "start_line": 22,
+            "end_line": 23,
+            "excerpt": "This exception does not satisfy [SFCG-029] when the\ndocumented default is nonzero."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-029 @ initialization:L16; Synthetic FCG: Initialization and State]\n[Rule] Apply a documented default configuration when the caller supplies no\n   override.\n[Exception] This exception does not satisfy [SFCG-029] when the\ndocumented default is nonzero."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-60811f5a11d1bbc9",
+          "source_id": "initialization",
+          "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+          "document_version": null,
+          "explicit_rule_id": "SFCG-030",
+          "heading_lineage": [
+            "Synthetic FCG: Initialization and State"
+          ],
+          "normative_statement": "Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence.",
+          "normative_span": {
+            "start": 878,
+            "end": 995,
+            "start_line": 18,
+            "end_line": 19,
+            "excerpt": "Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence."
+          },
+          "conditions": [],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "mandatory",
+          "extraction_method": "markdown-normalizer-v1:list_item:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 878,
+            "end": 995,
+            "start_line": 18,
+            "end_line": 19,
+            "excerpt": "Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[SFCG-030 @ initialization:L18; Synthetic FCG: Initialization and State]\n[Rule] Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence."
+      },
+      {
+        "rule": {
+          "evidence_id": "ev-b49c1f98f30d95a4",
+          "source_id": "decoy_bootloader",
+          "source_ref": "fcgc://synthetic-benchmark/decoy_bootloader.md",
+          "document_version": null,
+          "explicit_rule_id": null,
+          "heading_lineage": [
+            "Synthetic Decoy: Manufacturing Bootloader Notes"
+          ],
+          "normative_statement": "Similar words here must not be treated as applicability.",
+          "normative_span": {
+            "start": 395,
+            "end": 451,
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt": "Similar words here must not be treated as applicability."
+          },
+          "conditions": [],
+          "exceptions": [],
+          "supporting_definitions": [],
+          "dependencies": [],
+          "obligation_strength": "prohibition",
+          "extraction_method": "markdown-normalizer-v1:paragraph:sentence",
+          "ambiguity_status": "clear",
+          "ambiguity_notes": [],
+          "section_span": null,
+          "duplicate_of": null
+        },
+        "retained_spans": [
+          {
+            "start": 395,
+            "end": 451,
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt": "Similar words here must not be treated as applicability."
+          }
+        ],
+        "duplicate_source_refs": [],
+        "rendered_text": "[ev-b49c1f98f30d95a4 @ decoy_bootloader:L7; Synthetic Decoy: Manufacturing Bootloader Notes]\n[Rule] Similar words here must not be treated as applicability."
+      }
+    ],
+    "unresolved_sections": [],
+    "instructions_version": "checker-evidence-v1",
+    "instructions": "Evaluate only against the source-backed guideline evidence below. Treat conditions, exceptions, definitions, scope, and quantitative limits as part of each rule. Do not infer compliance from an absent rule or missing evidence. Return not_evaluated when evidence is incomplete or applicability is unresolved. Cite source IDs and exact source wording for any future finding.",
+    "warnings": [
+      "Sufficiency gate: ambiguous_applicability",
+      "Review applicability: SFCG-001, SFCG-004, SFCG-006, SFCG-013, SFCG-014, SFCG-015, SFCG-016, SFCG-017, SFCG-018, SFCG-025, SFCG-026, SFCG-027, SFCG-028, SFCG-029, ev-b49c1f98f30d95a4"
+    ],
+    "status": "incomplete_context",
+    "rendered_input": "Evaluate only against the source-backed guideline evidence below. Treat conditions, exceptions, definitions, scope, and quantitative limits as part of each rule. Do not infer compliance from an absent rule or missing evidence. Return not_evaluated when evidence is incomplete or applicability is unresolved. Cite source IDs and exact source wording for any future finding.\n\n[Firmware C001.c; sha256=e5608fb93c447b2e90e8dab64d58631c61b5995b27eac9412ebf1ec3edd2a4fc; lines=9]\n#include <stddef.h>\nint sensor_open(void **handle);\nint sensor_configure(void *handle);\nint boot_sensor(void) {\n    void *handle = NULL;\n    int rc = sensor_open(&handle);\n    if (rc != 0) return rc;\n    return sensor_configure(handle);\n}\n\n\n[Sources]\napi_returns: fcgc://synthetic-benchmark/api_returns.md\ndecoy_bootloader: fcgc://synthetic-benchmark/decoy_bootloader.md\ninitialization: fcgc://synthetic-benchmark/initialization.md\npointers: fcgc://synthetic-benchmark/pointers.md\n\n[SFCG-001 @ api_returns:L7; Synthetic FCG: API Results and Calls]\n[Rule] After `sensor_open` succeeds, the returned handle may be used; a failed\n   open must be handled before any handle access.\n\n[SFCG-004 @ api_returns:L13; Synthetic FCG: API Results and Calls]\n[Rule] When a callback is invoked through a function pointer and its contract\n   returns status, the caller must inspect that status before continuing.\n\n[SFCG-005 @ api_returns:L15; Synthetic FCG: API Results and Calls]\n[Rule] A call declared infallible in the local interface has no status to test;\n   do not invent a failure path solely for that call.\n\n[SFCG-006 @ api_returns:L17; Synthetic FCG: API Results and Calls]\n[Rule] Failure of a best-effort diagnostic log operation may be ignored only\n   when the caller does not depend on the log being persisted.\n\n[SFCG-013 @ pointers:L8; Synthetic FCG: Pointer Contracts]\n[Rule] Validate a required caller pointer before its first dereference.\n[Condition] Any entry point\n[Exception] It does not relax\n[SFCG-013] for a separately required configuration pointer.\n\n[SFCG-014 @ pointers:L9; Synthetic FCG: Pointer Contracts]\n[Rule] Reject a null output pointer before writing through it.\n[Condition] Output parameters\n\n[SFCG-015 @ pointers:L10; Synthetic FCG: Pointer Contracts]\n[Rule] Validate an externally supplied peripheral address against the allowed mapped range before MMIO access.\n[Condition] External addresses\n\n[SFCG-016 @ pointers:L11; Synthetic FCG: Pointer Contracts]\n[Rule] A null buffer is permitted when its length is zero; for a positive length the buffer must be non-null.\n[Condition] Length-bearing buffers\n[Exception] The zero-length exception in [SFCG-016] is intentional.\n\n[SFCG-017 @ pointers:L12; Synthetic FCG: Pointer Contracts]\n[Rule] Validate callback context before dereferencing it inside the callback.\n[Condition] Indirect callbacks\n\n[SFCG-018 @ pointers:L13; Synthetic FCG: Pointer Contracts]\n[Rule] Reject overlapping source and destination ranges when the operation contract forbids aliasing.\n[Condition] Copy without overlap support\n\n[SFCG-025 @ initialization:L8; Synthetic FCG: Initialization and State]\n[Rule] Initialize the state object before reading fields that depend on\n   initialization.\n[Condition] For the benchmark `State` module, the documented default threshold is 7.\n[Exception] An object with static zero initialization may satisfy [SFCG-025] if zero is its\ndocumented initial state.\n\n[SFCG-026 @ initialization:L10; Synthetic FCG: Initialization and State]\n[Rule] Zero or explicitly set fields shared with an interrupt handler before\n   enabling its interrupt source.\n\n[SFCG-027 @ initialization:L12; Synthetic FCG: Initialization and State]\n[Rule] If initialization reports failure, prevent later use of the incomplete\n   object in the same control flow.\n\n[SFCG-028 @ initialization:L14; Synthetic FCG: Initialization and State]\n[Rule] After a device reset, restore required configuration before normal\n   operations resume.\n\n[SFCG-029 @ initialization:L16; Synthetic FCG: Initialization and State]\n[Rule] Apply a documented default configuration when the caller supplies no\n   override.\n[Exception] This exception does not satisfy [SFCG-029] when the\ndocumented default is nonzero.\n\n[SFCG-030 @ initialization:L18; Synthetic FCG: Initialization and State]\n[Rule] Program configuration fields before enabling the device; later changes\n   require a disable-and-reconfigure sequence.\n\n[ev-b49c1f98f30d95a4 @ decoy_bootloader:L7; Synthetic Decoy: Manufacturing Bootloader Notes]\n[Rule] Similar words here must not be treated as applicability.\n\n[Warnings]\nSufficiency gate: ambiguous_applicability\nReview applicability: SFCG-001, SFCG-004, SFCG-006, SFCG-013, SFCG-014, SFCG-015, SFCG-016, SFCG-017, SFCG-018, SFCG-025, SFCG-026, SFCG-027, SFCG-028, SFCG-029, ev-b49c1f98f30d95a4",
+    "tokenizer_version": "regex-word-punctuation-v1",
+    "estimated_tokens": 997
+  },
+  "status": "insufficient_evidence",
+  "stop_reason": "retrieval_round_limit",
+  "metrics": {
+    "search_calls": 3,
+    "fetch_calls": 5,
+    "additional_search_calls": 2,
+    "additional_fetch_calls": 2,
+    "candidate_sources": 5,
+    "initial_retrieval_tokens": 614,
+    "final_retrieval_tokens": 921,
+    "additional_retrieval_tokens": 307,
+    "initial_required_input_tokens": 654,
+    "final_required_input_tokens": 997,
+    "checker_input_token_delta": 343,
+    "initial_duration_ms": 9.336791932582855,
+    "additional_duration_ms": 7.397457957267761,
+    "total_duration_ms": 16.734249889850616,
+    "recovered_categories": [
+      "initialization"
+    ],
+    "resolved_dependencies": [],
+    "warning_signals_recovered": true
+  }
+}

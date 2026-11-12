@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      ".venv/bin/pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "........................................................................ [ 41%]\n........................................................................ [ 82%]\n..............................                                           [100%]\n174 passed in 6.77s\n"
+  },
+  {
+    "command": [
+      ".venv/bin/ruff",
+      "check",
+      "."
+    ],
+    "exit_code": 0,
+    "output": "All checks passed!\n"
+  },
+  {
+    "command": [
+      ".venv/bin/ruff",
+      "format",
+      "--check",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "output": "92 files already formatted\n"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "src",
+      "tests",
+      "scripts"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "output": "No broken requirements found.\nWARNING: The directory '/Users/marcuslim/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/release_checks.py"
+    ],
+    "exit_code": 0,
+    "output": "{\n  \"scanned_text_files\": 268,\n  \"secret_pattern_findings\": [],\n  \"invalid_json_or_toml\": [],\n  \"skipped_large_files\": [],\n  \"python\": \"3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 17.0.0 (clang-1700.0.13.3)]\",\n  \"static_type_check\": \"not configured in pyproject.toml\",\n  \"dependencies\": {\n    \"fcgc\": \"0.12.0\",\n    \"pydantic\": \"2.14.1\",\n    \"typer\": \"0.27.3\",\n    \"tree-sitter\": \"0.26.0\",\n    \"tree-sitter-c\": \"0.24.2\"\n  },\n  \"limitation\": \"Pattern scan only; dependency CVE scanning requires a current advisory database.\"\n}\n"
+  }
+]

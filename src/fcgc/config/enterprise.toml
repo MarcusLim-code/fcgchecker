@@ -1,0 +1,4 @@
+# Contract only. MCP retrieval raises NotImplementedError; Devin returns not_evaluated.
+retriever = "atlassian_mcp"
+checker = "devin"
+top_k = 3

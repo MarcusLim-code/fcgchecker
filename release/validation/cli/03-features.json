@@ -1,0 +1,1073 @@
+{
+  "extractor_version": "tree-sitter-c-v1",
+  "analysis_mode": "tree_sitter_ast",
+  "parser_has_error": false,
+  "observed": {
+    "function_definitions": [
+      "calibrate",
+      "deadline_passed",
+      "next_index",
+      "queue_sample",
+      "sensor_controller_init",
+      "sensor_controller_irq",
+      "sensor_controller_poll",
+      "sensor_controller_set_calibration",
+      "sensor_controller_start",
+      "sensor_controller_stats",
+      "sensor_controller_stop",
+      "sensor_controller_take"
+    ],
+    "calls": [
+      {
+        "callee": "next_index",
+        "effective_callee": "next_index",
+        "enclosing_function": "queue_sample",
+        "line": 95,
+        "assigned_to": "next",
+        "checked_lines": [
+          96
+        ],
+        "returned_directly": false,
+        "returned_later_lines": [],
+        "macro_expanded": false,
+        "possible_indirect_call": false
+      },
+      {
+        "callee": "calibrate",
+        "effective_callee": "calibrate",
+        "enclosing_function": "queue_sample",
+        "line": 101,
+        "assigned_to": null,
+        "checked_lines": [],
+        "returned_directly": false,
+        "returned_later_lines": [],
+        "macro_expanded": false,
+        "possible_indirect_call": false
+      },
+      {
+        "callee": "queue_sample",
+        "effective_callee": "queue_sample",
+        "enclosing_function": "sensor_controller_poll",
+        "line": 179,
+        "assigned_to": null,
+        "checked_lines": [],
+        "returned_directly": false,
+        "returned_later_lines": [],
+        "macro_expanded": false,
+        "possible_indirect_call": false
+      },
+      {
+        "callee": "deadline_passed",
+        "effective_callee": "deadline_passed",
+        "enclosing_function": "sensor_controller_poll",
+        "line": 185,
+        "assigned_to": null,
+        "checked_lines": [
+          185
+        ],
+        "returned_directly": false,
+        "returned_later_lines": [],
+        "macro_expanded": false,
+        "possible_indirect_call": false
+      },
+      {
+        "callee": "queue_sample",
+        "effective_callee": "queue_sample",
+        "enclosing_function": "sensor_controller_irq",
+        "line": 208,
+        "assigned_to": null,
+        "checked_lines": [],
+        "returned_directly": false,
+        "returned_later_lines": [],
+        "macro_expanded": false,
+        "possible_indirect_call": false
+      },
+      {
+        "callee": "next_index",
+        "effective_callee": "next_index",
+        "enclosing_function": "sensor_controller_take",
+        "line": 224,
+        "assigned_to": null,
+        "checked_lines": [],
+        "returned_directly": false,
+        "returned_later_lines": [],
+        "macro_expanded": false,
+        "possible_indirect_call": false
+      }
+    ],
+    "pointer_buffer_operations": [
+      {
+        "kind": "field_access",
+        "expression": "controller->gain_q8",
+        "line": 83
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->offset",
+        "line": 84
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->head",
+        "line": 95
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->tail",
+        "line": 96
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.dropped",
+        "line": 97
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 97
+      },
+      {
+        "kind": "pointer_expression",
+        "expression": "&controller->queue[controller->head]",
+        "line": 100
+      },
+      {
+        "kind": "subscript",
+        "expression": "controller->queue[controller->head]",
+        "line": 100
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->queue",
+        "line": 100
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->head",
+        "line": 100
+      },
+      {
+        "kind": "field_access",
+        "expression": "sample->value",
+        "line": 101
+      },
+      {
+        "kind": "field_access",
+        "expression": "sample->sequence",
+        "line": 102
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->sequence",
+        "line": 102
+      },
+      {
+        "kind": "field_access",
+        "expression": "sample->tick",
+        "line": 103
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->head",
+        "line": 104
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.completed",
+        "line": 105
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 105
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 113
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 114
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->irq_epoch",
+        "line": 115
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->sequence",
+        "line": 116
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->deadline",
+        "line": 117
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->offset",
+        "line": 118
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->gain_q8",
+        "line": 119
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->head",
+        "line": 120
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->tail",
+        "line": 121
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 122
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->control",
+        "line": 123
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 123
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_clear",
+        "line": 124
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 124
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->prescaler",
+        "line": 125
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 125
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->control",
+        "line": 126
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 126
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 131
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 134
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->deadline",
+        "line": 140
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 141
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_clear",
+        "line": 142
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 142
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->control",
+        "line": 147
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 147
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 153
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 156
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 159
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 162
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->status",
+        "line": 167
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 167
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.faults",
+        "line": 169
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 169
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 170
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.overruns",
+        "line": 174
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 174
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_clear",
+        "line": 175
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 175
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->data",
+        "line": 178
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 178
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_clear",
+        "line": 180
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 180
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 181
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->deadline",
+        "line": 185
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.timeouts",
+        "line": 186
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 186
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 187
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->control",
+        "line": 188
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 188
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 195
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_status",
+        "line": 198
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 198
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_clear",
+        "line": 199
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 199
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->irq_epoch",
+        "line": 200
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.faults",
+        "line": 203
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 203
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 204
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 206
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->data",
+        "line": 207
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 207
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 209
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats.overruns",
+        "line": 212
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 212
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->tail",
+        "line": 220
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->head",
+        "line": 220
+      },
+      {
+        "kind": "pointer_expression",
+        "expression": "*sample",
+        "line": 223
+      },
+      {
+        "kind": "subscript",
+        "expression": "controller->queue[controller->tail]",
+        "line": 223
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->queue",
+        "line": 223
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->tail",
+        "line": 223
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->tail",
+        "line": 224
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->tail",
+        "line": 224
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 233
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->offset",
+        "line": 236
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->gain_q8",
+        "line": 237
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->stats",
+        "line": 245
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 249
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->control",
+        "line": 252
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 252
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers->irq_clear",
+        "line": 253
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->registers",
+        "line": 253
+      },
+      {
+        "kind": "field_access",
+        "expression": "controller->state",
+        "line": 254
+      }
+    ],
+    "control_flow": [
+      {
+        "kind": "return",
+        "expression": "return (uint8_t)((index + 1u) % SENSOR_QUEUE_CAPACITY);",
+        "line": 75
+      },
+      {
+        "kind": "return",
+        "expression": "return (int32_t)(now - deadline) >= 0;",
+        "line": 79
+      },
+      {
+        "kind": "condition",
+        "expression": "(adjusted < 0)",
+        "line": 85
+      },
+      {
+        "kind": "return",
+        "expression": "return 0u;",
+        "line": 86
+      },
+      {
+        "kind": "condition",
+        "expression": "(adjusted > SENSOR_MAX_RAW)",
+        "line": 88
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_MAX_RAW;",
+        "line": 89
+      },
+      {
+        "kind": "return",
+        "expression": "return (uint16_t)adjusted;",
+        "line": 91
+      },
+      {
+        "kind": "condition",
+        "expression": "(next == controller->tail)",
+        "line": 96
+      },
+      {
+        "kind": "return",
+        "expression": "return false;",
+        "line": 98
+      },
+      {
+        "kind": "return",
+        "expression": "return true;",
+        "line": 106
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL)",
+        "line": 110
+      },
+      {
+        "kind": "return",
+        "expression": "return;",
+        "line": 111
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL || controller->registers == NULL)",
+        "line": 131
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BAD_ARGUMENT;",
+        "line": 132
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller->state == SENSOR_WAITING)",
+        "line": 134
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BUSY;",
+        "line": 135
+      },
+      {
+        "kind": "condition",
+        "expression": "(timeout_ticks == 0u)",
+        "line": 137
+      },
+      {
+        "kind": "condition",
+        "expression": "(use_interrupt)",
+        "line": 144
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_OK;",
+        "line": 148
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL || controller->registers == NULL)",
+        "line": 153
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BAD_ARGUMENT;",
+        "line": 154
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller->state == SENSOR_READY)",
+        "line": 156
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_OK;",
+        "line": 157
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller->state == SENSOR_FAILED)",
+        "line": 159
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_HARDWARE_ERROR;",
+        "line": 160
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller->state != SENSOR_WAITING)",
+        "line": 162
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_EMPTY;",
+        "line": 163
+      },
+      {
+        "kind": "condition",
+        "expression": "attempt < spin_budget",
+        "line": 166
+      },
+      {
+        "kind": "condition",
+        "expression": "((status & SENSOR_STATUS_FAULT) != 0u)",
+        "line": 168
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_HARDWARE_ERROR;",
+        "line": 171
+      },
+      {
+        "kind": "condition",
+        "expression": "((status & SENSOR_STATUS_OVERRUN) != 0u)",
+        "line": 173
+      },
+      {
+        "kind": "condition",
+        "expression": "((status & SENSOR_STATUS_READY) != 0u)",
+        "line": 177
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_OK;",
+        "line": 182
+      },
+      {
+        "kind": "condition",
+        "expression": "(deadline_passed(now, controller->deadline))",
+        "line": 185
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_TIMEOUT;",
+        "line": 189
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BUSY;",
+        "line": 191
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL || controller->registers == NULL)",
+        "line": 195
+      },
+      {
+        "kind": "return",
+        "expression": "return;",
+        "line": 196
+      },
+      {
+        "kind": "condition",
+        "expression": "((pending & SENSOR_STATUS_FAULT) != 0u)",
+        "line": 202
+      },
+      {
+        "kind": "condition",
+        "expression": "((pending & SENSOR_STATUS_READY) != 0u &&\n               controller->state == SENSOR_WAITING)",
+        "line": 205
+      },
+      {
+        "kind": "condition",
+        "expression": "((pending & SENSOR_STATUS_OVERRUN) != 0u)",
+        "line": 211
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL || sample == NULL)",
+        "line": 217
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BAD_ARGUMENT;",
+        "line": 218
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller->tail == controller->head)",
+        "line": 220
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_EMPTY;",
+        "line": 221
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_OK;",
+        "line": 225
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL || gain_q8 == 0u)",
+        "line": 230
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BAD_ARGUMENT;",
+        "line": 231
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller->state == SENSOR_WAITING)",
+        "line": 233
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_BUSY;",
+        "line": 234
+      },
+      {
+        "kind": "return",
+        "expression": "return SENSOR_OK;",
+        "line": 238
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL)",
+        "line": 242
+      },
+      {
+        "kind": "return",
+        "expression": "return (SensorStats){0};",
+        "line": 243
+      },
+      {
+        "kind": "return",
+        "expression": "return controller->stats;",
+        "line": 245
+      },
+      {
+        "kind": "condition",
+        "expression": "(controller == NULL || controller->registers == NULL)",
+        "line": 249
+      },
+      {
+        "kind": "return",
+        "expression": "return;",
+        "line": 250
+      }
+    ],
+    "identifiers": [
+      "SENSOR_BAD_ARGUMENT",
+      "SENSOR_BASE_ADDRESS",
+      "SENSOR_BUSY",
+      "SENSOR_CONTROL_ENABLE",
+      "SENSOR_CONTROL_IRQ_ENABLE",
+      "SENSOR_CONTROL_START",
+      "SENSOR_DEFAULT_TIMEOUT",
+      "SENSOR_EMPTY",
+      "SENSOR_FAILED",
+      "SENSOR_HARDWARE_ERROR",
+      "SENSOR_IDLE",
+      "SENSOR_MAX_RAW",
+      "SENSOR_OK",
+      "SENSOR_QUEUE_CAPACITY",
+      "SENSOR_READY",
+      "SENSOR_STATUS_FAULT",
+      "SENSOR_STATUS_OVERRUN",
+      "SENSOR_STATUS_READY",
+      "SENSOR_TIMED_OUT",
+      "SENSOR_TIMEOUT",
+      "SENSOR_WAITING",
+      "adjusted",
+      "attempt",
+      "calibrate",
+      "control",
+      "controller",
+      "deadline",
+      "deadline_passed",
+      "gain_q8",
+      "index",
+      "next",
+      "next_index",
+      "now",
+      "offset",
+      "pending",
+      "prescaler",
+      "queue_sample",
+      "raw",
+      "sample",
+      "sensor_controller_init",
+      "sensor_controller_irq",
+      "sensor_controller_poll",
+      "sensor_controller_set_calibration",
+      "sensor_controller_start",
+      "sensor_controller_stats",
+      "sensor_controller_stop",
+      "sensor_controller_take",
+      "spin_budget",
+      "status",
+      "tick",
+      "timeout_ticks",
+      "use_interrupt"
+    ]
+  },
+  "inferred_categories": [
+    {
+      "name": "api_return_handling",
+      "basis": [
+        "call:calibrate@101",
+        "call:deadline_passed@185",
+        "call:next_index@224",
+        "call:next_index@95",
+        "call:queue_sample@179",
+        "call:queue_sample@208"
+      ],
+      "confidence": "heuristic"
+    },
+    {
+      "name": "buffer_boundary",
+      "basis": [
+        "syntax:subscript@100",
+        "syntax:subscript@223"
+      ],
+      "confidence": "heuristic"
+    },
+    {
+      "name": "error_handling",
+      "basis": [
+        "condition@168",
+        "condition@173",
+        "condition@177",
+        "condition@202",
+        "condition@205",
+        "condition@211",
+        "condition@85"
+      ],
+      "confidence": "heuristic"
+    },
+    {
+      "name": "general_firmware",
+      "basis": [
+        "C source artifact"
+      ],
+      "confidence": "heuristic"
+    },
+    {
+      "name": "interrupt_state",
+      "basis": [
+        "identifier:interrupt"
+      ],
+      "confidence": "heuristic"
+    },
+    {
+      "name": "pointer_validation",
+      "basis": [
+        "syntax:field_access@100",
+        "syntax:field_access@101",
+        "syntax:field_access@102",
+        "syntax:field_access@103",
+        "syntax:field_access@104",
+        "syntax:field_access@105",
+        "syntax:field_access@113",
+        "syntax:field_access@114",
+        "syntax:field_access@115",
+        "syntax:field_access@116",
+        "syntax:field_access@117",
+        "syntax:field_access@118",
+        "syntax:field_access@119",
+        "syntax:field_access@120",
+        "syntax:field_access@121",
+        "syntax:field_access@122",
+        "syntax:field_access@123",
+        "syntax:field_access@124",
+        "syntax:field_access@125",
+        "syntax:field_access@126",
+        "syntax:field_access@131",
+        "syntax:field_access@134",
+        "syntax:field_access@140",
+        "syntax:field_access@141",
+        "syntax:field_access@142",
+        "syntax:field_access@147",
+        "syntax:field_access@153",
+        "syntax:field_access@156",
+        "syntax:field_access@159",
+        "syntax:field_access@162",
+        "syntax:field_access@167",
+        "syntax:field_access@169",
+        "syntax:field_access@170",
+        "syntax:field_access@174",
+        "syntax:field_access@175",
+        "syntax:field_access@178",
+        "syntax:field_access@180",
+        "syntax:field_access@181",
+        "syntax:field_access@185",
+        "syntax:field_access@186",
+        "syntax:field_access@187",
+        "syntax:field_access@188",
+        "syntax:field_access@195",
+        "syntax:field_access@198",
+        "syntax:field_access@199",
+        "syntax:field_access@200",
+        "syntax:field_access@203",
+        "syntax:field_access@204",
+        "syntax:field_access@206",
+        "syntax:field_access@207",
+        "syntax:field_access@209",
+        "syntax:field_access@212",
+        "syntax:field_access@220",
+        "syntax:field_access@223",
+        "syntax:field_access@224",
+        "syntax:field_access@233",
+        "syntax:field_access@236",
+        "syntax:field_access@237",
+        "syntax:field_access@245",
+        "syntax:field_access@249",
+        "syntax:field_access@252",
+        "syntax:field_access@253",
+        "syntax:field_access@254",
+        "syntax:field_access@83",
+        "syntax:field_access@84",
+        "syntax:field_access@95",
+        "syntax:field_access@96",
+        "syntax:field_access@97",
+        "syntax:pointer_expression@100",
+        "syntax:pointer_expression@223",
+        "syntax:subscript@100",
+        "syntax:subscript@223"
+      ],
+      "confidence": "heuristic"
+    }
+  ],
+  "component_hints": [
+    "bus",
+    "interrupt",
+    "sensor"
+  ],
+  "unknowns": [
+    "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+    "A later conditional reference is observable, not proof it checks the same value."
+  ]
+}

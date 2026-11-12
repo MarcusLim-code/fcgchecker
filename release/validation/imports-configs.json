@@ -1,0 +1,91 @@
+{
+  "imported_modules": [
+    "fcgc.adapters",
+    "fcgc.adapters.checker",
+    "fcgc.adapters.checker.demo",
+    "fcgc.adapters.checker.devin",
+    "fcgc.adapters.checker.local_llm",
+    "fcgc.adapters.checker.mock",
+    "fcgc.adapters.checker.placeholder",
+    "fcgc.adapters.retrieval",
+    "fcgc.adapters.retrieval.atlassian",
+    "fcgc.adapters.retrieval.benchmark",
+    "fcgc.adapters.retrieval.local",
+    "fcgc.adapters.retrieval.replay",
+    "fcgc.cli",
+    "fcgc.config",
+    "fcgc.core",
+    "fcgc.core.baseline",
+    "fcgc.core.checking",
+    "fcgc.core.context_packer",
+    "fcgc.core.context_reducer",
+    "fcgc.core.document_normalizer",
+    "fcgc.core.features",
+    "fcgc.core.files",
+    "fcgc.core.interfaces",
+    "fcgc.core.p1",
+    "fcgc.core.p2",
+    "fcgc.core.p3",
+    "fcgc.core.query_planner",
+    "fcgc.core.retrieval",
+    "fcgc.core.rule_segmentation",
+    "fcgc.experiments",
+    "fcgc.experiments.acceptance",
+    "fcgc.experiments.benchmark",
+    "fcgc.experiments.calibration",
+    "fcgc.experiments.calibration_margins",
+    "fcgc.experiments.evaluation",
+    "fcgc.experiments.metrics",
+    "fcgc.experiments.quality",
+    "fcgc.experiments.rq1",
+    "fcgc.experiments.run_log",
+    "fcgc.experiments.runner",
+    "fcgc.experiments.snapshots",
+    "fcgc.experiments.statistics",
+    "fcgc.schemas",
+    "fcgc.schemas.benchmark",
+    "fcgc.schemas.checking",
+    "fcgc.schemas.models",
+    "fcgc.schemas.rules",
+    "fcgc.schemas.stage3",
+    "fcgc.schemas.stage6",
+    "fcgc.schemas.stage7",
+    "fcgc.schemas.stage9"
+  ],
+  "module_count": 51,
+  "provider_configurations": [
+    {
+      "path": "src/fcgc/config/local.toml",
+      "retriever": "local"
+    },
+    {
+      "path": "src/fcgc/config/benchmark.toml",
+      "retriever": "benchmark"
+    },
+    {
+      "path": "src/fcgc/config/benchmark_scoped.toml",
+      "retriever": "benchmark"
+    },
+    {
+      "path": "src/fcgc/config/replay.toml",
+      "retriever": "replay"
+    },
+    {
+      "path": "src/fcgc/config/enterprise.toml",
+      "retriever": "atlassian_mcp"
+    },
+    {
+      "path": "src/fcgc/config/checker_demo.toml",
+      "retriever": "benchmark"
+    },
+    {
+      "path": "src/fcgc/config/checker_mock.toml",
+      "retriever": "benchmark"
+    },
+    {
+      "path": "src/fcgc/config/checker_ollama.toml",
+      "retriever": "benchmark"
+    }
+  ],
+  "planner_reducer_fallback_defaults": "validated"
+}

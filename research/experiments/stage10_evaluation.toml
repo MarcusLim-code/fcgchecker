@@ -1,0 +1,7 @@
+experiment_directories = ["../../outputs/experiments/stage10-development"]
+dataset_root = "../../benchmarks/v2"
+output_directory = "../../outputs/experiments/stage10-evaluation"
+rule_k = 18
+seed = 2026
+bootstrap_samples = 2000
+allow_provisional_compliance = false

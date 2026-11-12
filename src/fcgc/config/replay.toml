@@ -1,0 +1,4 @@
+retriever = "replay"
+checker = "placeholder"
+top_k = 3
+replay_path = "../fixtures/replay/benchmark_c002_v2.json"

@@ -1,0 +1,354 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "targets": {
+    "minimum_rules": 30,
+    "development_cases": 8,
+    "heldout_cases": 16,
+    "near_duplicate_threshold": 0.8
+  },
+  "documents": [
+    {
+      "source_id": "api_returns",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/api_returns.md",
+      "source_ref": "fcgc://synthetic-benchmark/api_returns.md",
+      "document_type": "numbered",
+      "scope": "benchmark_firmware"
+    },
+    {
+      "source_id": "error_flow",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/error_flow.md",
+      "source_ref": "fcgc://synthetic-benchmark/error_flow.md",
+      "document_type": "bulleted",
+      "scope": "benchmark_firmware"
+    },
+    {
+      "source_id": "pointers",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/pointers.md",
+      "source_ref": "fcgc://synthetic-benchmark/pointers.md",
+      "document_type": "table",
+      "scope": "benchmark_firmware"
+    },
+    {
+      "source_id": "buffers",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/buffers.md",
+      "source_ref": "fcgc://synthetic-benchmark/buffers.md",
+      "document_type": "narrative",
+      "scope": "benchmark_firmware"
+    },
+    {
+      "source_id": "initialization",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/initialization.md",
+      "source_ref": "fcgc://synthetic-benchmark/initialization.md",
+      "document_type": "numbered",
+      "scope": "benchmark_firmware"
+    },
+    {
+      "source_id": "resources",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/resources.md",
+      "source_ref": "fcgc://synthetic-benchmark/resources.md",
+      "document_type": "bulleted",
+      "scope": "benchmark_firmware"
+    },
+    {
+      "source_id": "decoy_host_tools",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/decoy_host_tools.md",
+      "source_ref": "fcgc://synthetic-benchmark/decoy_host_tools.md",
+      "document_type": "contextual_decoy",
+      "scope": "decoy"
+    },
+    {
+      "source_id": "decoy_bootloader",
+      "path": "../../src/fcgc/fixtures/benchmark_guidelines/decoy_bootloader.md",
+      "source_ref": "fcgc://synthetic-benchmark/decoy_bootloader.md",
+      "document_type": "contextual_decoy",
+      "scope": "decoy"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "C001",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C001.c",
+      "split": "development",
+      "group": "open_result",
+      "behaviors": [
+        "status_call",
+        "dependent_operation"
+      ]
+    },
+    {
+      "case_id": "C002",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C002.c",
+      "split": "development",
+      "group": "open_result",
+      "behaviors": [
+        "status_call",
+        "dependent_operation"
+      ]
+    },
+    {
+      "case_id": "C003",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C003.c",
+      "split": "development",
+      "group": "pointer_entry",
+      "behaviors": [
+        "pointer_entry",
+        "output_write"
+      ]
+    },
+    {
+      "case_id": "C004",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C004.c",
+      "split": "development",
+      "group": "pointer_entry",
+      "behaviors": [
+        "pointer_entry",
+        "output_write"
+      ]
+    },
+    {
+      "case_id": "C005",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C005.c",
+      "split": "development",
+      "group": "read_bounds",
+      "behaviors": [
+        "external_length",
+        "array_copy"
+      ]
+    },
+    {
+      "case_id": "C006",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C006.c",
+      "split": "development",
+      "group": "read_bounds",
+      "behaviors": [
+        "external_length",
+        "array_copy"
+      ]
+    },
+    {
+      "case_id": "C007",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C007.c",
+      "split": "development",
+      "group": "resource_paths",
+      "behaviors": [
+        "resource_acquisition",
+        "multiple_exits"
+      ]
+    },
+    {
+      "case_id": "C008",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C008.c",
+      "split": "development",
+      "group": "resource_paths",
+      "behaviors": [
+        "resource_acquisition",
+        "multiple_exits"
+      ]
+    },
+    {
+      "case_id": "C009",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C009.c",
+      "split": "heldout",
+      "group": "init_order",
+      "behaviors": [
+        "state_initialization",
+        "interrupt_enable"
+      ]
+    },
+    {
+      "case_id": "C010",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C010.c",
+      "split": "heldout",
+      "group": "init_order",
+      "behaviors": [
+        "state_initialization",
+        "interrupt_enable"
+      ]
+    },
+    {
+      "case_id": "C011",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C011.c",
+      "split": "heldout",
+      "group": "error_semantics",
+      "behaviors": [
+        "error_status",
+        "retry_loop"
+      ]
+    },
+    {
+      "case_id": "C012",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C012.c",
+      "split": "heldout",
+      "group": "error_semantics",
+      "behaviors": [
+        "error_status",
+        "retry_loop"
+      ]
+    },
+    {
+      "case_id": "C013",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C013.c",
+      "split": "heldout",
+      "group": "null_exception",
+      "behaviors": [
+        "zero_length_branch",
+        "pointer_access"
+      ]
+    },
+    {
+      "case_id": "C014",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C014.c",
+      "split": "heldout",
+      "group": "null_exception",
+      "behaviors": [
+        "zero_length_branch",
+        "pointer_access"
+      ]
+    },
+    {
+      "case_id": "C015",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C015.c",
+      "split": "heldout",
+      "group": "general_text",
+      "behaviors": [
+        "text_copy",
+        "terminator_write"
+      ]
+    },
+    {
+      "case_id": "C016",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C016.c",
+      "split": "heldout",
+      "group": "general_text",
+      "behaviors": [
+        "text_copy",
+        "terminator_write"
+      ]
+    },
+    {
+      "case_id": "C017",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C017.c",
+      "split": "heldout",
+      "group": "macro_write",
+      "behaviors": [
+        "macro_wrapped_call",
+        "storage_call"
+      ]
+    },
+    {
+      "case_id": "C018",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C018.c",
+      "split": "heldout",
+      "group": "macro_write",
+      "behaviors": [
+        "macro_wrapped_call",
+        "storage_call"
+      ]
+    },
+    {
+      "case_id": "C019",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C019.c",
+      "split": "heldout",
+      "group": "indirect_callback",
+      "behaviors": [
+        "indirect_call",
+        "callback_context"
+      ]
+    },
+    {
+      "case_id": "C020",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C020.c",
+      "split": "heldout",
+      "group": "indirect_callback",
+      "behaviors": [
+        "indirect_call",
+        "callback_context"
+      ]
+    },
+    {
+      "case_id": "C021",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C021.c",
+      "split": "heldout",
+      "group": "dma_lock",
+      "behaviors": [
+        "dma_submission",
+        "lock_lifetime"
+      ]
+    },
+    {
+      "case_id": "C022",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C022.c",
+      "split": "heldout",
+      "group": "dma_lock",
+      "behaviors": [
+        "dma_submission",
+        "lock_lifetime"
+      ]
+    },
+    {
+      "case_id": "C023",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C023.c",
+      "split": "heldout",
+      "group": "unspecified_contract",
+      "behaviors": [
+        "utility_operation"
+      ]
+    },
+    {
+      "case_id": "C024",
+      "path": "../../src/fcgc/fixtures/benchmark_cases/C024.c",
+      "split": "heldout",
+      "group": "unspecified_contract",
+      "behaviors": [
+        "utility_operation"
+      ]
+    }
+  ],
+  "coverage": {
+    "rule_categories": {
+      "api_return_value": 6,
+      "buffer_safety": 6,
+      "error_handling": 6,
+      "initialization": 6,
+      "pointer_validation": 6,
+      "resource_lifetime": 6
+    },
+    "document_types": {
+      "bulleted": 2,
+      "contextual_decoy": 2,
+      "narrative": 1,
+      "numbered": 2,
+      "table": 1
+    },
+    "code_behaviors": {
+      "array_copy": 2,
+      "callback_context": 2,
+      "dependent_operation": 2,
+      "dma_submission": 2,
+      "error_status": 2,
+      "external_length": 2,
+      "indirect_call": 2,
+      "interrupt_enable": 2,
+      "lock_lifetime": 2,
+      "macro_wrapped_call": 2,
+      "multiple_exits": 2,
+      "output_write": 2,
+      "pointer_access": 2,
+      "pointer_entry": 2,
+      "resource_acquisition": 2,
+      "retry_loop": 2,
+      "state_initialization": 2,
+      "status_call": 2,
+      "storage_call": 2,
+      "terminator_write": 2,
+      "text_copy": 2,
+      "utility_operation": 2,
+      "zero_length_branch": 2
+    },
+    "splits": {
+      "development": 8,
+      "heldout": 16
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C014",
+  "code_sha256": "bdf15e5b021a85ba2a6504f4454b614f4a64bd131e044fa6229161742a96a4a0",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-016",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "buffer[i]"
+        }
+      ],
+      "rationale": "Positive length permits a null pointer to be read."
+    },
+    {
+      "rule_id": "SFCG-013",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "buffer[i]"
+        }
+      ],
+      "rationale": "Required pointer is dereferenced without validation."
+    }
+  ],
+  "case_rationale": "Matched exception variant handles zero length but not positive-length null.",
+  "review_status": "provisional"
+}

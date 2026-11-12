@@ -1,0 +1,49 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C021",
+  "code_sha256": "662824061cadfba60feb49d966327d690fc9afa5f5fdeb6c62fdea6de5cc7eda",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-023",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "((uintptr_t)data & 3u)"
+        }
+      ],
+      "rationale": "Address and byte count are checked for alignment."
+    },
+    {
+      "rule_id": "SFCG-031",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 10,
+          "end_line": 10,
+          "quote": "unlock_dma();"
+        }
+      ],
+      "rationale": "Lock is released after the submit path."
+    },
+    {
+      "rule_id": "SFCG-008",
+      "expected_status": "compliant",
+      "violation_spans": [],
+      "source_evidence": [
+        {
+          "start_line": 10,
+          "end_line": 10,
+          "quote": "unlock_dma();"
+        }
+      ],
+      "rationale": "Cleanup occurs before returning an error."
+    }
+  ],
+  "case_rationale": "DMA contract and lock lifetime apply at the same time.",
+  "review_status": "provisional"
+}

@@ -1,0 +1,32 @@
+{
+  "source_directory": "/var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/fcgc-release-source-_8znh6f6/fcgc-0.11.0",
+  "checks": [
+    {
+      "command": [
+        "/private/tmp/fcgc-final-runtime/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "--force-reinstall",
+        "/var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/fcgc-release-source-_8znh6f6/fcgc-0.11.0"
+      ],
+      "cwd": "None",
+      "exit_code": 0,
+      "output": "Processing /var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/fcgc-release-source-_8znh6f6/fcgc-0.11.0\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: fcgc\n  Building wheel for fcgc (pyproject.toml): started\n  Building wheel for fcgc (pyproject.toml): finished with status 'done'\n  Created wheel for fcgc: filename=fcgc-0.11.0-py3-none-any.whl size=133928 sha256=fd10844cfea80543c2ef0087c4f201b42831ba981bc0d5009b62e9f655b3b0f7\n  Stored in directory: /private/var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/pip-ephem-wheel-cache-0munks3q/wheels/32/61/9a/6975a65190e5314f5113178f64251b482accd9a9dcd20fcde8\nSuccessfully built fcgc\nInstalling collected packages: fcgc\n  Attempting uninstall: fcgc\n    Found existing installation: fcgc 0.11.0\n    Uninstalling fcgc-0.11.0:\n      Successfully uninstalled fcgc-0.11.0\nSuccessfully installed fcgc-0.11.0\nWARNING: The directory '/Users/marcuslim/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    },
+    {
+      "command": [
+        "/private/tmp/fcgc-final-runtime/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "/var/folders/n6/782vk0tn4gx97ybzbc1xfc5w0000gn/T/fcgc-release-source-_8znh6f6/fcgc-0.11.0",
+      "exit_code": 0,
+      "output": "........................................................................ [ 55%]\n.........................................................                [100%]\n129 passed in 4.71s\n"
+    }
+  ]
+}

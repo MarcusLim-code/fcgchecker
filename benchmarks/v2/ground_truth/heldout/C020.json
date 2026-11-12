@@ -1,0 +1,46 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C020",
+  "code_sha256": "ff7280b688e9ee0a46e973f956853b902b62247adb4aa5b8814f24c36487a093",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-004",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 9,
+          "end_line": 9
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 9,
+          "end_line": 9,
+          "quote": "callback(context, 7);"
+        }
+      ],
+      "rationale": "The returned callback status is discarded."
+    },
+    {
+      "rule_id": "SFCG-017",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 4,
+          "end_line": 4
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 4,
+          "end_line": 4,
+          "quote": "*(int *)context = value;"
+        }
+      ],
+      "rationale": "Callback dereferences context without validation."
+    }
+  ],
+  "case_rationale": "Matched indirect-call variant discards status and trusts context.",
+  "review_status": "provisional"
+}

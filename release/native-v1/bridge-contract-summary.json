@@ -1,0 +1,62 @@
+{
+  "version": "fcgc-agent-result-v1",
+  "session_id": "06a7346c-4fa6-476f-aea0-97580b54aa51",
+  "status": "complete",
+  "mode": "wd",
+  "strategy": "p1",
+  "source": "/Users/marcuslim/Desktop/fcgchecker/runs/native-final/bridge-contract/pointer_bad.c",
+  "function": null,
+  "retrieval_provider": "agent_mcp",
+  "checker_status": "evaluated",
+  "configured_checker": "devin",
+  "configuration_hash": "de0c4f9c48847d7d60c45054a7f782e496d16b58453c512ab56fd0ef3bc63385",
+  "rules_evaluated": 1,
+  "violations_found": 1,
+  "unresolved_checks": 0,
+  "findings": [
+    {
+      "evidence_id": "ev-4f71e776e2f39f11",
+      "applicability": "applies",
+      "decision": "violating",
+      "locations": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "excerpt": "    *out = 7;"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "pointer",
+          "source_ref": "fcgc://demo/pointer.md",
+          "start": 119,
+          "end": 193,
+          "quote": "A required output pointer must be checked for null before its first write."
+        }
+      ],
+      "explanation": "The supported single-pointer function writes without a null guard.",
+      "uncertainty": []
+    }
+  ],
+  "severity": null,
+  "latency_scope": "Core trace times measure the final receipt-replay pass; cumulative backend processing and agent workflow wall time are recorded separately.",
+  "evidence_status": "complete",
+  "live_access_verified_by_python": false,
+  "capture_origin": "synthetic_contract_test",
+  "action": null,
+  "counts": {
+    "search_calls": 1,
+    "fetch_calls": 1,
+    "transport_retries": 0
+  },
+  "workflow_ms": 54.582,
+  "backend_processing_ms": 3.510957583785057,
+  "host_tool_duration_ms": null,
+  "input_estimated_tokens": 1767,
+  "token_method": "regex-word-punctuation-v1",
+  "billed_tokens": null,
+  "rovo_credits": null,
+  "warnings": [],
+  "audit": "/Users/marcuslim/Desktop/fcgchecker/runs/native-final/bridge-contract/session/session.json",
+  "report": "/Users/marcuslim/Desktop/fcgchecker/runs/native-final/bridge-contract/session/report.md"
+}

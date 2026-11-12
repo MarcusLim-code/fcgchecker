@@ -1,0 +1,25 @@
+{
+  "note": "Synthetic arithmetic fixture; metric values hand-checked by explicit set counts, not independently reviewed firmware annotations.",
+  "retrieval": {
+    "ranked_ids": ["A", "A", "B", "C"],
+    "applicable_ids": ["A", "D"],
+    "k": 2,
+    "expected": {"relevant_at_k": 1, "precision_at_k": 0.5, "recall_at_k": 0.5, "f2_at_k": 0.5, "duplicate_observations_removed": 1}
+  },
+  "compliance": {
+    "expected": [
+      {"rule_id": "A", "expected_status": "violation", "violation_spans": [{"start_line": 5, "end_line": 5}]},
+      {"rule_id": "D", "expected_status": "violation", "violation_spans": [{"start_line": 10, "end_line": 10}]},
+      {"rule_id": "B", "expected_status": "compliant", "violation_spans": []},
+      {"rule_id": "U", "expected_status": "uncertain", "violation_spans": []}
+    ],
+    "predictions": [
+      {"rule_id": "A", "decision": "violating", "locations": [{"start_line": 5, "end_line": 5}]},
+      {"rule_id": "B", "decision": "violating", "locations": [{"start_line": 10, "end_line": 10}]},
+      {"rule_id": "C", "decision": "violating", "locations": [{"start_line": 20, "end_line": 20}]},
+      {"rule_id": "D", "decision": "compliant", "locations": []},
+      {"rule_id": "U", "decision": "unresolved", "locations": []}
+    ],
+    "expected_metrics": {"tp": 1, "fp": 2, "fn": 1, "precision": 0.3333333333333333, "recall": 0.5, "f1": 0.4, "rule_attribution_accuracy": 0.5, "attribution_denominator": 2}
+  }
+}

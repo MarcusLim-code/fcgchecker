@@ -1,0 +1,5 @@
+version = "p1-template-v1"
+base_query = "synthetic C firmware coding guidelines"
+query_template = "{base} {concepts}"
+max_specific_concepts = 2
+max_queries = 1

@@ -1,0 +1,46 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C018",
+  "code_sha256": "7de6922ed0e3f2a424a699b35df5fb163f0a3776e6cf060462b5fdcae7b63616",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-002",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 6,
+          "end_line": 6
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 6,
+          "end_line": 6,
+          "quote": "STORE(data, length);"
+        }
+      ],
+      "rationale": "The write result and short count are ignored."
+    },
+    {
+      "rule_id": "SFCG-011",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 7,
+          "end_line": 7
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "return commit_flash();"
+        }
+      ],
+      "rationale": "Commit assumes the macro-wrapped write succeeded."
+    }
+  ],
+  "case_rationale": "Matched macro variant discards the call result.",
+  "review_status": "provisional"
+}

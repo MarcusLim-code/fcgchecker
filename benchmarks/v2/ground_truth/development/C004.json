@@ -1,0 +1,46 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C004",
+  "code_sha256": "17db12f0e5483b2a9725e7882aa273010becf281672381b8cbaafb1574cdf50f",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-013",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 3,
+          "end_line": 3
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "quote": "*input * 2"
+        }
+      ],
+      "rationale": "A required input pointer is dereferenced unchecked."
+    },
+    {
+      "rule_id": "SFCG-014",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 3,
+          "end_line": 3
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 3,
+          "end_line": 3,
+          "quote": "*output ="
+        }
+      ],
+      "rationale": "The output pointer is written unchecked."
+    }
+  ],
+  "case_rationale": "Matched pointer variant with both validations absent.",
+  "review_status": "provisional"
+}

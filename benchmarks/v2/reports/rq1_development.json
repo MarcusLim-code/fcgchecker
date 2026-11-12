@@ -1,0 +1,1465 @@
+{
+  "report_version": "rq1-development-v1",
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "split": "development",
+  "document_top_k": 3,
+  "rule_k": 18,
+  "max_searches_per_case": 1,
+  "max_fetches_per_case": 3,
+  "budget_description": "One lexical search and up to three document fetches per case for each strategy; same corpus, source scope, score, tie-break, document K, and rule K.",
+  "matched_budget": true,
+  "b0_aggregate": {
+    "true_positive_rules": 8,
+    "retrieved_rules": 96,
+    "applicable_rules": 22,
+    "micro_precision_at_k": 0.08333333333333333,
+    "micro_recall_at_k": 0.36363636363636365,
+    "search_operations": 8,
+    "fetch_operations": 24,
+    "feature_extraction_ms": 0.0,
+    "query_planning_ms": 0.0,
+    "retrieval_ms": 1.3896662276238203
+  },
+  "p1_aggregate": {
+    "true_positive_rules": 20,
+    "retrieved_rules": 132,
+    "applicable_rules": 22,
+    "micro_precision_at_k": 0.15151515151515152,
+    "micro_recall_at_k": 0.9090909090909091,
+    "search_operations": 8,
+    "fetch_operations": 24,
+    "feature_extraction_ms": 6.860415916889906,
+    "query_planning_ms": 0.11175090912729502,
+    "retrieval_ms": 1.364000141620636
+  },
+  "improvements": [
+    "C002",
+    "C005",
+    "C006",
+    "C007",
+    "C008"
+  ],
+  "regressions": [
+    "C001"
+  ],
+  "ties": [
+    "C003",
+    "C004"
+  ],
+  "cases": [
+    {
+      "case_id": "C001",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-001",
+            "SFCG-007",
+            "SFCG-011"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-001"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-007",
+            "SFCG-011"
+          ],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 1,
+          "irrelevant_rule_count": 11,
+          "precision_at_k": 0.08333333333333333,
+          "recall_at_k": 0.3333333333333333,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.24091603700071573
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines resource lock handle cleanup release pointer null output validation dereference general firmware coding requirements",
+        "fetched_source_ids": [
+          "pointers",
+          "resources",
+          "api_returns"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-001",
+            "SFCG-007",
+            "SFCG-011"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-001"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-007",
+            "SFCG-011"
+          ],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 18,
+          "relevant_rule_count": 1,
+          "irrelevant_rule_count": 17,
+          "precision_at_k": 0.05555555555555555,
+          "recall_at_k": 0.3333333333333333,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 5.407541990280151,
+          "query_planning_ms": 0.02345908433198929,
+          "retrieval_ms": 0.21233304869383574
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "resource_lifetime",
+            "guideline_concept": "resource acquisition and cleanup",
+            "query_terms": "resource lock handle cleanup release",
+            "basis": [
+              "call:sensor_open@6"
+            ]
+          },
+          {
+            "feature_category": "pointer_validation",
+            "guideline_concept": "pointer contract validation",
+            "query_terms": "pointer null output validation dereference",
+            "basis": [
+              "syntax:pointer_expression@6"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 0.0,
+      "precision_delta": -0.027777777777777776,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "regression"
+    },
+    {
+      "case_id": "C002",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-001",
+            "SFCG-011"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-001"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-011"
+          ],
+          "applicable_rule_count": 2,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 1,
+          "irrelevant_rule_count": 11,
+          "precision_at_k": 0.08333333333333333,
+          "recall_at_k": 0.5,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.1959590008482337
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines API return result status failure resource lock handle cleanup release general firmware coding requirements",
+        "fetched_source_ids": [
+          "api_returns",
+          "error_flow",
+          "resources"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-001",
+            "SFCG-011"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006",
+            "SFCG-007",
+            "SFCG-008",
+            "SFCG-009",
+            "SFCG-010",
+            "SFCG-011",
+            "SFCG-012",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-001",
+            "SFCG-011"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006",
+            "SFCG-007",
+            "SFCG-008",
+            "SFCG-009",
+            "SFCG-010",
+            "SFCG-012",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 2,
+          "retrieved_rule_count": 18,
+          "relevant_rule_count": 2,
+          "irrelevant_rule_count": 16,
+          "precision_at_k": 0.1111111111111111,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.14662498142570257,
+          "query_planning_ms": 0.01695798709988594,
+          "retrieval_ms": 0.18412491772323847
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "possibly_unchecked_result",
+            "guideline_concept": "possible unchecked API result",
+            "query_terms": "API return result status failure",
+            "basis": [
+              "call:sensor_open@6"
+            ]
+          },
+          {
+            "feature_category": "resource_lifetime",
+            "guideline_concept": "resource acquisition and cleanup",
+            "query_terms": "resource lock handle cleanup release",
+            "basis": [
+              "call:sensor_open@6"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 0.5,
+      "precision_delta": 0.027777777777777776,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "improvement"
+    },
+    {
+      "case_id": "C003",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 2,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 2,
+          "irrelevant_rule_count": 10,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.15725009143352509
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines pointer null output validation dereference general firmware coding requirements",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 2,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 2,
+          "irrelevant_rule_count": 10,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.10204198770225048,
+          "query_planning_ms": 0.01108401920646429,
+          "retrieval_ms": 0.1555420458316803
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "pointer_validation",
+            "guideline_concept": "pointer contract validation",
+            "query_terms": "pointer null output validation dereference",
+            "basis": [
+              "syntax:pointer_expression@4"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 0.0,
+      "precision_delta": 0.0,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "tie"
+    },
+    {
+      "case_id": "C004",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 2,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 2,
+          "irrelevant_rule_count": 10,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.1470409333705902
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines pointer null output validation dereference general firmware coding requirements",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 2,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 2,
+          "irrelevant_rule_count": 10,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.06450002547353506,
+          "query_planning_ms": 0.008916947990655899,
+          "retrieval_ms": 0.15233305748552084
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "pointer_validation",
+            "guideline_concept": "pointer contract validation",
+            "query_terms": "pointer null output validation dereference",
+            "basis": [
+              "syntax:pointer_expression@3"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 0.0,
+      "precision_delta": 0.0,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "tie"
+    },
+    {
+      "case_id": "C005",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 1,
+          "irrelevant_rule_count": 11,
+          "precision_at_k": 0.08333333333333333,
+          "recall_at_k": 0.3333333333333333,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.14766608364880085
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines buffer capacity array count boundary pointer null output validation dereference general firmware coding requirements",
+        "fetched_source_ids": [
+          "pointers",
+          "buffers",
+          "api_returns"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-019",
+            "SFCG-020",
+            "SFCG-021",
+            "SFCG-022",
+            "SFCG-023",
+            "SFCG-024",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-020",
+            "SFCG-021",
+            "SFCG-022",
+            "SFCG-023",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 18,
+          "relevant_rule_count": 3,
+          "irrelevant_rule_count": 15,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.21604099310934544,
+          "query_planning_ms": 0.012042000889778137,
+          "retrieval_ms": 0.15279208309948444
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "buffer_boundary",
+            "guideline_concept": "buffer boundary safety",
+            "query_terms": "buffer capacity array count boundary",
+            "basis": [
+              "identifier:capacity_or_length",
+              "syntax:subscript@8"
+            ]
+          },
+          {
+            "feature_category": "pointer_validation",
+            "guideline_concept": "pointer contract validation",
+            "query_terms": "pointer null output validation dereference",
+            "basis": [
+              "syntax:subscript@8"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 0.6666666666666667,
+      "precision_delta": 0.08333333333333333,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "improvement"
+    },
+    {
+      "case_id": "C006",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 1,
+          "irrelevant_rule_count": 11,
+          "precision_at_k": 0.08333333333333333,
+          "recall_at_k": 0.3333333333333333,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.19704201258718967
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines buffer capacity array count boundary pointer null output validation dereference general firmware coding requirements",
+        "fetched_source_ids": [
+          "pointers",
+          "buffers",
+          "api_returns"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-013",
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-019",
+            "SFCG-020",
+            "SFCG-021",
+            "SFCG-022",
+            "SFCG-023",
+            "SFCG-024",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-019",
+            "SFCG-024"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-020",
+            "SFCG-021",
+            "SFCG-022",
+            "SFCG-023",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 18,
+          "relevant_rule_count": 3,
+          "irrelevant_rule_count": 15,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.18587498925626278,
+          "query_planning_ms": 0.016000005416572094,
+          "retrieval_ms": 0.18075003754347563
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "buffer_boundary",
+            "guideline_concept": "buffer boundary safety",
+            "query_terms": "buffer capacity array count boundary",
+            "basis": [
+              "identifier:capacity_or_length",
+              "syntax:subscript@6"
+            ]
+          },
+          {
+            "feature_category": "pointer_validation",
+            "guideline_concept": "pointer contract validation",
+            "query_terms": "pointer null output validation dereference",
+            "basis": [
+              "syntax:subscript@6"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 0.6666666666666667,
+      "precision_delta": 0.08333333333333333,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "improvement"
+    },
+    {
+      "case_id": "C007",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-008",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-007"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [],
+          "irrelevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-008",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-007"
+          ],
+          "applicable_rule_count": 4,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 0,
+          "irrelevant_rule_count": 12,
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.15750003512948751
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines resource lock handle cleanup release error flow propagation timeout retry general firmware coding requirements",
+        "fetched_source_ids": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-008",
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-007"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006",
+            "SFCG-007",
+            "SFCG-008",
+            "SFCG-009",
+            "SFCG-010",
+            "SFCG-011",
+            "SFCG-012"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-007",
+            "SFCG-008"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006",
+            "SFCG-009",
+            "SFCG-010",
+            "SFCG-011",
+            "SFCG-012"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 4,
+          "retrieved_rule_count": 18,
+          "relevant_rule_count": 4,
+          "irrelevant_rule_count": 14,
+          "precision_at_k": 0.2222222222222222,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.5097079556435347,
+          "query_planning_ms": 0.012415926903486252,
+          "retrieval_ms": 0.15670794527977705
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "resource_lifetime",
+            "guideline_concept": "resource acquisition and cleanup",
+            "query_terms": "resource lock handle cleanup release",
+            "basis": [
+              "call:device_close@11",
+              "call:device_open@8",
+              "call:lock_bus@7",
+              "call:unlock_bus@12",
+              "call:unlock_bus@9"
+            ]
+          },
+          {
+            "feature_category": "error_handling",
+            "guideline_concept": "error handling and propagation",
+            "query_terms": "error flow propagation timeout retry",
+            "basis": [
+              "condition@7",
+              "condition@9"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 1.0,
+      "precision_delta": 0.2222222222222222,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "improvement"
+    },
+    {
+      "case_id": "C008",
+      "b0": {
+        "strategy": "b0",
+        "query": "firmware coding guidelines C source",
+        "fetched_source_ids": [
+          "pointers",
+          "api_returns",
+          "decoy_host_tools"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-008",
+            "SFCG-031",
+            "SFCG-032"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "relevant_rule_ids": [],
+          "irrelevant_rule_ids": [
+            "SFCG-013",
+            "SFCG-014",
+            "SFCG-015",
+            "SFCG-016",
+            "SFCG-017",
+            "SFCG-018",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006"
+          ],
+          "missed_rule_ids": [
+            "SFCG-008",
+            "SFCG-031",
+            "SFCG-032"
+          ],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 12,
+          "relevant_rule_count": 0,
+          "irrelevant_rule_count": 12,
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.0,
+          "query_planning_ms": 0.0,
+          "retrieval_ms": 0.14629203360527754
+        },
+        "mapping_version": null,
+        "template_version": null,
+        "concepts": [],
+        "analysis_mode": null,
+        "unknowns": []
+      },
+      "p1": {
+        "strategy": "p1",
+        "query": "synthetic C firmware coding guidelines resource lock handle cleanup release error flow propagation timeout retry general firmware coding requirements",
+        "fetched_source_ids": [
+          "resources",
+          "api_returns",
+          "error_flow"
+        ],
+        "metrics": {
+          "document_top_k": 3,
+          "rule_k": 18,
+          "applicable_rule_ids": [
+            "SFCG-008",
+            "SFCG-031",
+            "SFCG-032"
+          ],
+          "ranked_rule_ids_at_k": [
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006",
+            "SFCG-007",
+            "SFCG-008",
+            "SFCG-009",
+            "SFCG-010",
+            "SFCG-011",
+            "SFCG-012"
+          ],
+          "relevant_rule_ids": [
+            "SFCG-031",
+            "SFCG-032",
+            "SFCG-008"
+          ],
+          "irrelevant_rule_ids": [
+            "SFCG-033",
+            "SFCG-034",
+            "SFCG-035",
+            "SFCG-036",
+            "SFCG-001",
+            "SFCG-002",
+            "SFCG-003",
+            "SFCG-004",
+            "SFCG-005",
+            "SFCG-006",
+            "SFCG-007",
+            "SFCG-009",
+            "SFCG-010",
+            "SFCG-011",
+            "SFCG-012"
+          ],
+          "missed_rule_ids": [],
+          "applicable_rule_count": 3,
+          "retrieved_rule_count": 18,
+          "relevant_rule_count": 3,
+          "irrelevant_rule_count": 15,
+          "precision_at_k": 0.16666666666666666,
+          "recall_at_k": 1.0,
+          "search_operations": 1,
+          "fetch_operations": 3,
+          "feature_extraction_ms": 0.22808299399912357,
+          "query_planning_ms": 0.010874937288463116,
+          "retrieval_ms": 0.16941700596362352
+        },
+        "mapping_version": "feature-concepts-v1",
+        "template_version": "p1-template-v1",
+        "concepts": [
+          {
+            "feature_category": "resource_lifetime",
+            "guideline_concept": "resource acquisition and cleanup",
+            "query_terms": "resource lock handle cleanup release",
+            "basis": [
+              "call:device_close@12",
+              "call:device_open@8",
+              "call:lock_bus@7",
+              "call:unlock_bus@13"
+            ]
+          },
+          {
+            "feature_category": "error_handling",
+            "guideline_concept": "error handling and propagation",
+            "query_terms": "error flow propagation timeout retry",
+            "basis": [
+              "condition@11",
+              "condition@7",
+              "condition@9"
+            ]
+          },
+          {
+            "feature_category": "general_firmware",
+            "guideline_concept": "general firmware rules",
+            "query_terms": "general firmware coding requirements",
+            "basis": [
+              "C source artifact"
+            ]
+          }
+        ],
+        "analysis_mode": "tree_sitter_ast",
+        "unknowns": [
+          "No interprocedural analysis, alias analysis, or proof of data-flow correctness.",
+          "A later conditional reference is observable, not proof it checks the same value."
+        ]
+      },
+      "recall_delta": 1.0,
+      "precision_delta": 0.16666666666666666,
+      "search_operation_delta": 0,
+      "fetch_operation_delta": 0,
+      "outcome": "improvement"
+    }
+  ]
+}

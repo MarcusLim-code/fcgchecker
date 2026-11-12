@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fcgc"
+version = "0.13.0"
+description = "Offline firmware coding guidelines retrieval research prototype"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2,<3",
+  "typer>=0.12,<1",
+  "tree-sitter>=0.22,<1",
+  "tree-sitter-c>=0.23,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.8,<1"]
+
+[project.scripts]
+fcgc = "fcgc.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.data-files]
+"share/fcgc/skills/fcg_checking" = ["skills/fcg_checking/SKILL.md", "skills/fcg_checking/prompt.txt"]
+"share/fcgc/orchestration" = ["skills/fcg_orchestration/WORKFLOW.md"]
+"share/fcgc/agent-skills/fcg-check" = [".agents/skills/fcg-check/SKILL.md"]
+"share/fcgc/agent-skills/fcg-compare" = [".agents/skills/fcg-compare/SKILL.md"]
+"share/fcgc/agent-skills/fcg-report" = [".agents/skills/fcg-report/SKILL.md"]
+"share/fcgc/agent-skills/fcg-rules" = [".agents/skills/fcg-rules/SKILL.md"]
+"share/fcgc/agent-skills/fcg-doctor" = [".agents/skills/fcg-doctor/SKILL.md"]
+
+[tool.setuptools.package-data]
+fcgc = [
+  "config/*.toml",
+  "config/*.json",
+  "fixtures/cases/*.c",
+  "fixtures/guidelines/*.md",
+  "fixtures/benchmark_cases/*.c",
+  "fixtures/benchmark_guidelines/*.md",
+  "fixtures/replay/*.json",
+  "fixtures/segmentation/*.md",
+  "fixtures/checking/*.md",
+  "fixtures/checking/*.c",
+]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.private.toml", "*.private.json", "*.local.toml", "*.local.json", ".env", ".env.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["outputs", "runs", "build", "dist", "wheelhouse"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,8 @@
+{
+  "python": "3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-15.3.2-arm64-arm-64bit-Mach-O",
+  "ollama_executable": null,
+  "real_llm_inference_executed": false,
+  "enterprise_access_used": false,
+  "timing_limitation": "Release timing runs overlapped other local validation jobs; not isolated performance measurements."
+}

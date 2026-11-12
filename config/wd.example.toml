@@ -1,0 +1,8 @@
+# Future integration contract ONLY. This configuration is intentionally not runnable.
+# Discover approved MCP capabilities, authentication and Devin integration in WD first.
+# Do not add guessed service URLs, MCP tool names or credentials here.
+retriever = "atlassian_mcp"
+checker = "devin"
+top_k = 3
+allow_network = false
+allow_remote = false

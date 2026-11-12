@@ -1,0 +1,9 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C024",
+  "code_sha256": "f50825973b79ec4451ff497fb3b7b33188e32a290fc5ef3b6e6533c82ecc78ff",
+  "applicable_rules": [],
+  "case_rationale": "Pure bit arithmetic has no applicable category-specific rule in this corpus; no compliance conclusion is assigned.",
+  "review_status": "provisional"
+}

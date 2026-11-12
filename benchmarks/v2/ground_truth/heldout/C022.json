@@ -1,0 +1,64 @@
+{
+  "dataset_version": "2.0.0",
+  "annotation_version": "1.0.0-provisional",
+  "case_id": "C022",
+  "code_sha256": "08fe0da346fbae6844e95e5063994df0d1ce5236fb885eb1d66037e208fcff9a",
+  "applicable_rules": [
+    {
+      "rule_id": "SFCG-023",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 7,
+          "end_line": 7
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 7,
+          "end_line": 7,
+          "quote": "dma_submit(data, bytes);"
+        }
+      ],
+      "rationale": "Submission occurs without alignment validation."
+    },
+    {
+      "rule_id": "SFCG-031",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "Error path skips unlocking."
+    },
+    {
+      "rule_id": "SFCG-008",
+      "expected_status": "violation",
+      "violation_spans": [
+        {
+          "start_line": 8,
+          "end_line": 8
+        }
+      ],
+      "source_evidence": [
+        {
+          "start_line": 8,
+          "end_line": 8,
+          "quote": "if (rc != 0) return rc;"
+        }
+      ],
+      "rationale": "Cleanup is skipped before error return."
+    }
+  ],
+  "case_rationale": "Matched multi-rule variant omits DMA validation and leaks a lock on error.",
+  "review_status": "provisional"
+}

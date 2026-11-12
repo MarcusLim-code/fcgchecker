@@ -1,0 +1,145 @@
+<!doctype html><meta charset='utf-8'><title>FCGC evaluation</title><style>body{font:15px system-ui;margin:2rem}table{border-collapse:collapse;font-size:12px}td,th{padding:.4rem;border:1px solid #ccc}pre{white-space:pre-wrap}section{overflow:auto}</style><h1>FCGC offline research evaluation</h1><p>{&#x27;data&#x27;: &#x27;synthetic&#x27;, &#x27;retrieval&#x27;: [&#x27;benchmark&#x27;], &#x27;checking&#x27;: [&#x27;mock&#x27;], &#x27;retrieval_kind&#x27;: [&#x27;local_fixture&#x27;], &#x27;checker_kind&#x27;: [&#x27;mock&#x27;], &#x27;resources&#x27;: &#x27;local token estimates and measured wall time; provider tokens only when exposed; no billing measurements&#x27;, &#x27;ground_truth&#x27;: [&#x27;provisional&#x27;]}</p><section><table><tr><th>panel</th><th>strategy</th><th>checker_index</th><th>cases</th><th>source_jaccard_mean</th><th>rule_jaccard_mean</th><th>fetched_recall_n</th><th>fetched_recall_mean</th><th>fetched_recall_median</th><th>fetched_recall_sd</th><th>fetched_recall_iqr</th><th>fetched_recall_min</th><th>fetched_recall_max</th><th>fetched_precision_n</th><th>fetched_precision_mean</th><th>fetched_precision_median</th><th>fetched_precision_sd</th><th>fetched_precision_iqr</th><th>fetched_precision_min</th><th>fetched_precision_max</th><th>retained_recall_n</th><th>retained_recall_mean</th><th>retained_recall_median</th><th>retained_recall_sd</th><th>retained_recall_iqr</th><th>retained_recall_min</th><th>retained_recall_max</th><th>checker_received_recall_n</th><th>checker_received_recall_mean</th><th>checker_received_recall_median</th><th>checker_received_recall_sd</th><th>checker_received_recall_iqr</th><th>checker_received_recall_min</th><th>checker_received_recall_max</th><th>violation_f1_n</th><th>violation_f1_mean</th><th>violation_f1_median</th><th>violation_f1_sd</th><th>violation_f1_iqr</th><th>violation_f1_min</th><th>violation_f1_max</th><th>violation_precision_n</th><th>violation_precision_mean</th><th>violation_precision_median</th><th>violation_precision_sd</th><th>violation_precision_iqr</th><th>violation_precision_min</th><th>violation_precision_max</th><th>violation_recall_n</th><th>violation_recall_mean</th><th>violation_recall_median</th><th>violation_recall_sd</th><th>violation_recall_iqr</th><th>violation_recall_min</th><th>violation_recall_max</th><th>violation_tp_n</th><th>violation_tp_mean</th><th>violation_tp_median</th><th>violation_tp_sd</th><th>violation_tp_iqr</th><th>violation_tp_min</th><th>violation_tp_max</th><th>violation_fp_n</th><th>violation_fp_mean</th><th>violation_fp_median</th><th>violation_fp_sd</th><th>violation_fp_iqr</th><th>violation_fp_min</th><th>violation_fp_max</th><th>violation_fn_n</th><th>violation_fn_mean</th><th>violation_fn_median</th><th>violation_fn_sd</th><th>violation_fn_iqr</th><th>violation_fn_min</th><th>violation_fn_max</th><th>rule_attribution_accuracy_n</th><th>rule_attribution_accuracy_mean</th><th>rule_attribution_accuracy_median</th><th>rule_attribution_accuracy_sd</th><th>rule_attribution_accuracy_iqr</th><th>rule_attribution_accuracy_min</th><th>rule_attribution_accuracy_max</th><th>retrieved_context_tokens_n</th><th>retrieved_context_tokens_mean</th><th>retrieved_context_tokens_median</th><th>retrieved_context_tokens_sd</th><th>retrieved_context_tokens_iqr</th><th>retrieved_context_tokens_min</th><th>retrieved_context_tokens_max</th><th>output_tokens_n</th><th>output_tokens_mean</th><th>output_tokens_median</th><th>output_tokens_sd</th><th>output_tokens_iqr</th><th>output_tokens_min</th><th>output_tokens_max</th><th>provider_total_tokens_n</th><th>provider_total_tokens_mean</th><th>provider_total_tokens_median</th><th>provider_total_tokens_sd</th><th>provider_total_tokens_iqr</th><th>provider_total_tokens_min</th><th>provider_total_tokens_max</th><th>tokens_per_correct_detection_n</th><th>tokens_per_correct_detection_mean</th><th>tokens_per_correct_detection_median</th><th>tokens_per_correct_detection_sd</th><th>tokens_per_correct_detection_iqr</th><th>tokens_per_correct_detection_min</th><th>tokens_per_correct_detection_max</th><th>checker_input_tokens_n</th><th>checker_input_tokens_mean</th><th>checker_input_tokens_median</th><th>checker_input_tokens_sd</th><th>checker_input_tokens_iqr</th><th>checker_input_tokens_min</th><th>checker_input_tokens_max</th><th>end_to_end_ms_n</th><th>end_to_end_ms_mean</th><th>end_to_end_ms_median</th><th>end_to_end_ms_sd</th><th>end_to_end_ms_iqr</th><th>end_to_end_ms_min</th><th>end_to_end_ms_max</th><th>search_calls_n</th><th>search_calls_mean</th><th>search_calls_median</th><th>search_calls_sd</th><th>search_calls_iqr</th><th>search_calls_min</th><th>search_calls_max</th><th>fetch_calls_n</th><th>fetch_calls_mean</th><th>fetch_calls_median</th><th>fetch_calls_sd</th><th>fetch_calls_iqr</th><th>fetch_calls_min</th><th>fetch_calls_max</th></tr><tr><td>155530ba5dc3bdcd4ec540bb72ac313ca72b617a842b42476e710d0bd6961622</td><td>b0</td><td>0</td><td>8</td><td>1.0</td><td>1.0</td><td>8</td><td>0.4375</td><td>0.3333333333333333</td><td>0.38768236876032813</td><td>0.375</td><td>0.0</td><td>1.0</td><td>8</td><td>0.08333333333333333</td><td>0.08333333333333333</td><td>0.0629940788348712</td><td>0.04166666666666666</td><td>0.0</td><td>0.16666666666666666</td><td>8</td><td>0.4375</td><td>0.3333333333333333</td><td>0.38768236876032813</td><td>0.375</td><td>0.0</td><td>1.0</td><td>8</td><td>0.4375</td><td>0.3333333333333333</td><td>0.38768236876032813</td><td>0.375</td><td>0.0</td><td>1.0</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>614</td><td>614.0</td><td>0.0</td><td>0.0</td><td>614</td><td>614</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>5717.875</td><td>5716.0</td><td>29.91147653612955</td><td>50.25</td><td>5674</td><td>5756</td><td>8</td><td>7.767564248448859</td><td>7.749860951056084</td><td>0.16496911234671316</td><td>0.27945494124044945</td><td>7.573430736859639</td><td>8.007125308116278</td><td>8</td><td>1</td><td>1.0</td><td>0.0</td><td>0.0</td><td>1</td><td>1</td><td>8</td><td>3</td><td>3.0</td><td>0.0</td><td>0.0</td><td>3</td><td>3</td></tr><tr><td>155530ba5dc3bdcd4ec540bb72ac313ca72b617a842b42476e710d0bd6961622</td><td>p1</td><td>0</td><td>8</td><td>1.0</td><td>1.0</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>8</td><td>0.16319444444444445</td><td>0.16666666666666666</td><td>0.037672296718348264</td><td>0.0</td><td>0.08333333333333333</td><td>0.2222222222222222</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>684.375</td><td>690.0</td><td>70.91833834972245</td><td>135.75</td><td>614</td><td>752</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>6644.625</td><td>6503.0</td><td>1065.1545746309043</td><td>1768.5</td><td>5619</td><td>7942</td><td>8</td><td>8.888229126265893</td><td>9.068909644459685</td><td>1.0374566240626941</td><td>1.7913330617981655</td><td>7.437375296528141</td><td>10.123721944789091</td><td>8</td><td>1</td><td>1.0</td><td>0.0</td><td>0.0</td><td>1</td><td>1</td><td>8</td><td>3</td><td>3.0</td><td>0.0</td><td>0.0</td><td>3</td><td>3</td></tr><tr><td>155530ba5dc3bdcd4ec540bb72ac313ca72b617a842b42476e710d0bd6961622</td><td>p2</td><td>0</td><td>8</td><td>1.0</td><td>1.0</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>8</td><td>0.16319444444444445</td><td>0.16666666666666666</td><td>0.037672296718348264</td><td>0.0</td><td>0.08333333333333333</td><td>0.2222222222222222</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>684.375</td><td>690.0</td><td>70.91833834972245</td><td>135.75</td><td>614</td><td>752</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>5534.625</td><td>5499.5</td><td>886.7107657758854</td><td>1240.25</td><td>4447</td><td>6654</td><td>8</td><td>10.438970435643569</td><td>10.445270958977442</td><td>1.4221928126445884</td><td>2.2171214416933562</td><td>8.591180589670936</td><td>12.140222049007813</td><td>8</td><td>1</td><td>1.0</td><td>0.0</td><td>0.0</td><td>1</td><td>1</td><td>8</td><td>3</td><td>3.0</td><td>0.0</td><td>0.0</td><td>3</td><td>3</td></tr><tr><td>155530ba5dc3bdcd4ec540bb72ac313ca72b617a842b42476e710d0bd6961622</td><td>p3</td><td>0</td><td>8</td><td>1.0</td><td>1.0</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>8</td><td>0.1388888888888889</td><td>0.1388888888888889</td><td>0.05143444998736397</td><td>0.05555555555555555</td><td>0.05555555555555555</td><td>0.2222222222222222</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>8</td><td>0.9166666666666666</td><td>1.0</td><td>0.23570226039551584</td><td>0.0</td><td>0.3333333333333333</td><td>1.0</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>1025.25</td><td>1032.0</td><td>128.99252470035395</td><td>222.75</td><td>861</td><td>1146</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>0</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>8</td><td>7513</td><td>7511.0</td><td>959.6192697404231</td><td>1288.25</td><td>6174</td><td>8689</td><td>8</td><td>21.330282955508057</td><td>21.99484714462111</td><td>2.1645352460570697</td><td>3.8164271973073447</td><td>18.66040239110589</td><td>24.22601372624437</td><td>8</td><td>3</td><td>3.0</td><td>0.0</td><td>0.0</td><td>3</td><td>3</td><td>8</td><td>5.375</td><td>5.5</td><td>0.7440238091428449</td><td>1.0</td><td>4</td><td>6</td></tr></table></section><details open><summary>Full report</summary><pre># FCGC research evaluation
+
+Split: development. Labels: `{&#x27;data&#x27;: &#x27;synthetic&#x27;, &#x27;retrieval&#x27;: [&#x27;benchmark&#x27;], &#x27;checking&#x27;: [&#x27;mock&#x27;], &#x27;retrieval_kind&#x27;: [&#x27;local_fixture&#x27;], &#x27;checker_kind&#x27;: [&#x27;mock&#x27;], &#x27;resources&#x27;: &#x27;local token estimates and measured wall time; provider tokens only when exposed; no billing measurements&#x27;, &#x27;ground_truth&#x27;: [&#x27;provisional&#x27;]}`.
+Quality flags: {&#x27;incomplete_observations&#x27;: 30, &#x27;unsupported_rule_observations&#x27;: 21, &#x27;ambiguous_rule_instances&#x27;: 54, &#x27;unresolved_finding_instances&#x27;: 1440, &#x27;compliance_eligible_observations&#x27;: 0}.
+
+Rule K is a unique canonical-rule prefix after source-arrival rank, source line, then ID. Document K is the experiment search budget; it is not rule K.
+Precision divides by actual unique returned rule IDs up to K; no-applicable-rule recall and zero-denominator precision are undefined.
+Checker-received means the adapter got the frozen task; model-supplied coverage is separately recorded and is empty for mocks.
+
+| Configuration | Cases | Fetched recall@K | Fetched precision@K | Retained recall@K | Checker-received recall@K | Violation F1 | Input tokens mean | Calls search/fetch mean |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 155530ba / b0 / checker 0 | 8 | 0.438 | 0.083 | 0.438 | 0.438 | unavailable | 5717.875 | 1.000/3.000 |
+| 155530ba / p1 / checker 0 | 8 | 0.917 | 0.163 | 0.917 | 0.917 | unavailable | 6644.625 | 1.000/3.000 |
+| 155530ba / p2 / checker 0 | 8 | 0.917 | 0.163 | 0.917 | 0.917 | unavailable | 5534.625 | 1.000/3.000 |
+| 155530ba / p3 / checker 0 | 8 | 0.917 | 0.139 | 0.917 | 0.917 | unavailable | 7513.000 | 3.000/5.375 |
+
+## Paired comparisons
+
+Deltas are later minus earlier. Repetitions are averaged within firmware case; inference uses matched-variant group means. Negative token/latency deltas favor efficiency. No accuracy claim is made for mocks or provisional labels.
+
+| Contrast | Metric | Cases / groups | Mean delta | 95% group bootstrap CI | Holm sign-flip p |
+| --- | --- | --- | ---: | --- | ---: |
+| b0_vs_p1 | fetched_recall | 8/4 | 0.479 | [0.125, 0.8333333333333334] | 0.750 |
+| b0_vs_p1 | fetched_precision | 8/4 | 0.080 | [0.020833333333333332, 0.15624999999999997] | 0.750 |
+| b0_vs_p1 | retained_recall | 8/4 | 0.479 | [0.125, 0.8333333333333334] | 0.750 |
+| b0_vs_p1 | checker_received_recall | 8/4 | 0.479 | [0.125, 0.8333333333333334] | 0.750 |
+| b0_vs_p1 | violation_f1 | 0/0 | unavailable | None | unavailable |
+| b0_vs_p1 | checker_input_tokens | 8/4 | 926.750 | [-28.5, 1872.5] | 0.500 |
+| b0_vs_p1 | end_to_end_ms | 8/4 | 1.121 | [0.4126389976590872, 1.828690757974982] | 0.375 |
+| b0_vs_p1 | search_calls | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| b0_vs_p1 | fetch_calls | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p1_vs_p2 | fetched_recall | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p1_vs_p2 | fetched_precision | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p1_vs_p2 | retained_recall | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p1_vs_p2 | checker_received_recall | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p1_vs_p2 | violation_f1 | 0/0 | unavailable | None | unavailable |
+| p1_vs_p2 | checker_input_tokens | 8/4 | -1110.000 | [-1308.0, -818.5] | 0.375 |
+| p1_vs_p2 | end_to_end_ms | 8/4 | 1.551 | [0.8896923682186748, 2.0241615420673047] | 0.375 |
+| p1_vs_p2 | search_calls | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p1_vs_p2 | fetch_calls | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p2_vs_p3 | fetched_recall | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p2_vs_p3 | fetched_precision | 8/4 | -0.024 | [-0.048611111111111105, 0.0] | 1.000 |
+| p2_vs_p3 | retained_recall | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p2_vs_p3 | checker_received_recall | 8/4 | 0.000 | [0.0, 0.0] | 1.000 |
+| p2_vs_p3 | violation_f1 | 0/0 | unavailable | None | unavailable |
+| p2_vs_p3 | checker_input_tokens | 8/4 | 1978.375 | [1888.625, 2035.0] | 0.375 |
+| p2_vs_p3 | end_to_end_ms | 8/4 | 10.891 | [10.167835125078756, 11.76905717390279] | 0.375 |
+| p2_vs_p3 | search_calls | 8/4 | 2.000 | [2.0, 2.0] | 0.375 |
+| p2_vs_p3 | fetch_calls | 8/4 | 2.375 | [1.625, 3.0] | 0.375 |
+
+## Per-case missed evidence and regressions
+
+- C001-b0-r01, checker 0: missed [&#x27;SFCG-007&#x27;, &#x27;SFCG-011&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C001-p1-r01, checker 0: missed [&#x27;SFCG-007&#x27;, &#x27;SFCG-011&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C001-p2-r01, checker 0: missed [&#x27;SFCG-007&#x27;, &#x27;SFCG-011&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C001-p3-r01, checker 0: missed [&#x27;SFCG-007&#x27;, &#x27;SFCG-011&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C002-b0-r01, checker 0: missed [&#x27;SFCG-011&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C002-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C002-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C002-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C003-b0-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C003-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C003-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C003-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C004-b0-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C004-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C004-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C004-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C005-b0-r01, checker 0: missed [&#x27;SFCG-019&#x27;, &#x27;SFCG-024&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C005-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C005-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C005-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C006-b0-r01, checker 0: missed [&#x27;SFCG-019&#x27;, &#x27;SFCG-024&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C006-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C006-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C006-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C007-b0-r01, checker 0: missed [&#x27;SFCG-007&#x27;, &#x27;SFCG-008&#x27;, &#x27;SFCG-031&#x27;, &#x27;SFCG-032&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C007-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C007-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C007-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C008-b0-r01, checker 0: missed [&#x27;SFCG-008&#x27;, &#x27;SFCG-031&#x27;, &#x27;SFCG-032&#x27;]; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C008-p1-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C008-p2-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+- C008-p3-r01, checker 0: missed []; lost during reduction []; model FN None; model FP None; status not_evaluated.
+
+## Limitations
+
+- Synthetic local data cannot establish enterprise retrieval or model performance.
+- Provisional annotations are not independent ground truth; compliance accuracy is disabled unless explicitly exploratory.
+- Mock/unexecuted checkers have null compliance metrics, never perfect accuracy or zero model false negatives.
+- Repetitions are averaged within case; inferential tests resample matched variant groups, not individual repeated runs.
+- Small group counts produce coarse p-values and unstable confidence intervals; tests are exploratory.
+- Sign-flip tests assume symmetric independent group differences; sign tests also reported. Holm adjustment is within metric/panel only.
+- Feature/category mappings and source-line ranking are explicit approximations, not enterprise ranking scores.
+- Unknown source rule IDs cannot be scored canonically; they remain separately listed.
+- Provider token counters are not measured bills. Output tokens, total tokens, ACU and Rovo credits remain null when unavailable.
+- Archived P3 traces do not isolate feature/reduction timings; these remain null instead of inferred zero.
+- Legacy traces do not always establish model submission for unresolved/error results; model-supplied coverage can be unknown.
+- Failed/missing runs are reported separately; paired metrics use available case pairs and disclose exclusions.
+- End-to-end latency includes the entire configured checker matrix; checker_ms is specific to one checker.
+
+## Missing and incomplete observations
+
+Missing run files: 0. Checker statuses: {&#x27;not_evaluated&#x27;: 96}.
+- C001-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C001-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C001-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p1-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p1-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p1-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p2-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p2-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p2-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C002-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C003-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C003-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C003-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C004-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C004-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C004-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C005-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C005-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C005-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C006-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C006-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C006-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C007-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C007-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C007-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C008-p3-r01: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C008-p3-r02: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+- C008-p3-r03: run=finished; incomplete=[&#x27;evidence_context&#x27;]; errors=[].
+
+## Per-case regressions
+
+- b0_vs_p1 / checker_input_tokens: {&#x27;C005&#x27;: 2199, &#x27;C006&#x27;: 2199, &#x27;C007&#x27;: 1546, &#x27;C008&#x27;: 1546}
+- b0_vs_p1 / end_to_end_ms: {&#x27;C001&#x27;: 1.3082359607021017, &#x27;C004&#x27;: 0.3263750889648991, &#x27;C005&#x27;: 2.2058609562615548, &#x27;C006&#x27;: 1.7541247264792519, &#x27;C003&#x27;: 0.2052360214293003, &#x27;C007&#x27;: 1.2056659907102585, &#x27;C008&#x27;: 2.149111358448863}
+- p1_vs_p2 / end_to_end_ms: {&#x27;C001&#x27;: 0.1610826390484963, &#x27;C004&#x27;: 1.4196112751960754, &#x27;C005&#x27;: 1.852958385522168, &#x27;C006&#x27;: 2.4871806769321356, &#x27;C002&#x27;: 1.1538052931427947, &#x27;C003&#x27;: 1.7532638739794502, &#x27;C007&#x27;: 2.197042029971877, &#x27;C008&#x27;: 1.380986301228404}
+- p2_vs_p3 / fetched_precision: {&#x27;C001&#x27;: -0.027777777777777776, &#x27;C004&#x27;: -0.05555555555555555, &#x27;C002&#x27;: -0.05555555555555555, &#x27;C003&#x27;: -0.05555555555555555}
+- p2_vs_p3 / checker_input_tokens: {&#x27;C001&#x27;: 1984, &#x27;C004&#x27;: 1988, &#x27;C005&#x27;: 2035, &#x27;C006&#x27;: 2035, &#x27;C002&#x27;: 1727, &#x27;C003&#x27;: 1988, &#x27;C007&#x27;: 2035, &#x27;C008&#x27;: 2035}
+- p2_vs_p3 / end_to_end_ms: {&#x27;C001&#x27;: 9.57429176196456, &#x27;C004&#x27;: 14.808819085980456, &#x27;C005&#x27;: 10.728931054472922, &#x27;C006&#x27;: 10.99800031321744, &#x27;C002&#x27;: 10.297624782348672, &#x27;C003&#x27;: 9.501583486174544, &#x27;C007&#x27;: 10.542902629822493, &#x27;C008&#x27;: 10.678347044934828}
+- p2_vs_p3 / search_calls: {&#x27;C001&#x27;: 2, &#x27;C004&#x27;: 2, &#x27;C005&#x27;: 2, &#x27;C006&#x27;: 2, &#x27;C002&#x27;: 2, &#x27;C003&#x27;: 2, &#x27;C007&#x27;: 2, &#x27;C008&#x27;: 2}
+- p2_vs_p3 / fetch_calls: {&#x27;C001&#x27;: 2, &#x27;C004&#x27;: 2, &#x27;C005&#x27;: 3, &#x27;C006&#x27;: 3, &#x27;C002&#x27;: 1, &#x27;C003&#x27;: 2, &#x27;C007&#x27;: 3, &#x27;C008&#x27;: 3}</pre></details>

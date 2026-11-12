@@ -1,0 +1,735 @@
+running egg_info
+writing src/fcgc.egg-info/PKG-INFO
+writing dependency_links to src/fcgc.egg-info/dependency_links.txt
+writing entry points to src/fcgc.egg-info/entry_points.txt
+writing requirements to src/fcgc.egg-info/requires.txt
+writing top-level names to src/fcgc.egg-info/top_level.txt
+reading manifest file 'src/fcgc.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src/fcgc.egg-info/SOURCES.txt'
+running sdist
+running egg_info
+writing src/fcgc.egg-info/PKG-INFO
+writing dependency_links to src/fcgc.egg-info/dependency_links.txt
+writing entry points to src/fcgc.egg-info/entry_points.txt
+writing requirements to src/fcgc.egg-info/requires.txt
+writing top-level names to src/fcgc.egg-info/top_level.txt
+reading manifest file 'src/fcgc.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src/fcgc.egg-info/SOURCES.txt'
+running check
+creating fcgc-0.11.0
+creating fcgc-0.11.0/benchmarks/v2
+creating fcgc-0.11.0/benchmarks/v2/ground_truth/development
+creating fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+creating fcgc-0.11.0/benchmarks/v2/reports
+creating fcgc-0.11.0/docs
+creating fcgc-0.11.0/examples
+creating fcgc-0.11.0/experiments
+creating fcgc-0.11.0/release/evaluation
+creating fcgc-0.11.0/release/validation
+creating fcgc-0.11.0/release/validation/cli
+creating fcgc-0.11.0/scripts
+creating fcgc-0.11.0/skills/fcg_checking
+creating fcgc-0.11.0/src/fcgc
+creating fcgc-0.11.0/src/fcgc.egg-info
+creating fcgc-0.11.0/src/fcgc/adapters
+creating fcgc-0.11.0/src/fcgc/adapters/checker
+creating fcgc-0.11.0/src/fcgc/adapters/retrieval
+creating fcgc-0.11.0/src/fcgc/config
+creating fcgc-0.11.0/src/fcgc/core
+creating fcgc-0.11.0/src/fcgc/experiments
+creating fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+creating fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+creating fcgc-0.11.0/src/fcgc/fixtures/cases
+creating fcgc-0.11.0/src/fcgc/fixtures/checking
+creating fcgc-0.11.0/src/fcgc/fixtures/guidelines
+creating fcgc-0.11.0/src/fcgc/fixtures/replay
+creating fcgc-0.11.0/src/fcgc/fixtures/segmentation
+creating fcgc-0.11.0/src/fcgc/schemas
+creating fcgc-0.11.0/tests
+creating fcgc-0.11.0/tests/fixtures
+copying files to fcgc-0.11.0...
+copying .env.example -> fcgc-0.11.0
+copying MANIFEST.in -> fcgc-0.11.0
+copying README.md -> fcgc-0.11.0
+copying pyproject.toml -> fcgc-0.11.0
+copying requirements-runtime.lock -> fcgc-0.11.0
+copying requirements.lock -> fcgc-0.11.0
+copying benchmarks/v2/REVIEW_GUIDE.md -> fcgc-0.11.0/benchmarks/v2
+copying benchmarks/v2/benchmark.toml -> fcgc-0.11.0/benchmarks/v2
+copying benchmarks/v2/manifest.json -> fcgc-0.11.0/benchmarks/v2
+copying benchmarks/v2/rq1_development.toml -> fcgc-0.11.0/benchmarks/v2
+copying benchmarks/v2/rules.json -> fcgc-0.11.0/benchmarks/v2
+copying benchmarks/v2/validation_report.json -> fcgc-0.11.0/benchmarks/v2
+copying benchmarks/v2/ground_truth/development/C001.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C002.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C003.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C004.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C005.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C006.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C007.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/development/C008.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/development
+copying benchmarks/v2/ground_truth/heldout/C009.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C010.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C011.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C012.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C013.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C014.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C015.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C016.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C017.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C018.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C019.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C020.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C021.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C022.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C023.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/ground_truth/heldout/C024.json -> fcgc-0.11.0/benchmarks/v2/ground_truth/heldout
+copying benchmarks/v2/reports/rq1_development.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/rq1_development.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage10_known_metrics.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage10_research_evaluation.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage5_segmentation_demo.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage6_C001.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage6_C005.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage6_p1_p2_context.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage7_C001.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage7_C002.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage7_fallback.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage8_checking.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage8_pointer_bad_results.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage8_pointer_bad_task.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage8_pointer_good_results.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage8_pointer_good_task.json -> fcgc-0.11.0/benchmarks/v2/reports
+copying benchmarks/v2/reports/stage9_orchestration.md -> fcgc-0.11.0/benchmarks/v2/reports
+copying docs/ARCHITECTURE.md -> fcgc-0.11.0/docs
+copying docs/EXPERIMENTS.md -> fcgc-0.11.0/docs
+copying docs/LIMITATIONS.md -> fcgc-0.11.0/docs
+copying docs/LOCAL_SETUP.md -> fcgc-0.11.0/docs
+copying docs/RELEASE_READINESS.md -> fcgc-0.11.0/docs
+copying docs/RULE_SCHEMA.md -> fcgc-0.11.0/docs
+copying docs/SECURITY.md -> fcgc-0.11.0/docs
+copying docs/USER_GUIDE.md -> fcgc-0.11.0/docs
+copying docs/WD_INTEGRATION.md -> fcgc-0.11.0/docs
+copying docs/checking.md -> fcgc-0.11.0/docs
+copying docs/evaluation.md -> fcgc-0.11.0/docs
+copying examples/local.toml -> fcgc-0.11.0/examples
+copying examples/wd.toml -> fcgc-0.11.0/examples
+copying experiments/release_development.toml -> fcgc-0.11.0/experiments
+copying experiments/stage10_development.toml -> fcgc-0.11.0/experiments
+copying experiments/stage10_evaluation.toml -> fcgc-0.11.0/experiments
+copying experiments/stage10_margins.toml -> fcgc-0.11.0/experiments
+copying experiments/stage9_development.toml -> fcgc-0.11.0/experiments
+copying release/evaluation/metrics.json -> fcgc-0.11.0/release/evaluation
+copying release/evaluation/paired.csv -> fcgc-0.11.0/release/evaluation
+copying release/evaluation/report.html -> fcgc-0.11.0/release/evaluation
+copying release/evaluation/report.md -> fcgc-0.11.0/release/evaluation
+copying release/evaluation/runs.csv -> fcgc-0.11.0/release/evaluation
+copying release/evaluation/summary.csv -> fcgc-0.11.0/release/evaluation
+copying release/validation/acceptance.json -> fcgc-0.11.0/release/validation
+copying release/validation/build.txt -> fcgc-0.11.0/release/validation
+copying release/validation/checks.json -> fcgc-0.11.0/release/validation
+copying release/validation/cli-commands.json -> fcgc-0.11.0/release/validation
+copying release/validation/dataset-quality.json -> fcgc-0.11.0/release/validation
+copying release/validation/deterministic-violation.json -> fcgc-0.11.0/release/validation
+copying release/validation/development-advisories.json -> fcgc-0.11.0/release/validation
+copying release/validation/documentation-links.json -> fcgc-0.11.0/release/validation
+copying release/validation/environment.json -> fcgc-0.11.0/release/validation
+copying release/validation/imports-configs.json -> fcgc-0.11.0/release/validation
+copying release/validation/known-metrics.json -> fcgc-0.11.0/release/validation
+copying release/validation/package.json -> fcgc-0.11.0/release/validation
+copying release/validation/replay-comparison.json -> fcgc-0.11.0/release/validation
+copying release/validation/repository-scan.json -> fcgc-0.11.0/release/validation
+copying release/validation/runtime-advisories.json -> fcgc-0.11.0/release/validation
+copying release/validation/source-install.txt -> fcgc-0.11.0/release/validation
+copying release/validation/source-location.json -> fcgc-0.11.0/release/validation
+copying release/validation/source-package.json -> fcgc-0.11.0/release/validation
+copying release/validation/source-tests.txt -> fcgc-0.11.0/release/validation
+copying release/validation/wheel-acceptance.json -> fcgc-0.11.0/release/validation
+copying release/validation/cli/01-doctor.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/01-doctor.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/02-info.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/02-info.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/03-features.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/03-features.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/04-extract-rules.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/04-extract-rules.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/05-check.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/05-check.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/06-experiment.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/06-experiment.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/07-report.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/07-report.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/08-replay.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/08-replay.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/09-freeze-task.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/09-freeze-task.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/10-check-task.json -> fcgc-0.11.0/release/validation/cli
+copying release/validation/cli/10-check-task.stderr.txt -> fcgc-0.11.0/release/validation/cli
+copying scripts/release_checks.py -> fcgc-0.11.0/scripts
+copying skills/fcg_checking/SKILL.md -> fcgc-0.11.0/skills/fcg_checking
+copying skills/fcg_checking/prompt.txt -> fcgc-0.11.0/skills/fcg_checking
+copying src/fcgc/__init__.py -> fcgc-0.11.0/src/fcgc
+copying src/fcgc/cli.py -> fcgc-0.11.0/src/fcgc
+copying src/fcgc.egg-info/PKG-INFO -> fcgc-0.11.0/src/fcgc.egg-info
+copying src/fcgc.egg-info/SOURCES.txt -> fcgc-0.11.0/src/fcgc.egg-info
+copying src/fcgc.egg-info/dependency_links.txt -> fcgc-0.11.0/src/fcgc.egg-info
+copying src/fcgc.egg-info/entry_points.txt -> fcgc-0.11.0/src/fcgc.egg-info
+copying src/fcgc.egg-info/requires.txt -> fcgc-0.11.0/src/fcgc.egg-info
+copying src/fcgc.egg-info/top_level.txt -> fcgc-0.11.0/src/fcgc.egg-info
+copying src/fcgc/adapters/__init__.py -> fcgc-0.11.0/src/fcgc/adapters
+copying src/fcgc/adapters/checker/__init__.py -> fcgc-0.11.0/src/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/demo.py -> fcgc-0.11.0/src/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/devin.py -> fcgc-0.11.0/src/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/local_llm.py -> fcgc-0.11.0/src/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/mock.py -> fcgc-0.11.0/src/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/placeholder.py -> fcgc-0.11.0/src/fcgc/adapters/checker
+copying src/fcgc/adapters/retrieval/__init__.py -> fcgc-0.11.0/src/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/atlassian.py -> fcgc-0.11.0/src/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/benchmark.py -> fcgc-0.11.0/src/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/local.py -> fcgc-0.11.0/src/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/replay.py -> fcgc-0.11.0/src/fcgc/adapters/retrieval
+copying src/fcgc/config/__init__.py -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/benchmark.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/benchmark_scoped.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/benchmark_scopes_v1.json -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/checker_demo.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/checker_mock.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/checker_ollama.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/enterprise.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/feature_concepts_v1.json -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/feature_concepts_v2.json -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/local.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/p1_templates_v1.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/p1_templates_v2.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/p2_reduction_v1.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/p3_fallback_v1.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/config/replay.toml -> fcgc-0.11.0/src/fcgc/config
+copying src/fcgc/core/__init__.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/baseline.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/checking.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/context_packer.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/context_reducer.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/document_normalizer.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/features.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/files.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/interfaces.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/p1.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/p2.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/p3.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/query_planner.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/retrieval.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/core/rule_segmentation.py -> fcgc-0.11.0/src/fcgc/core
+copying src/fcgc/experiments/__init__.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/acceptance.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/benchmark.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/calibration.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/calibration_margins.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/evaluation.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/metrics.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/quality.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/rq1.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/run_log.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/runner.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/snapshots.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/experiments/statistics.py -> fcgc-0.11.0/src/fcgc/experiments
+copying src/fcgc/fixtures/benchmark_cases/C001.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C002.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C003.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C004.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C005.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C006.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C007.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C008.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C009.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C010.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C011.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C012.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C013.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C014.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C015.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C016.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C017.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C018.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C019.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C020.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C021.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C022.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C023.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C024.c -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_guidelines/api_returns.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/buffers.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/decoy_bootloader.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/decoy_host_tools.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/error_flow.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/initialization.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/pointers.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/resources.md -> fcgc-0.11.0/src/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/cases/register_access.c -> fcgc-0.11.0/src/fcgc/fixtures/cases
+copying src/fcgc/fixtures/cases/sensor_poll.c -> fcgc-0.11.0/src/fcgc/fixtures/cases
+copying src/fcgc/fixtures/checking/pointer.md -> fcgc-0.11.0/src/fcgc/fixtures/checking
+copying src/fcgc/fixtures/checking/pointer_bad.c -> fcgc-0.11.0/src/fcgc/fixtures/checking
+copying src/fcgc/fixtures/checking/pointer_good.c -> fcgc-0.11.0/src/fcgc/fixtures/checking
+copying src/fcgc/fixtures/guidelines/FCG-001.md -> fcgc-0.11.0/src/fcgc/fixtures/guidelines
+copying src/fcgc/fixtures/guidelines/FCG-002.md -> fcgc-0.11.0/src/fcgc/fixtures/guidelines
+copying src/fcgc/fixtures/guidelines/FCG-003.md -> fcgc-0.11.0/src/fcgc/fixtures/guidelines
+copying src/fcgc/fixtures/replay/benchmark_c002_v2.json -> fcgc-0.11.0/src/fcgc/fixtures/replay
+copying src/fcgc/fixtures/segmentation/contextual_rules.md -> fcgc-0.11.0/src/fcgc/fixtures/segmentation
+copying src/fcgc/fixtures/segmentation/duplicate_scope_a.md -> fcgc-0.11.0/src/fcgc/fixtures/segmentation
+copying src/fcgc/fixtures/segmentation/duplicate_scope_b.md -> fcgc-0.11.0/src/fcgc/fixtures/segmentation
+copying src/fcgc/schemas/__init__.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/benchmark.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/checking.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/models.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/rules.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/stage3.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/stage6.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/stage7.py -> fcgc-0.11.0/src/fcgc/schemas
+copying src/fcgc/schemas/stage9.py -> fcgc-0.11.0/src/fcgc/schemas
+copying tests/test_baseline.py -> fcgc-0.11.0/tests
+copying tests/test_benchmark.py -> fcgc-0.11.0/tests
+copying tests/test_cli.py -> fcgc-0.11.0/tests
+copying tests/test_local_retriever.py -> fcgc-0.11.0/tests
+copying tests/test_release.py -> fcgc-0.11.0/tests
+copying tests/test_stage10.py -> fcgc-0.11.0/tests
+copying tests/test_stage3.py -> fcgc-0.11.0/tests
+copying tests/test_stage4.py -> fcgc-0.11.0/tests
+copying tests/test_stage5.py -> fcgc-0.11.0/tests
+copying tests/test_stage6.py -> fcgc-0.11.0/tests
+copying tests/test_stage7.py -> fcgc-0.11.0/tests
+copying tests/test_stage8.py -> fcgc-0.11.0/tests
+copying tests/test_stage9.py -> fcgc-0.11.0/tests
+copying tests/fixtures/evaluation_known.json -> fcgc-0.11.0/tests/fixtures
+Writing fcgc-0.11.0/setup.cfg
+Creating tar archive
+removing 'fcgc-0.11.0' (and everything under it)
+running egg_info
+writing src/fcgc.egg-info/PKG-INFO
+writing dependency_links to src/fcgc.egg-info/dependency_links.txt
+writing entry points to src/fcgc.egg-info/entry_points.txt
+writing requirements to src/fcgc.egg-info/requires.txt
+writing top-level names to src/fcgc.egg-info/top_level.txt
+reading manifest file 'src/fcgc.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src/fcgc.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+creating build/lib/fcgc
+copying src/fcgc/__init__.py -> build/lib/fcgc
+copying src/fcgc/cli.py -> build/lib/fcgc
+creating build/lib/fcgc/core
+copying src/fcgc/core/document_normalizer.py -> build/lib/fcgc/core
+copying src/fcgc/core/interfaces.py -> build/lib/fcgc/core
+copying src/fcgc/core/files.py -> build/lib/fcgc/core
+copying src/fcgc/core/p1.py -> build/lib/fcgc/core
+copying src/fcgc/core/baseline.py -> build/lib/fcgc/core
+copying src/fcgc/core/context_packer.py -> build/lib/fcgc/core
+copying src/fcgc/core/__init__.py -> build/lib/fcgc/core
+copying src/fcgc/core/features.py -> build/lib/fcgc/core
+copying src/fcgc/core/rule_segmentation.py -> build/lib/fcgc/core
+copying src/fcgc/core/checking.py -> build/lib/fcgc/core
+copying src/fcgc/core/context_reducer.py -> build/lib/fcgc/core
+copying src/fcgc/core/retrieval.py -> build/lib/fcgc/core
+copying src/fcgc/core/query_planner.py -> build/lib/fcgc/core
+copying src/fcgc/core/p3.py -> build/lib/fcgc/core
+copying src/fcgc/core/p2.py -> build/lib/fcgc/core
+creating build/lib/fcgc/config
+copying src/fcgc/config/__init__.py -> build/lib/fcgc/config
+creating build/lib/fcgc/experiments
+copying src/fcgc/experiments/metrics.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/snapshots.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/runner.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/benchmark.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/evaluation.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/acceptance.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/__init__.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/calibration_margins.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/run_log.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/rq1.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/statistics.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/quality.py -> build/lib/fcgc/experiments
+copying src/fcgc/experiments/calibration.py -> build/lib/fcgc/experiments
+creating build/lib/fcgc/schemas
+copying src/fcgc/schemas/benchmark.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/models.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/__init__.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/rules.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/checking.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/stage9.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/stage6.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/stage3.py -> build/lib/fcgc/schemas
+copying src/fcgc/schemas/stage7.py -> build/lib/fcgc/schemas
+creating build/lib/fcgc/adapters
+copying src/fcgc/adapters/__init__.py -> build/lib/fcgc/adapters
+creating build/lib/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/placeholder.py -> build/lib/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/__init__.py -> build/lib/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/local_llm.py -> build/lib/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/demo.py -> build/lib/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/devin.py -> build/lib/fcgc/adapters/checker
+copying src/fcgc/adapters/checker/mock.py -> build/lib/fcgc/adapters/checker
+creating build/lib/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/benchmark.py -> build/lib/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/local.py -> build/lib/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/__init__.py -> build/lib/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/replay.py -> build/lib/fcgc/adapters/retrieval
+copying src/fcgc/adapters/retrieval/atlassian.py -> build/lib/fcgc/adapters/retrieval
+running egg_info
+writing src/fcgc.egg-info/PKG-INFO
+writing dependency_links to src/fcgc.egg-info/dependency_links.txt
+writing entry points to src/fcgc.egg-info/entry_points.txt
+writing requirements to src/fcgc.egg-info/requires.txt
+writing top-level names to src/fcgc.egg-info/top_level.txt
+reading manifest file 'src/fcgc.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'src/fcgc.egg-info/SOURCES.txt'
+copying src/fcgc/config/p2_reduction_v1.toml -> build/lib/fcgc/config
+copying src/fcgc/config/p1_templates_v2.toml -> build/lib/fcgc/config
+copying src/fcgc/config/local.toml -> build/lib/fcgc/config
+copying src/fcgc/config/checker_mock.toml -> build/lib/fcgc/config
+copying src/fcgc/config/p1_templates_v1.toml -> build/lib/fcgc/config
+copying src/fcgc/config/benchmark_scoped.toml -> build/lib/fcgc/config
+copying src/fcgc/config/checker_ollama.toml -> build/lib/fcgc/config
+copying src/fcgc/config/enterprise.toml -> build/lib/fcgc/config
+copying src/fcgc/config/checker_demo.toml -> build/lib/fcgc/config
+copying src/fcgc/config/p3_fallback_v1.toml -> build/lib/fcgc/config
+copying src/fcgc/config/benchmark.toml -> build/lib/fcgc/config
+copying src/fcgc/config/replay.toml -> build/lib/fcgc/config
+copying src/fcgc/config/feature_concepts_v2.json -> build/lib/fcgc/config
+copying src/fcgc/config/benchmark_scopes_v1.json -> build/lib/fcgc/config
+copying src/fcgc/config/feature_concepts_v1.json -> build/lib/fcgc/config
+creating build/lib/fcgc/fixtures/cases
+copying src/fcgc/fixtures/cases/register_access.c -> build/lib/fcgc/fixtures/cases
+copying src/fcgc/fixtures/cases/sensor_poll.c -> build/lib/fcgc/fixtures/cases
+creating build/lib/fcgc/fixtures/guidelines
+copying src/fcgc/fixtures/guidelines/FCG-003.md -> build/lib/fcgc/fixtures/guidelines
+copying src/fcgc/fixtures/guidelines/FCG-002.md -> build/lib/fcgc/fixtures/guidelines
+copying src/fcgc/fixtures/guidelines/FCG-001.md -> build/lib/fcgc/fixtures/guidelines
+creating build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C021.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C004.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C010.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C014.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C007.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C022.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C009.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C003.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C019.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C013.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C017.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C006.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C023.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C002.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C008.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C012.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C018.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C016.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C020.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C005.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C001.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C024.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C011.c -> build/lib/fcgc/fixtures/benchmark_cases
+copying src/fcgc/fixtures/benchmark_cases/C015.c -> build/lib/fcgc/fixtures/benchmark_cases
+creating build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/resources.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/initialization.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/error_flow.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/buffers.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/decoy_bootloader.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/pointers.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/api_returns.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+copying src/fcgc/fixtures/benchmark_guidelines/decoy_host_tools.md -> build/lib/fcgc/fixtures/benchmark_guidelines
+creating build/lib/fcgc/fixtures/replay
+copying src/fcgc/fixtures/replay/benchmark_c002_v2.json -> build/lib/fcgc/fixtures/replay
+creating build/lib/fcgc/fixtures/segmentation
+copying src/fcgc/fixtures/segmentation/duplicate_scope_b.md -> build/lib/fcgc/fixtures/segmentation
+copying src/fcgc/fixtures/segmentation/contextual_rules.md -> build/lib/fcgc/fixtures/segmentation
+copying src/fcgc/fixtures/segmentation/duplicate_scope_a.md -> build/lib/fcgc/fixtures/segmentation
+creating build/lib/fcgc/fixtures/checking
+copying src/fcgc/fixtures/checking/pointer.md -> build/lib/fcgc/fixtures/checking
+copying src/fcgc/fixtures/checking/pointer_good.c -> build/lib/fcgc/fixtures/checking
+copying src/fcgc/fixtures/checking/pointer_bad.c -> build/lib/fcgc/fixtures/checking
+installing to build/bdist.macosx-15.0-arm64/wheel
+running install
+running install_lib
+creating build/bdist.macosx-15.0-arm64/wheel
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/core
+copying build/lib/fcgc/core/document_normalizer.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/interfaces.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/files.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/p1.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/baseline.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/context_packer.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/features.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/rule_segmentation.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/checking.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/context_reducer.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/retrieval.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/query_planner.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/p3.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+copying build/lib/fcgc/core/p2.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/core
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/config
+copying build/lib/fcgc/config/feature_concepts_v2.json -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/p2_reduction_v1.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/p1_templates_v2.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/local.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/checker_mock.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/p1_templates_v1.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/benchmark_scoped.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/benchmark_scopes_v1.json -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/checker_ollama.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/enterprise.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/checker_demo.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/p3_fallback_v1.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/benchmark.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/feature_concepts_v1.json -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+copying build/lib/fcgc/config/replay.toml -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/config
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/experiments
+copying build/lib/fcgc/experiments/metrics.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/snapshots.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/runner.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/benchmark.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/evaluation.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/acceptance.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/calibration_margins.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/run_log.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/rq1.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/statistics.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/quality.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/experiments/calibration.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/experiments
+copying build/lib/fcgc/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/schemas
+copying build/lib/fcgc/schemas/benchmark.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/models.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/rules.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/checking.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/stage9.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/stage6.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/stage3.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+copying build/lib/fcgc/schemas/stage7.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/schemas
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/adapters
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/adapters/checker
+copying build/lib/fcgc/adapters/checker/placeholder.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/checker
+copying build/lib/fcgc/adapters/checker/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/checker
+copying build/lib/fcgc/adapters/checker/local_llm.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/checker
+copying build/lib/fcgc/adapters/checker/demo.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/checker
+copying build/lib/fcgc/adapters/checker/devin.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/checker
+copying build/lib/fcgc/adapters/checker/mock.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/checker
+copying build/lib/fcgc/adapters/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/adapters/retrieval
+copying build/lib/fcgc/adapters/retrieval/benchmark.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/retrieval
+copying build/lib/fcgc/adapters/retrieval/local.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/retrieval
+copying build/lib/fcgc/adapters/retrieval/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/retrieval
+copying build/lib/fcgc/adapters/retrieval/replay.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/retrieval
+copying build/lib/fcgc/adapters/retrieval/atlassian.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/adapters/retrieval
+copying build/lib/fcgc/cli.py -> build/bdist.macosx-15.0-arm64/wheel/./fcgc
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/resources.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/initialization.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/error_flow.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/buffers.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/decoy_bootloader.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/pointers.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/api_returns.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+copying build/lib/fcgc/fixtures/benchmark_guidelines/decoy_host_tools.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_guidelines
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/segmentation
+copying build/lib/fcgc/fixtures/segmentation/duplicate_scope_b.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/segmentation
+copying build/lib/fcgc/fixtures/segmentation/contextual_rules.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/segmentation
+copying build/lib/fcgc/fixtures/segmentation/duplicate_scope_a.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/segmentation
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/cases
+copying build/lib/fcgc/fixtures/cases/register_access.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/cases
+copying build/lib/fcgc/fixtures/cases/sensor_poll.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/cases
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C021.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C004.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C010.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C014.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C007.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C022.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C009.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C003.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C019.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C013.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C017.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C006.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C023.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C002.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C008.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C012.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C018.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C016.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C020.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C005.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C001.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C024.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C011.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+copying build/lib/fcgc/fixtures/benchmark_cases/C015.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/benchmark_cases
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/guidelines
+copying build/lib/fcgc/fixtures/guidelines/FCG-003.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/guidelines
+copying build/lib/fcgc/fixtures/guidelines/FCG-002.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/guidelines
+copying build/lib/fcgc/fixtures/guidelines/FCG-001.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/guidelines
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/replay
+copying build/lib/fcgc/fixtures/replay/benchmark_c002_v2.json -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/replay
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc/fixtures/checking
+copying build/lib/fcgc/fixtures/checking/pointer_good.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/checking
+copying build/lib/fcgc/fixtures/checking/pointer.md -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/checking
+copying build/lib/fcgc/fixtures/checking/pointer_bad.c -> build/bdist.macosx-15.0-arm64/wheel/./fcgc/fixtures/checking
+running install_data
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc-0.11.0.data/data
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc-0.11.0.data/data/share/fcgc/skills/fcg_checking
+copying skills/fcg_checking/SKILL.md -> build/bdist.macosx-15.0-arm64/wheel/fcgc-0.11.0.data/data/share/fcgc/skills/fcg_checking
+copying skills/fcg_checking/prompt.txt -> build/bdist.macosx-15.0-arm64/wheel/fcgc-0.11.0.data/data/share/fcgc/skills/fcg_checking
+running install_egg_info
+Copying src/fcgc.egg-info to build/bdist.macosx-15.0-arm64/wheel/./fcgc-0.11.0-py3.13.egg-info
+running install_scripts
+creating build/bdist.macosx-15.0-arm64/wheel/fcgc-0.11.0.dist-info/WHEEL
+creating '/Users/marcuslim/Desktop/fcgchecker/dist/.tmp-mc4yhqjg/fcgc-0.11.0-py3-none-any.whl' and adding 'build/bdist.macosx-15.0-arm64/wheel' to it
+adding 'fcgc/__init__.py'
+adding 'fcgc/cli.py'
+adding 'fcgc/adapters/__init__.py'
+adding 'fcgc/adapters/checker/__init__.py'
+adding 'fcgc/adapters/checker/demo.py'
+adding 'fcgc/adapters/checker/devin.py'
+adding 'fcgc/adapters/checker/local_llm.py'
+adding 'fcgc/adapters/checker/mock.py'
+adding 'fcgc/adapters/checker/placeholder.py'
+adding 'fcgc/adapters/retrieval/__init__.py'
+adding 'fcgc/adapters/retrieval/atlassian.py'
+adding 'fcgc/adapters/retrieval/benchmark.py'
+adding 'fcgc/adapters/retrieval/local.py'
+adding 'fcgc/adapters/retrieval/replay.py'
+adding 'fcgc/config/__init__.py'
+adding 'fcgc/config/benchmark.toml'
+adding 'fcgc/config/benchmark_scoped.toml'
+adding 'fcgc/config/benchmark_scopes_v1.json'
+adding 'fcgc/config/checker_demo.toml'
+adding 'fcgc/config/checker_mock.toml'
+adding 'fcgc/config/checker_ollama.toml'
+adding 'fcgc/config/enterprise.toml'
+adding 'fcgc/config/feature_concepts_v1.json'
+adding 'fcgc/config/feature_concepts_v2.json'
+adding 'fcgc/config/local.toml'
+adding 'fcgc/config/p1_templates_v1.toml'
+adding 'fcgc/config/p1_templates_v2.toml'
+adding 'fcgc/config/p2_reduction_v1.toml'
+adding 'fcgc/config/p3_fallback_v1.toml'
+adding 'fcgc/config/replay.toml'
+adding 'fcgc/core/__init__.py'
+adding 'fcgc/core/baseline.py'
+adding 'fcgc/core/checking.py'
+adding 'fcgc/core/context_packer.py'
+adding 'fcgc/core/context_reducer.py'
+adding 'fcgc/core/document_normalizer.py'
+adding 'fcgc/core/features.py'
+adding 'fcgc/core/files.py'
+adding 'fcgc/core/interfaces.py'
+adding 'fcgc/core/p1.py'
+adding 'fcgc/core/p2.py'
+adding 'fcgc/core/p3.py'
+adding 'fcgc/core/query_planner.py'
+adding 'fcgc/core/retrieval.py'
+adding 'fcgc/core/rule_segmentation.py'
+adding 'fcgc/experiments/__init__.py'
+adding 'fcgc/experiments/acceptance.py'
+adding 'fcgc/experiments/benchmark.py'
+adding 'fcgc/experiments/calibration.py'
+adding 'fcgc/experiments/calibration_margins.py'
+adding 'fcgc/experiments/evaluation.py'
+adding 'fcgc/experiments/metrics.py'
+adding 'fcgc/experiments/quality.py'
+adding 'fcgc/experiments/rq1.py'
+adding 'fcgc/experiments/run_log.py'
+adding 'fcgc/experiments/runner.py'
+adding 'fcgc/experiments/snapshots.py'
+adding 'fcgc/experiments/statistics.py'
+adding 'fcgc/fixtures/benchmark_cases/C001.c'
+adding 'fcgc/fixtures/benchmark_cases/C002.c'
+adding 'fcgc/fixtures/benchmark_cases/C003.c'
+adding 'fcgc/fixtures/benchmark_cases/C004.c'
+adding 'fcgc/fixtures/benchmark_cases/C005.c'
+adding 'fcgc/fixtures/benchmark_cases/C006.c'
+adding 'fcgc/fixtures/benchmark_cases/C007.c'
+adding 'fcgc/fixtures/benchmark_cases/C008.c'
+adding 'fcgc/fixtures/benchmark_cases/C009.c'
+adding 'fcgc/fixtures/benchmark_cases/C010.c'
+adding 'fcgc/fixtures/benchmark_cases/C011.c'
+adding 'fcgc/fixtures/benchmark_cases/C012.c'
+adding 'fcgc/fixtures/benchmark_cases/C013.c'
+adding 'fcgc/fixtures/benchmark_cases/C014.c'
+adding 'fcgc/fixtures/benchmark_cases/C015.c'
+adding 'fcgc/fixtures/benchmark_cases/C016.c'
+adding 'fcgc/fixtures/benchmark_cases/C017.c'
+adding 'fcgc/fixtures/benchmark_cases/C018.c'
+adding 'fcgc/fixtures/benchmark_cases/C019.c'
+adding 'fcgc/fixtures/benchmark_cases/C020.c'
+adding 'fcgc/fixtures/benchmark_cases/C021.c'
+adding 'fcgc/fixtures/benchmark_cases/C022.c'
+adding 'fcgc/fixtures/benchmark_cases/C023.c'
+adding 'fcgc/fixtures/benchmark_cases/C024.c'
+adding 'fcgc/fixtures/benchmark_guidelines/api_returns.md'
+adding 'fcgc/fixtures/benchmark_guidelines/buffers.md'
+adding 'fcgc/fixtures/benchmark_guidelines/decoy_bootloader.md'
+adding 'fcgc/fixtures/benchmark_guidelines/decoy_host_tools.md'
+adding 'fcgc/fixtures/benchmark_guidelines/error_flow.md'
+adding 'fcgc/fixtures/benchmark_guidelines/initialization.md'
+adding 'fcgc/fixtures/benchmark_guidelines/pointers.md'
+adding 'fcgc/fixtures/benchmark_guidelines/resources.md'
+adding 'fcgc/fixtures/cases/register_access.c'
+adding 'fcgc/fixtures/cases/sensor_poll.c'
+adding 'fcgc/fixtures/checking/pointer.md'
+adding 'fcgc/fixtures/checking/pointer_bad.c'
+adding 'fcgc/fixtures/checking/pointer_good.c'
+adding 'fcgc/fixtures/guidelines/FCG-001.md'
+adding 'fcgc/fixtures/guidelines/FCG-002.md'
+adding 'fcgc/fixtures/guidelines/FCG-003.md'
+adding 'fcgc/fixtures/replay/benchmark_c002_v2.json'
+adding 'fcgc/fixtures/segmentation/contextual_rules.md'
+adding 'fcgc/fixtures/segmentation/duplicate_scope_a.md'
+adding 'fcgc/fixtures/segmentation/duplicate_scope_b.md'
+adding 'fcgc/schemas/__init__.py'
+adding 'fcgc/schemas/benchmark.py'
+adding 'fcgc/schemas/checking.py'
+adding 'fcgc/schemas/models.py'
+adding 'fcgc/schemas/rules.py'
+adding 'fcgc/schemas/stage3.py'
+adding 'fcgc/schemas/stage6.py'
+adding 'fcgc/schemas/stage7.py'
+adding 'fcgc/schemas/stage9.py'
+adding 'fcgc-0.11.0.data/data/share/fcgc/skills/fcg_checking/SKILL.md'
+adding 'fcgc-0.11.0.data/data/share/fcgc/skills/fcg_checking/prompt.txt'
+adding 'fcgc-0.11.0.dist-info/METADATA'
+adding 'fcgc-0.11.0.dist-info/WHEEL'
+adding 'fcgc-0.11.0.dist-info/entry_points.txt'
+adding 'fcgc-0.11.0.dist-info/top_level.txt'
+adding 'fcgc-0.11.0.dist-info/RECORD'
+removing build/bdist.macosx-15.0-arm64/wheel
+Successfully built fcgc-0.11.0.tar.gz and fcgc-0.11.0-py3-none-any.whl
+* Getting build dependencies for sdist...
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+no previously-included directories found matching 'runs'
+no previously-included directories found matching 'wheelhouse'
+* Building sdist...
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+no previously-included directories found matching 'runs'
+no previously-included directories found matching 'wheelhouse'
+* Building wheel from sdist
+* Getting build dependencies for wheel...
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+no previously-included directories found matching 'runs'
+no previously-included directories found matching 'wheelhouse'
+* Building wheel...
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+no previously-included directories found matching 'runs'
+no previously-included directories found matching 'wheelhouse'

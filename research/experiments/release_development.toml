@@ -1,0 +1,22 @@
+dataset_id = "fcgc-synthetic-v2"
+dataset_root = "../../benchmarks/v2"
+split = "development"
+strategies = ["b0", "p1", "p2", "p3", "r"]
+repetitions = 3
+seed = 2026
+shuffle_order = true
+output_directory = "../../outputs/experiments/release-experiment"
+expected_skill_version = "1.1.0"
+expected_prompt_version = "FCGC-PROMPT-V1"
+document_top_k = 3
+reference_top_k = 8
+context_token_budget = 12000
+snapshots_approved = true
+
+[retrieval]
+retriever = "benchmark"
+checker = "mock"
+
+[[checkers]]
+retriever = "benchmark"
+checker = "mock"
